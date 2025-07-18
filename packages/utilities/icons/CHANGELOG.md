@@ -1,5 +1,12 @@
 # @kopexa/icons
 
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`4cc0560`](https://github.com/kopexa-grc/sight/commit/4cc0560d0723162171a83e3f84e501c949abda76)]:
+  - @kopexa/react-utils@2.0.0
+
 ## 4.0.1
 
 ### Patch Changes
