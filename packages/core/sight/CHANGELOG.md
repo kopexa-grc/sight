@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`2d29cc1`](https://github.com/kopexa-grc/sight/commit/2d29cc11ebd84317319e2fab727b69e513a356c9)]:
+  - @kopexa/drawer@4.0.3
+
 ## 2.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @kopexa/drawer
 
+## 4.0.3
+
+### Patch Changes
+
+- [`2d29cc1`](https://github.com/kopexa-grc/sight/commit/2d29cc11ebd84317319e2fab727b69e513a356c9) Thanks [@juliankoehn](https://github.com/juliankoehn)! - bump a version due to dialog context error
+
 ## 4.0.2
 
 ### Patch Changes
