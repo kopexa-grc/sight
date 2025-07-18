@@ -40,10 +40,10 @@
 		"react-dom": ">=18 || >=19.0.0-rc.0"
 	},
 	"dependencies": {
-        "@kopexa/shared-utils": "workspace:*",
-        "@kopexa/react-utils": "workspace:*",
+		"@kopexa/shared-utils": "workspace:*",
+		"@kopexa/react-utils": "workspace:*",
 		"@radix-ui/react-slot": "^1.2.3",
-        "@kopexa/ripple": "workspace:*"
+		"@kopexa/ripple": "workspace:*"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",
