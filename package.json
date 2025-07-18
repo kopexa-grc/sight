@@ -12,7 +12,9 @@
 		"changeset:canary": "changeset pre enter canary",
 		"changeset:beta": "changeset pre enter beta",
 		"version": "changeset version",
-		"release": "turbo run build --filter=docs^... && changeset publish",
+        "release": "changeset publish",
+        "version:canary": "changeset version --snapshot canary",
+        "release:canary": "changeset publish --snapshot --no-git-tag --tag canary",
 		"preview-storybook": "turbo run preview-storybook"
 	},
 	"devDependencies": {
