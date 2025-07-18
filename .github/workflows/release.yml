@@ -52,7 +52,7 @@ jobs:
           publish: pnpm release
           title: "ci(changesets): :package: version packages"
           commit: "ci(changesets): version packages"
-          setupGitUser: false
+          setupGitUser: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
