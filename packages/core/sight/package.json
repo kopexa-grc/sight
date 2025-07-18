@@ -1,0 +1,57 @@
+{
+  "name": "@kopexa/sight",
+  "version": "0.0.0",
+  "description": "Kopexas react UI Library",
+  "keywords": [
+    "sight"
+  ],
+  "author": "Kopexa <hello@kopexa.com>",
+  "homepage": "https://kopexa.com",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopexa-grc/sight.git",
+    "directory": "packages/core/sight"
+  },
+  "bugs": {
+    "url": "https://github.com/kopexa-grc/sight/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0-rc.0",
+    "react-dom": ">=19.0.0-rc.0",
+    "motion": ">=12.23.6",
+    "@kopexa/theme": "workspace:*"
+  },
+  "dependencies": {
+    "@kopexa/shared-utils": "workspace:*",
+    "@kopexa/react-utils": "workspace:*",
+    "@kopexa/button": "workspace:*",
+    "@kopexa/dialog": "workspace:*",
+    "@kopexa/drawer": "workspace:*",
+    "@kopexa/popover": "workspace:*"
+  },
+  "devDependencies": {
+    "@kopexa/theme": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^19.1.0",
+	"react-dom": "^19.1.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}
