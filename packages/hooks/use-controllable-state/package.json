@@ -1,9 +1,9 @@
 {
-	"name": "@kopexa/shared-utils",
+	"name": "@kopexa/use-controllable-state",
 	"version": "0.0.0",
-	"description": "A set of kopexa shared utilities",
+	"description": "A hook to provide a controllable state",
 	"keywords": [
-		"system"
+		"use-controllable-state"
 	],
 	"author": "Kopexa <hello@kopexa.com>",
 	"homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/kopexa-grc/sight.git",
-		"directory": "packages/utilities/react-utils"
+		"directory": "packages/hooks/use-controllable-state"
 	},
 	"bugs": {
 		"url": "https://github.com/kopexa-grc/sight/issues"
@@ -33,8 +33,15 @@
 		"prepack": "clean-package",
 		"postpack": "clean-package restore"
 	},
+	"peerDependencies": {
+		"react": ">=18 || >=19.0.0-rc.0"
+	},
+	"dependencies": {
+		"@kopexa/use-callback-ref": "workspace:*"
+	},
 	"devDependencies": {
-		"clean-package": "2.2.0"
+		"clean-package": "2.2.0",
+		"react": "^18.3.0"
 	},
 	"clean-package": "../../../clean-package.config.json",
 	"tsup": {
@@ -43,15 +50,6 @@
 		"format": [
 			"cjs",
 			"esm"
-		],
-		"splitting": false,
-		"entry": [
-			"src/demi/react18",
-			"src/demi/react19"
 		]
-	},
-	"dependencies": {
-		"clsx": "^2.1.1",
-		"tailwind-merge": "3.3.1"
 	}
 }

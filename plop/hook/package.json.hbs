@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/{{componentName}}",
-  "version": "2.0.0",
+  "name": "@kopexa/{{hookName}}",
+  "version": "0.0.0",
   "description": "{{description}}",
   "keywords": [
-    "{{componentName}}"
+    "{{hookName}}"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/{{outDir}}/{{componentName}}"
+    "directory": "packages/{{outDir}}/{{hookName}}"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -34,20 +34,19 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "react": ">=19.0.0-rc.0",
-    "react-dom": ">=19.0.0-rc.0",
-    "motion": ">=12.23.6",
-    "@kopexa/theme": "workspace:*"
-  },
-  "dependencies": {
-    "@kopexa/shared-utils": "workspace:*",
-    "@kopexa/react-utils": "workspace:*"
+    "react": ">=18 || >=19.0.0-rc.0"
   },
   "devDependencies": {
-    "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
-    "react": "^19.1.0",
-	"react-dom": "^19.1.0"
+    "react": "^18.3.0"
   },
-  "clean-package": "../../../clean-package.config.json"
+  "clean-package": "../../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
 }
