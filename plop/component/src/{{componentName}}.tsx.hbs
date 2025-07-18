@@ -1,0 +1,18 @@
+import { {{ componentName }} } from "@kopexa/theme";
+import type { ComponentProps } from "react";
+
+export type {{capitalize componentName}}Props = ComponentProps<"{{ componentName }}">
+
+export const {{capitalize componentName}} = (props: {{capitalize componentName}}Props) => {
+	const { className, children, ...rest } = props;
+
+	const styles = {{ componentName }}({
+        className,
+    });
+
+	return (
+		<div className={styles} {...rest}>
+			{children}
+		</div>
+	);
+};

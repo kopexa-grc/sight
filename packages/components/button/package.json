@@ -34,12 +34,17 @@
 		"postpack": "clean-package restore"
 	},
 	"peerDependencies": {
-		"react": ">=18 || >=19.0.0-rc.0",
-		"react-dom": ">=18 || >=19.0.0-rc.0",
+		"@kopexa/theme": "workspace:*",
 		"framer-motion": ">=11.5.6 || >=12.0.0-alpha.1",
-		"@kopexa/theme": "workspace:*"
+		"react": ">=18 || >=19.0.0-rc.0",
+		"react-dom": ">=18 || >=19.0.0-rc.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+        "@kopexa/shared-utils": "workspace:*",
+        "@kopexa/react-utils": "workspace:*",
+		"@radix-ui/react-slot": "^1.2.3",
+        "@kopexa/ripple": "workspace:*"
+	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",
 		"clean-package": "2.2.0",
