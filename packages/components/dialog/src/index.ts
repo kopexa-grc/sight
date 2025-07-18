@@ -1,4 +1,5 @@
 export type {
+	DialogBodyProps,
 	DialogCloseProps,
 	DialogCloseTriggerProps,
 	DialogContentProps,
@@ -12,6 +13,7 @@ export type {
 	DialogTriggerProps,
 } from "./dialog";
 export {
+	DialogBody,
 	DialogClose,
 	DialogCloseTrigger,
 	DialogContent,
@@ -23,6 +25,7 @@ export {
 	DialogRoot,
 	DialogTitle,
 	DialogTrigger,
+	useDialogContext,
 } from "./dialog";
 
 export * as Dialog from "./namespace";

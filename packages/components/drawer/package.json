@@ -35,13 +35,18 @@
 	},
 	"peerDependencies": {
 		"@kopexa/theme": "workspace:*",
+		"motion": ">=12.23.6",
 		"react": ">=19.0.0-rc.0",
 		"react-dom": ">=19.0.0-rc.0"
 	},
 	"dependencies": {
+		"@kopexa/dialog": "workspace:*",
 		"@kopexa/react-utils": "workspace:*",
 		"@kopexa/shared-utils": "workspace:*",
-		"@radix-ui/react-dialog": "^1.1.14"
+		"@kopexa/icons": "workspace:*",
+		"@kopexa/motion-utils": "workspace:*",
+		"@radix-ui/react-dialog": "^1.1.14",
+		"motion": "^12.23.6"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",

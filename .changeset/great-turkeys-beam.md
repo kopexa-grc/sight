@@ -1,0 +1,15 @@
+---
+"@kopexa/dialog": minor
+"@kopexa/drawer": minor
+"@kopexa/theme": minor
+"@kopexa/button": minor
+"@kopexa/ripple": minor
+"@kopexa/use-callback-ref": minor
+"@kopexa/use-controllable-state": minor
+"@kopexa/icons": minor
+"@kopexa/motion-utils": minor
+"@kopexa/react-utils": minor
+"@kopexa/shared-utils": minor
+---
+
+added the drawer and the dialog component

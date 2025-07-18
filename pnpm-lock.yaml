@@ -136,6 +136,15 @@ importers:
 
   packages/components/drawer:
     dependencies:
+      '@kopexa/dialog':
+        specifier: workspace:*
+        version: link:../dialog
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/motion-utils':
+        specifier: workspace:*
+        version: link:../../utilities/motion-utils
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
@@ -145,6 +154,9 @@ importers:
       '@radix-ui/react-dialog':
         specifier: ^1.1.14
         version: 1.1.14(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      motion:
+        specifier: ^12.23.6
+        version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
     devDependencies:
       '@kopexa/theme':
         specifier: workspace:*

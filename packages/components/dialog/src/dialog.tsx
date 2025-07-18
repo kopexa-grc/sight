@@ -17,25 +17,37 @@ import { scaleInOut } from "./transition";
 type DialogContextValue = {
 	styles: ReturnType<typeof dialog>;
 	open: boolean;
+	placement?: "top" | "bottom" | "left" | "right";
+	size?: DialogVariantProps["size"];
+	radius?: DialogVariantProps["radius"];
 };
 
 const [DialogProvider, useDialogContext] = createContext<DialogContextValue>();
+
+export { useDialogContext };
 
 export type DialogRootProps = ComponentProps<typeof DialogPrimitive.Root> &
 	DialogVariantProps;
 
 export const DialogRoot = (props: DialogRootProps) => {
-	const { open: openProp, onOpenChange, size, ...restProps } = props;
+	const {
+		open: openProp,
+		onOpenChange,
+		size,
+		radius,
+		placement,
+		...restProps
+	} = props;
 
 	const [open, setOpen] = useControllableState({
 		value: openProp,
 		onChange: onOpenChange,
 		defaultValue: false,
 	});
-	const styles = dialog({ size });
+	const styles = dialog({ size, radius });
 
 	return (
-		<DialogProvider value={{ styles, open }}>
+		<DialogProvider value={{ styles, open, placement, size, radius }}>
 			<DialogPrimitive.Root
 				data-slot="dialog"
 				open={open}
@@ -160,6 +172,19 @@ export function DialogFooter({ className, ...props }: DialogFooterProps) {
 		<div
 			data-slot="dialog-footer"
 			className={styles.footer({ className })}
+			{...props}
+		/>
+	);
+}
+
+export type DialogBodyProps = ComponentProps<"div">;
+
+export function DialogBody({ className, ...props }: DialogBodyProps) {
+	const { styles } = useDialogContext();
+	return (
+		<div
+			data-slot="dialog-body"
+			className={styles.body({ className })}
 			{...props}
 		/>
 	);

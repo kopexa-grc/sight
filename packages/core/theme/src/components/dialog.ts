@@ -2,11 +2,11 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const dialog = tv({
 	slots: {
-		overlay: ["fixed inset-0 z-50 bg-black/75"],
+		overlay: ["fixed inset-0 z-50 bg-black/25"],
 		content: [
 			"bg-background fixed top-[50%] left-[50%] z-50",
 			"grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%]",
-			"gap-4 rounded-lg border p-6 shadow-lg",
+			"gap-4 border shadow-lg",
 			//  mobile animation vars
 			"[--scale-enter:100%]",
 			"[--scale-exit:100%]",
@@ -26,8 +26,11 @@ export const dialog = tv({
 			"[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
 		],
 		closeTrigger: [],
-		header: "flex flex-col gap-1 text-center sm:text-left",
-		footer: "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
+		header:
+			"flex flex-col gap-1 text-center sm:text-left shrink grow-0 px-6 pt-4",
+		footer:
+			"flex flex-col-reverse gap-2 px-6 pt-2 pb-4 sm:flex-row sm:justify-end",
+		body: "px-6 py-2 flex-1 overflow-auto",
 		title: "text-lg leading-none font-semibold",
 		description: "text-muted-foreground text-sm",
 	},
@@ -67,9 +70,24 @@ export const dialog = tv({
 				],
 			},
 		},
+		placement: { top: {}, bottom: {}, left: {}, right: {} },
+		radius: {
+			none: "",
+			sm: {
+				content: "rounded-sm",
+			},
+			md: {
+				content: "rounded-md",
+			},
+			lg: {
+				content: "rounded-lg",
+			},
+		},
 	},
 	defaultVariants: {
 		size: "md",
+		placement: "right",
+		radius: "lg",
 	},
 });
 
