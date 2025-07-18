@@ -1,5 +1,13 @@
 # @kopexa/button
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`659c2f0`](https://github.com/kopexa-grc/sight/commit/659c2f060ee81b7143674a0879fe46ef42d0a664)]:
+  - @kopexa/react-utils@1.1.1
+  - @kopexa/ripple@4.0.1
+
 ## 2.0.0
 
 ### Minor Changes
