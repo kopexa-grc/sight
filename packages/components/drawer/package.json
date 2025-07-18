@@ -1,9 +1,9 @@
 {
-	"name": "@kopexa/button",
-	"version": "0.0.0",
-	"description": "Buttons allow users to perform actions and choose with a single tap.",
+	"name": "@kopexa/drawer",
+	"version": "2.0.0",
+	"description": "A drawer for kopexa",
 	"keywords": [
-		"button"
+		"drawer"
 	],
 	"author": "Kopexa <hello@kopexa.com>",
 	"homepage": "https://kopexa.com",
@@ -19,31 +19,29 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/kopexa-grc/sight.git",
-		"directory": "packages/components/button"
+		"directory": "packages/components/drawer"
 	},
 	"bugs": {
 		"url": "https://github.com/kopexa-grc/sight/issues"
 	},
 	"scripts": {
 		"build": "tsup src --dts",
+		"build:fast": "tsup src",
 		"dev": "pnpm build:fast --watch",
 		"clean": "rimraf dist .turbo",
 		"typecheck": "tsc --noEmit",
-		"build:fast": "tsup src",
 		"prepack": "clean-package",
 		"postpack": "clean-package restore"
 	},
 	"peerDependencies": {
 		"@kopexa/theme": "workspace:*",
-		"framer-motion": ">=11.5.6 || >=12.0.0-alpha.1",
-		"react": ">=18 || >=19.0.0-rc.0",
-		"react-dom": ">=18 || >=19.0.0-rc.0"
+		"react": ">=19.0.0-rc.0",
+		"react-dom": ">=19.0.0-rc.0"
 	},
 	"dependencies": {
-		"@kopexa/shared-utils": "workspace:*",
 		"@kopexa/react-utils": "workspace:*",
-		"@radix-ui/react-slot": "^1.2.3",
-		"@kopexa/ripple": "workspace:*"
+		"@kopexa/shared-utils": "workspace:*",
+		"@radix-ui/react-dialog": "^1.1.14"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",

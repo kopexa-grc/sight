@@ -4,6 +4,13 @@ import { Button } from "../src";
 export default {
 	title: "Components/Button",
 	component: Button,
+	argTypes: {
+		disabled: {
+			control: {
+				type: "boolean",
+			},
+		},
+	},
 } as Meta<typeof Button>;
 
 const defaultProps = {
@@ -13,5 +20,12 @@ const defaultProps = {
 export const Default = {
 	args: {
 		...defaultProps,
+	},
+};
+
+export const IsDisabled = {
+	args: {
+		...defaultProps,
+		disabled: true,
 	},
 };
