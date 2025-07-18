@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/shared-utils",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "A set of kopexa shared utilities",
 	"keywords": [
 		"system"

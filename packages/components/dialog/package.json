@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/dialog",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
 	"keywords": [
 		"dialog"
