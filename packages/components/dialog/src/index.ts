@@ -1,5 +1,6 @@
 export type {
 	DialogCloseProps,
+	DialogCloseTriggerProps,
 	DialogContentProps,
 	DialogDescriptionProps,
 	DialogFooterProps,
@@ -12,6 +13,7 @@ export type {
 } from "./dialog";
 export {
 	DialogClose,
+	DialogCloseTrigger,
 	DialogContent,
 	DialogDescription,
 	DialogFooter,

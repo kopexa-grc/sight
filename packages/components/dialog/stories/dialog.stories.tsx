@@ -6,6 +6,26 @@ import { Dialog, type DialogRootProps } from "../src";
 export default {
 	title: "Components/Dialog",
 	component: Dialog.Root,
+	argTypes: {
+		size: {
+			control: {
+				type: "select",
+			},
+			options: [
+				"xs",
+				"sm",
+				"md",
+				"lg",
+				"xl",
+				"2xl",
+				"3xl",
+				"4xl",
+				"5xl",
+				"6xl",
+				"full",
+			],
+		},
+	},
 } as Meta<typeof Dialog.Root>;
 
 const defaultProps = {
@@ -19,7 +39,13 @@ const content = (
 			<Dialog.Description>My Description</Dialog.Description>
 		</Dialog.Header>
 		<p>Content of this modal</p>
-		<Dialog.Footer>Footerino</Dialog.Footer>
+		<Dialog.Footer>
+			<Dialog.CloseTrigger>
+				<button type="button" className="btn">
+					Close
+				</button>
+			</Dialog.CloseTrigger>
+		</Dialog.Footer>
 	</Dialog.Content>
 );
 

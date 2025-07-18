@@ -2,7 +2,7 @@ import { CloseIcon } from "@kopexa/icons";
 import { TRANSITION_VARIANTS } from "@kopexa/motion-utils";
 import { createContext } from "@kopexa/react-utils";
 import { cn } from "@kopexa/shared-utils";
-import { dialog } from "@kopexa/theme";
+import { type DialogVariantProps, dialog } from "@kopexa/theme";
 import { useControllableState } from "@kopexa/use-controllable-state";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import {
@@ -21,17 +21,18 @@ type DialogContextValue = {
 
 const [DialogProvider, useDialogContext] = createContext<DialogContextValue>();
 
-export type DialogRootProps = ComponentProps<typeof DialogPrimitive.Root>;
+export type DialogRootProps = ComponentProps<typeof DialogPrimitive.Root> &
+	DialogVariantProps;
 
 export const DialogRoot = (props: DialogRootProps) => {
-	const { open: openProp, onOpenChange, ...restProps } = props;
+	const { open: openProp, onOpenChange, size, ...restProps } = props;
 
 	const [open, setOpen] = useControllableState({
 		value: openProp,
 		onChange: onOpenChange,
 		defaultValue: false,
 	});
-	const styles = dialog();
+	const styles = dialog({ size });
 
 	return (
 		<DialogProvider value={{ styles, open }}>
@@ -192,6 +193,25 @@ export function DialogDescription({
 		<DialogPrimitive.Description
 			data-slot="dialog-description"
 			className={styles.description({ className })}
+			{...props}
+		/>
+	);
+}
+
+export type DialogCloseTriggerProps = ComponentProps<
+	typeof DialogPrimitive.Close
+>;
+
+export function DialogCloseTrigger({
+	className,
+	...props
+}: DialogCloseTriggerProps) {
+	const { styles } = useDialogContext();
+
+	return (
+		<DialogPrimitive.Close
+			data-slot="dialog-close-trigger"
+			className={styles.closeTrigger({ className })}
 			{...props}
 		/>
 	);
