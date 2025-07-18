@@ -14,4 +14,4 @@ jobs:
         uses: ./.github/common-actions/install
 
       - name: Build project
-        run: build
+        run: pnpm build
