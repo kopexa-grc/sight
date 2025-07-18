@@ -1,5 +1,11 @@
 # @kopexa/react-utils
 
+## 2.0.0
+
+### Major Changes
+
+- [`4cc0560`](https://github.com/kopexa-grc/sight/commit/4cc0560d0723162171a83e3f84e501c949abda76) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed missing mjs build, resulted in errors for all consumers
+
 ## 1.1.1
 
 ### Patch Changes
