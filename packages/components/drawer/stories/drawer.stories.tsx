@@ -1,24 +1,22 @@
-import React from "react";
-import {Meta} from "@storybook/react";
 import { drawer } from "@kopexa/theme";
+import type { Meta } from "@storybook/react";
 
-import { Drawer, DrawerProps } from "../src";
+import { Drawer, type DrawerProps } from "../src";
 
 export default {
-  title: "Components/Drawer",
-  component: Drawer,
+	title: "Components/Drawer",
+	component: Drawer,
 } as Meta<typeof Drawer>;
 
 const defaultProps = {
-  ...drawer.defaultVariants,
+	...drawer.defaultVariants,
 };
 
 const Template = (args: DrawerProps) => <Drawer {...args} />;
 
-
 export const Default = {
-  render: Template,
-  args: {
-    ...defaultProps,
-  }
-}
+	render: Template,
+	args: {
+		...defaultProps,
+	},
+};
