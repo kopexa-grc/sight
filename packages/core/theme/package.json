@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/theme",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "The default theme for Kopexa components",
 	"keywords": [
 		"theme",
