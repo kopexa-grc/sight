@@ -39,7 +39,7 @@ jobs:
       - name: Install
         uses: ./.github/common-actions/install
 
-      - name: Run ESLint
+      - name: Run Biome
         run: pnpm lint
 
   continuous-release:
