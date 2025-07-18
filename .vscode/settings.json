@@ -10,7 +10,10 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"tailwindCSS.experimental.configFile": {
-		"packages/storybook/tailwind.css": ["packages/core/theme/**/*", "packages/components/**/*"]
+		"packages/storybook/tailwind.css": [
+			"packages/core/theme/**/*",
+			"packages/components/**/*"
+		]
 	},
 	"tailwindCSS.experimental.classRegex": [
 		["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]

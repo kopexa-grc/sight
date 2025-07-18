@@ -12,7 +12,7 @@
 		"enabled": true,
 		"indentStyle": "tab",
 		"lineEnding": "lf",
-        "useEditorconfig": true
+		"useEditorconfig": true
 	},
 
 	"linter": {
