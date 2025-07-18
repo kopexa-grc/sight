@@ -1,5 +1,20 @@
 # @kopexa/popover
 
+## 4.0.0
+
+### Minor Changes
+
+- [`90158af`](https://github.com/kopexa-grc/sight/commit/90158af74fa0a0095674af77135611c07ced45c5) Thanks [@juliankoehn](https://github.com/juliankoehn)! - just for fun a fat version bump
+
+### Patch Changes
+
+- Updated dependencies [[`90158af`](https://github.com/kopexa-grc/sight/commit/90158af74fa0a0095674af77135611c07ced45c5)]:
+  - @kopexa/theme@1.1.0
+  - @kopexa/use-controllable-state@1.1.0
+  - @kopexa/motion-utils@4.0.0
+  - @kopexa/react-utils@1.1.0
+  - @kopexa/shared-utils@1.1.0
+
 ## 3.0.0
 
 ### Minor Changes
