@@ -2,10 +2,14 @@ name: Release
 
 on:
   push:
+    paths:
+      - ".changeset/**"
+      - "packages/**"
     branches:
-      - main
+      - canary
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
@@ -15,25 +19,54 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Install
+        uses: ./.github/common-actions/install
 
-      - name: Install Dependencies
-        run: yarn
+      - name: Tests
+        run: pnpm test
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Build
+        id: build
+        continue-on-error: false
+        # Custom turbo build failure information
+        run: |
+          pnpm build || {
+            echo "Turbo build failed with exit code $?"
+            exit 1
+          }
+
+      - name: Create Release Pull Request or Publish to NPM
+        # Run only if the build is successful
+        if: steps.build.outcome == 'success'
         id: changesets
         uses: changesets/action@v1
         with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn release
+          publish: pnpm release
+          title: "ci(changesets): :package: version packages"
+          commit: "ci(changesets): version packages"
+          setupGitUser: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.KOPEXA_CLOUD_REPO_ACCESS_TOKEN }}
 
-      - name: Send a Slack notification if a publish happens
-        if: steps.changesets.outputs.published == 'true'
-        # You can do something when a publish happens.
-        run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
+      - name: Create canary release
+        if: steps.build.outcome == 'success' && steps.changesets.outputs.published != 'true'
+        timeout-minutes: 15
+        run: |
+          git checkout canary
+          pnpm version:canary
+          pnpm release:canary
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    #   - name: Create Release Pull Request or Publish to npm
+    #     id: changesets
+    #     uses: changesets/action@v1
+    #     with:
+    #       # This expects you to have a script called release which does a build for your packages and calls changeset publish
+    #       publish: yarn release
+    #     env:
+    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
