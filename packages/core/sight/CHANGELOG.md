@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`0050d79`](https://github.com/kopexa-grc/sight/commit/0050d794809f5751af13853dc83dc3a24882e49d)]:
+  - @kopexa/popover@4.1.0
+
 ## 2.0.3
 
 ### Patch Changes
