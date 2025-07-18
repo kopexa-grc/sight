@@ -1,9 +1,10 @@
 import { drawer } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
-import { Drawer, type DrawerRootProps } from "../src";
+import { Drawer } from "../src";
 
 export default {
+	id: "components-drawer",
 	title: "Components/Drawer",
 	component: Drawer.Root,
 	argTypes: {
@@ -59,7 +60,7 @@ const content = (
 	</Drawer.Content>
 );
 
-const Template = (args: DrawerRootProps) => (
+const Template = (args: Drawer.RootProps) => (
 	<Drawer.Root {...args}>
 		<Drawer.Trigger>
 			<button type="button" className="btn">
@@ -72,6 +73,7 @@ const Template = (args: DrawerRootProps) => (
 
 export const Default = {
 	render: Template,
+	id: "components-drawer--default",
 	args: {
 		...defaultProps,
 	},

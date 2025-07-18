@@ -1,11 +1,28 @@
+export type {
+	DrawerBodyProps as BodyProps,
+	DrawerCloseProps as CloseProps,
+	DrawerCloseTriggerProps as CloseTriggerProps,
+	DrawerContentProps as ContentProps,
+	DrawerDescriptionProps as DescriptionProps,
+	DrawerFooterProps as FooterProps,
+	DrawerHeaderProps as HeaderProps,
+	DrawerOverlayProps as OverlayProps,
+	DrawerPortalProps as PortalProps,
+	DrawerRootProps as RootProps,
+	DrawerTitleProps as TitleProps,
+	DrawerTriggerProps as TriggerProps,
+} from "./drawer";
 export {
-	DialogBody as Body,
-	DialogCloseTrigger as CloseTrigger,
-	DialogDescription as Description,
-	DialogFooter as Footer,
-	DialogHeader as Header,
-	DialogRoot as Root,
-	DialogTitle as Title,
-	DialogTrigger as Trigger,
-} from "@kopexa/dialog";
-export { DrawerContent as Content } from "./drawer";
+	DrawerBody as Body,
+	DrawerClose as Close,
+	DrawerCloseTrigger as CloseTrigger,
+	DrawerContent as Content,
+	DrawerDescription as Description,
+	DrawerFooter as Footer,
+	DrawerHeader as Header,
+	DrawerOverlay as Overlay,
+	DrawerPortal as Portal,
+	DrawerRoot as Root,
+	DrawerTitle as Title,
+	DrawerTrigger as Trigger,
+} from "./drawer";

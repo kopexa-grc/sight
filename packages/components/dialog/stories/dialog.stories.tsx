@@ -4,6 +4,7 @@ import type { Meta } from "@storybook/react";
 import { Dialog, type DialogRootProps } from "../src";
 
 export default {
+	id: "components-dialog",
 	title: "Components/Dialog",
 	component: Dialog.Root,
 	argTypes: {
@@ -62,7 +63,7 @@ const Template = (args: DialogRootProps) => {
 	);
 };
 
-export const Default = {
+export const DialogDefault = {
 	render: Template,
 	args: {
 		...defaultProps,

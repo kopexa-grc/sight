@@ -44,7 +44,7 @@ export const DialogRoot = (props: DialogRootProps) => {
 		onChange: onOpenChange,
 		defaultValue: false,
 	});
-	const styles = dialog({ size, radius });
+	const styles = dialog({ size, radius, placement });
 
 	return (
 		<DialogProvider value={{ styles, open, placement, size, radius }}>

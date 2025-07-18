@@ -3,11 +3,18 @@ import { dialog } from "./dialog";
 
 export const drawer = tv({
 	slots: {
+		overlay: dialog.slots.overlay,
 		content: [
 			"bg-background fixed z-50 flex flex-col w-full gap-4 shadow-lg max-h-dvh",
 			"outline-hidden",
 		],
 		close: dialog.slots.close,
+		closeTrigger: dialog.slots.closeTrigger,
+		header: dialog.slots.header,
+		footer: dialog.slots.footer,
+		body: dialog.slots.body,
+		title: dialog.slots.title,
+		description: dialog.slots.description,
 	},
 	variants: {
 		size: {
