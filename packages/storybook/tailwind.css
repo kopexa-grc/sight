@@ -1,12 +1,8 @@
-@import "tailwindcss"
+@import "tailwindcss";
 
-@source "../components/*/src/**/*.{js,jsx,ts,tsx}"
-@source "../components/*/src/**/*.{js,jsx,ts,tsx}",
-@source "../components/*/stories/**/*.{js,jsx,ts,tsx}",
-@source "../core/theme/src/components/**/*.{js,jsx,ts,tsx}",
-@source "../core/theme/src/utils/**/*.{js,jsx,ts,tsx}",
-@source "../core/theme/stories/**/*.{js,jsx,ts,tsx}",
-
-body {
-    background-color: green;
-}
+@source "../components/*/src/**/*.{js,jsx,ts,tsx}";
+@source "../components/*/src/**/*.{js,jsx,ts,tsx}";
+@source "../components/*/stories/**/*.{js,jsx,ts,tsx}";
+@source "../core/theme/src/components/**/*.{js,jsx,ts,tsx}";
+@source "../core/theme/src/utils/**/*.{js,jsx,ts,tsx}";
+@source "../core/theme/stories/**/*.{js,jsx,ts,tsx}";
