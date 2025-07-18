@@ -41,3 +41,20 @@ jobs:
 
       - name: Run ESLint
         run: pnpm lint
+
+  continuous-release:
+    name: Continuous Release
+    if: github.repository == 'kopexa-grc/sight'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Install
+        uses: ./.github/common-actions/install
+
+      - name: Build packages
+        run: pnpm build
+
+      - name: Release
+        run: pnpx pkg-pr-new publish --compact --pnpm './packages/components/*' './packages/core/*' './packages/hooks/*' './packages/utilities/*'
