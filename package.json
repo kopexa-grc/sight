@@ -7,6 +7,7 @@
     "lint:fix": "biome check . --write",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
     "changeset": "changeset",
     "changeset:canary": "changeset pre enter canary",
     "changeset:beta": "changeset pre enter beta",

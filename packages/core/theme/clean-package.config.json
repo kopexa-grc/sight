@@ -9,15 +9,9 @@
         "import": "./dist/index.mjs",
         "require": "./dist/index.js"
       },
-      "./plugin": {
-        "types": "./dist/plugin.d.ts",
-        "import": "./dist/plugin.mjs",
-        "require": "./dist/plugin.js"
-      },
-      "./colors": {
-        "types": "./dist/colors.d.ts",
-        "import": "./dist/colors.mjs",
-        "require": "./dist/colors.js"
+      "./index.css": {
+        "import": "./dist/index.css",
+        "require": "./dist/index.css"
       },
       "./package.json": "./package.json"
     }

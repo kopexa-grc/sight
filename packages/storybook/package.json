@@ -1,67 +1,68 @@
 {
-	"name": "@kopexa/storybook",
-	"description": "A Storybook package for UI components",
-	"version": "0.0.0",
-	"license": "ISC",
-	"keywords": [
-		"storybook",
-		"ui",
-		"design-system"
-	],
-	"type": "module",
-	"author": "Kopexa <hello@kopexa.com>",
-	"homepage": "https://kopexa.com",
-	"main": "src/index.ts",
-	"sideEffects": true,
-	"files": [
-		"dist"
-	],
-	"publishConfig": {
-		"access": "public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kopexa-grc/sight.git",
-		"directory": "packages/storybook"
-	},
-	"bugs": {
-		"url": "https://github.com/kopexa-grc/sight/issues"
-	},
-	"scripts": {
-		"dev": "storybook dev -p 6006",
-		"build": "storybook build",
-		"start": "pnpm dlx http-server storybook-static"
-	},
-	"dependencies": {
-		"@storybook/addon-themes": "^9.0.17",
-		"@tailwindcss/vite": "^4.1.11",
-		"@types/node": "^24.0.14",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0",
-		"tailwindcss": "^4.1.11"
-	},
-	"devDependencies": {
-		"@chromatic-com/storybook": "^4.0.1",
-		"@storybook/addon-a11y": "^9.0.17",
-		"@storybook/addon-docs": "^9.0.17",
-		"@storybook/addon-vitest": "^9.0.17",
-		"@storybook/react-vite": "^9.0.17",
-		"@types/react": "^19.1.8",
-		"@types/react-dom": "^19.1.6",
-		"@vitejs/plugin-react": "^4.6.0",
-		"@vitest/browser": "^3.2.4",
-		"@vitest/coverage-v8": "^3.2.4",
-		"globals": "^16.3.0",
-		"playwright": "^1.54.1",
-		"storybook": "^9.0.17",
-		"typescript": "~5.8.3",
-		"typescript-eslint": "^8.35.1",
-		"vite": "^7.0.4",
-		"vitest": "^3.2.4"
-	},
-	"eslintConfig": {
-		"extends": [
-			"plugin:storybook/recommended"
-		]
-	}
+  "name": "@kopexa/storybook",
+  "description": "A Storybook package for UI components",
+  "version": "0.0.0",
+  "license": "ISC",
+  "keywords": [
+    "storybook",
+    "ui",
+    "design-system"
+  ],
+  "type": "module",
+  "author": "Kopexa <hello@kopexa.com>",
+  "homepage": "https://kopexa.com",
+  "main": "src/index.ts",
+  "sideEffects": true,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopexa-grc/sight.git",
+    "directory": "packages/storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/kopexa-grc/sight/issues"
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "start": "pnpm dlx http-server storybook-static"
+  },
+  "dependencies": {
+    "@storybook/addon-themes": "^9.0.17",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.0.14",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.11",
+    "@kopexa/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-a11y": "^9.0.17",
+    "@storybook/addon-docs": "^9.0.17",
+    "@storybook/addon-vitest": "^9.0.17",
+    "@storybook/react-vite": "^9.0.17",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "globals": "^16.3.0",
+    "playwright": "^1.54.1",
+    "storybook": "^9.0.17",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4",
+    "vitest": "^3.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }

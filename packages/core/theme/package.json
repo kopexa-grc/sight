@@ -67,6 +67,7 @@
   "tsup": {
     "clean": true,
     "target": "es2019",
+    "publicDir": "styles",
     "format": [
       "cjs",
       "esm"
