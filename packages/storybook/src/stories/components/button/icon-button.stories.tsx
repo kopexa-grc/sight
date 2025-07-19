@@ -40,6 +40,7 @@ export default {
 
 const defaultProps = {
 	children: <SearchIcon />,
+	"aria-label": "Search",
 	...button.defaultVariants,
 };
 

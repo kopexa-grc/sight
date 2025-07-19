@@ -6,8 +6,15 @@ tasks:
     cmds:
       - task --list
 
+  install:
+    desc: install dependencies
+    cmds:
+      - pnpm install
+
   dev:
     desc: run the development server
+    tasks:
+      - install
     cmds:
       - pnpm run dev
 

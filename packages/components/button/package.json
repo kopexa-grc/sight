@@ -43,6 +43,7 @@
 		"@kopexa/shared-utils": "workspace:*",
 		"@kopexa/react-utils": "workspace:*",
         "@kopexa/spinner": "workspace:*",
+        "@kopexa/tooltip": "workspace:*",
 		"@radix-ui/react-slot": "^1.2.3",
 		"@kopexa/ripple": "workspace:*"
 	},
