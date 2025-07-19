@@ -20,6 +20,8 @@
 	--accent-foreground: oklch(0.205 0 0);
 	--destructive: oklch(0.577 0.245 27.325);
 	--destructive-foreground: oklch(0.577 0.245 27.325);
+    --success: oklch(0.7329 0.1935 150.81);
+    --success-foreground: oklch(1 0 0);
 	--warning: oklch(0.84 0.16 84);
 	--warning-foreground: oklch(0.28 0.07 46);
 	--border: oklch(0.922 0 0);
@@ -58,6 +60,8 @@
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.396 0.141 25.723);
 	--destructive-foreground: oklch(0.637 0.237 25.331);
+    --success: oklch(0.7329 0.1935 150.81);
+    --success-foreground: oklch(1 0 0);
 	--warning: oklch(0.41 0.11 46);
 	--warning-foreground: oklch(0.99 0.02 95);
 	--border: oklch(0.269 0 0);
@@ -95,6 +99,8 @@
 	--color-accent-foreground: var(--accent-foreground);
 	--color-destructive: var(--destructive);
 	--color-destructive-foreground: var(--destructive-foreground);
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
 	--color-warning: var(--warning);
 	--color-warning-foreground: var(--warning-foreground);
 	--color-border: var(--border);
@@ -126,4 +132,52 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+}
+
+.spinner-dot-animation {
+    animation-delay: calc(250ms * var(--dot-index));
+}
+
+.spinner-dot-blink-animation {
+    animation-delay: calc(200ms * var(--dot-index));
+}
+
+@theme {
+    --animate-spinner-ease-spin: spinner-spin 0.8s ease infinite;
+    --animate-spinner-linear-spin: spinner-spin 0.8s linear infinite;
+    --animate-blink: blink 1.4s infinite both;
+    --animate-sway: sway 720ms ease infinite;
+
+    @keyframes spinner-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0.2;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.2;
+        }
+    }
+
+    @keyframes sway {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(0px, -150%);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
 }
