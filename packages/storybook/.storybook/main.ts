@@ -15,6 +15,11 @@ const config: StorybookConfig = {
 		"../src/**/*.mdx",
 		"../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
 		"../../components/**/stories/**/*.stories.@(js|jsx|ts|tsx)",
+		// ⛔️ exclude imported stories from nested node_modules in other workspace packages
+		"!../../**/node_modules/**/*.stories.@(js|jsx|ts|tsx)",
+		"!../../components/*/node_modules/**/*.stories.@(js|jsx|ts|tsx)",
+		"!../../components/**/node_modules/**/*.stories.@(js|jsx|ts|tsx)",
+		"!../**/node_modules/**/*.stories.@(js|jsx|ts|tsx)",
 	],
 	staticDirs: ["../public"],
 	addons: [

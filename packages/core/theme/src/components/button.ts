@@ -66,12 +66,17 @@ export const button = tv({
 		fullWidth: {
 			true: "w-full",
 		},
+		isIconOnly: {
+			true: "",
+			false: "[&>svg]:max-w-[theme(spacing.8)]",
+		},
 	},
 	defaultVariants: {
 		size: "md",
 		variant: "solid",
 		color: "primary",
 		fullWidth: false,
+		isIconOnly: false,
 	},
 	compoundVariants: [
 		// primary color

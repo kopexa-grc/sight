@@ -65,6 +65,7 @@ export const Button = (props: ButtonProps) => {
 		fullWidth,
 		startContent,
 		endContent,
+		isIconOnly,
 		spinnerPlacement = "start",
 		...rest
 	} = props;
@@ -87,9 +88,10 @@ export const Button = (props: ButtonProps) => {
 			color,
 			radius,
 			fullWidth,
+			isIconOnly,
 			className,
 		});
-	}, [variant, size, color, radius, fullWidth, className]);
+	}, [variant, size, color, radius, isIconOnly, fullWidth, className]);
 
 	const handleClick = useCallback(
 		(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
