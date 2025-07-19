@@ -18,7 +18,6 @@ const config: StorybookConfig = {
 	],
 	staticDirs: ["../public"],
 	addons: [
-		getAbsolutePath("@chromatic-com/storybook"),
 		getAbsolutePath("@storybook/addon-docs"),
 		getAbsolutePath("@storybook/addon-a11y"),
 		getAbsolutePath("@storybook/addon-vitest"),
@@ -33,6 +32,9 @@ const config: StorybookConfig = {
 	},
 	typescript: {
 		reactDocgen: false,
+	},
+	features: {
+		backgrounds: false,
 	},
 };
 export default config;

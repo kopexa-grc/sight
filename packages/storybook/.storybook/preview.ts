@@ -4,7 +4,12 @@ import "../tailwind.css";
 
 const preview: Preview = {
 	parameters: {
+		html: {
+			root: "#html-addon-root",
+			removeEmptyComments: true,
+		},
 		controls: {
+			hideNoControlsWarning: true,
 			matchers: {
 				color: /(background|color)$/i,
 				date: /Date$/i,
@@ -16,6 +21,9 @@ const preview: Preview = {
 			// 'error' - fail CI on a11y violations
 			// 'off' - skip a11y checks entirely
 			test: "todo",
+		},
+		docs: {
+			codePanel: true,
 		},
 	},
 	decorators: [

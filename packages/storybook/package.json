@@ -33,17 +33,16 @@
 		"start": "pnpm dlx http-server storybook-static"
 	},
 	"dependencies": {
+		"@kopexa/sight": "workspace:*",
+		"@kopexa/theme": "workspace:*",
 		"@storybook/addon-themes": "^9.0.17",
 		"@tailwindcss/vite": "^4.1.11",
 		"@types/node": "^24.0.14",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
-		"tailwindcss": "^4.1.11",
-		"@kopexa/theme": "workspace:*",
-        "@kopexa/sight": "workspace:*"
+		"tailwindcss": "^4.1.11"
 	},
 	"devDependencies": {
-		"@chromatic-com/storybook": "^4.0.1",
 		"@storybook/addon-a11y": "^9.0.17",
 		"@storybook/addon-docs": "^9.0.17",
 		"@storybook/addon-vitest": "^9.0.17",

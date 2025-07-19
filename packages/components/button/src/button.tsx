@@ -1,11 +1,39 @@
 import { mergeRefs } from "@kopexa/react-utils";
 import { Ripple, type RippleProps, useRipple } from "@kopexa/ripple";
+import { dataAttr } from "@kopexa/shared-utils";
+import { Spinner, type SpinnerProps } from "@kopexa/spinner";
 import { type ButtonVariantProps, button } from "@kopexa/theme";
 import * as Slot from "@radix-ui/react-slot";
-import { type ComponentProps, useCallback, useRef } from "react";
+import {
+	type ComponentProps,
+	type ReactNode,
+	useCallback,
+	useMemo,
+	useRef,
+} from "react";
 
 export type ButtonProps = ComponentProps<"button"> &
 	ButtonVariantProps & {
+		/**
+		 * The button start content.
+		 */
+		startContent?: ReactNode;
+		/**
+		 * The button end content.
+		 */
+		endContent?: ReactNode;
+
+		/**
+		 * The spinner placement.
+		 * @default "start"
+		 */
+		spinnerPlacement?: "start" | "end";
+		/**
+		 * render the button as a different component.
+		 * @default false
+		 * @example
+		 * <Button asChild><Link to="/path">Link</Link></Button>
+		 */
 		asChild?: boolean;
 		/**
 		 * Whether the button should display a ripple effect on press.
@@ -30,8 +58,14 @@ export const Button = (props: ButtonProps) => {
 		ref,
 		isLoading,
 		variant,
-		size,
+		size = "md",
 		className,
+		color,
+		radius,
+		fullWidth,
+		startContent,
+		endContent,
+		spinnerPlacement = "start",
 		...rest
 	} = props;
 
@@ -46,11 +80,16 @@ export const Button = (props: ButtonProps) => {
 		ripples,
 	} = useRipple();
 
-	const styles = button({
-		variant,
-		size,
-		className,
-	});
+	const styles = useMemo(() => {
+		return button({
+			variant,
+			size,
+			color,
+			radius,
+			fullWidth,
+			className,
+		});
+	}, [variant, size, color, radius, fullWidth, className]);
 
 	const handleClick = useCallback(
 		(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -68,6 +107,16 @@ export const Button = (props: ButtonProps) => {
 		[ripples, onClearRipple],
 	);
 
+	const spinnerSize = useMemo(() => {
+		const buttonSpinnerSizeMap: Record<string, SpinnerProps["size"]> = {
+			sm: "sm",
+			md: "sm",
+			lg: "md",
+		};
+
+		return buttonSpinnerSizeMap[size];
+	}, [size]);
+
 	return (
 		<Comp
 			type={type}
@@ -75,9 +124,22 @@ export const Button = (props: ButtonProps) => {
 			onClick={handleClick}
 			ref={mergeRefs(domRef, ref)}
 			disabled={isDisabled}
+			// data
+			data-disabled={dataAttr(isDisabled)}
+			data-loading={dataAttr(isLoading)}
+			aria-disabled={isDisabled}
+			tabIndex={isDisabled ? -1 : undefined}
 			{...rest}
 		>
+			{startContent}
+			{isLoading && spinnerPlacement === "start" && (
+				<Spinner color="current" size={spinnerSize} />
+			)}
 			<Slot.Slottable>{children}</Slot.Slottable>
+			{isLoading && spinnerPlacement === "end" && (
+				<Spinner color="current" size={spinnerSize} />
+			)}
+			{endContent}
 			{!disableRipple && <Ripple {...getRippleProps()} />}
 		</Comp>
 	);

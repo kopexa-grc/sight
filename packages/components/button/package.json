@@ -42,11 +42,13 @@
 	"dependencies": {
 		"@kopexa/shared-utils": "workspace:*",
 		"@kopexa/react-utils": "workspace:*",
+        "@kopexa/spinner": "workspace:*",
 		"@radix-ui/react-slot": "^1.2.3",
 		"@kopexa/ripple": "workspace:*"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",
+        "@kopexa/icons": "workspace:*",
 		"clean-package": "2.2.0",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
