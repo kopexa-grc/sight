@@ -1,7 +1,6 @@
+import { Spinner, type SpinnerProps } from "@kopexa/sight";
 import { spinner } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-
-import { Spinner, type SpinnerProps } from "../src";
 
 export default {
 	title: "Components/Spinner",

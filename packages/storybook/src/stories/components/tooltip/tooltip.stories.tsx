@@ -1,7 +1,6 @@
+import { Tooltip, type TooltipProps } from "@kopexa/sight";
 import { tooltip } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-
-import { Tooltip, type TooltipProps } from "../src";
 
 export default {
 	title: "Components/Tooltip",

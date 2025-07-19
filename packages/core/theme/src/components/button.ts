@@ -31,7 +31,6 @@ export const button = tv({
 		"disabled:pointer-events-none disabled:opacity-50",
 		"shrink-0 [&_svg]:shrink-0",
 		"aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
-		"[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4",
 		"text-sm font-medium",
 	],
 	variants: {
@@ -67,7 +66,7 @@ export const button = tv({
 			true: "w-full",
 		},
 		isIconOnly: {
-			true: "",
+			true: "px-0 !gap-0",
 			false: "[&>svg]:max-w-[theme(spacing.8)]",
 		},
 	},
@@ -156,6 +155,25 @@ export const button = tv({
 			variant: "outline",
 			color: "success",
 			class: colorVariants.outline.success,
+		},
+		// icon
+		{
+			isIconOnly: true,
+			size: "sm",
+			class:
+				"min-w-8 w-8 h-8 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-3.5",
+		},
+		{
+			isIconOnly: true,
+			size: "md",
+			class:
+				"min-w-10 w-10 h-10 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4",
+		},
+		{
+			isIconOnly: true,
+			size: "lg",
+			class:
+				"min-w-12 w-12 h-12 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-5",
 		},
 	],
 });

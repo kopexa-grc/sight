@@ -1,7 +1,6 @@
+import { Dialog, type DialogRootProps } from "@kopexa/sight";
 import { dialog } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-
-import { Dialog, type DialogRootProps } from "../src";
 
 export default {
 	id: "components-dialog",

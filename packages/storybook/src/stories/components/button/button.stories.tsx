@@ -1,8 +1,8 @@
 import { PlusIcon, SaveIcon } from "@kopexa/icons";
+import { Button, type ButtonProps } from "@kopexa/sight";
 import { button } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 import { useState } from "react";
-import { Button, type ButtonProps } from "../src";
 
 export default {
 	title: "Components/Button",

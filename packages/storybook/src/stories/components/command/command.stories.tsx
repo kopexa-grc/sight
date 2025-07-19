@@ -1,7 +1,6 @@
+import { Command } from "@kopexa/sight";
 import { command } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-
-import { Command } from "../src";
 
 export default {
 	title: "Components/Command",

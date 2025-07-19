@@ -1,0 +1,27 @@
+version: "3"
+
+tasks:
+  default:
+    silent: true
+    cmds:
+      - task --list
+
+  dev:
+    desc: run the development server
+    cmds:
+      - pnpm run dev
+
+  lint:
+    desc: run the linter
+    cmds:
+      - pnpm run lint
+
+  lint:fix:
+    desc: run the linter and fix issues
+    cmds:
+      - pnpm run lint:fix
+
+  changeset:
+    desc: create a new changeset
+    cmds:
+      - pnpm changeset

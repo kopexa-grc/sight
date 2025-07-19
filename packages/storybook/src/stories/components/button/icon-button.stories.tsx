@@ -1,6 +1,7 @@
+import { SearchIcon } from "@kopexa/icons";
+import { IconButton, type IconButtonProps } from "@kopexa/sight";
 import { button } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-import { IconButton, type IconButtonProps } from "../src";
 
 export default {
 	title: "Components/IconButton",
@@ -38,6 +39,7 @@ export default {
 } as Meta<IconButtonProps>;
 
 const defaultProps = {
+	children: <SearchIcon />,
 	...button.defaultVariants,
 };
 

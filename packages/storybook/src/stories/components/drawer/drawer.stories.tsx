@@ -1,7 +1,6 @@
+import { Drawer } from "@kopexa/sight";
 import { drawer } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
-
-import { Drawer } from "../src";
 
 export default {
 	id: "components-drawer",

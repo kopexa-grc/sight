@@ -1,6 +1,5 @@
+import { Popover } from "@kopexa/sight";
 import type { Meta } from "@storybook/react";
-
-import { Popover } from "../src";
 
 export default {
 	id: "components-popover",
