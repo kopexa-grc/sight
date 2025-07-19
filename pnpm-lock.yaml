@@ -436,6 +436,9 @@ importers:
 
   packages/storybook:
     dependencies:
+      '@kopexa/sight':
+        specifier: workspace:*
+        version: link:../core/sight
       '@kopexa/theme':
         specifier: workspace:*
         version: link:../core/theme
