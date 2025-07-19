@@ -127,3 +127,48 @@ export function CommandShortcut(props: CommandShortcutProps) {
 		/>
 	);
 }
+
+export type CommandHeaderProps = ComponentProps<"div">;
+
+export function CommandHeader(props: CommandHeaderProps) {
+	const { className, ...restProps } = props;
+
+	const styles = command();
+	return (
+		<div
+			data-slot="command-header"
+			className={styles.header({ className })}
+			{...restProps}
+		/>
+	);
+}
+
+export type CommandTitleProps = ComponentProps<"div">;
+
+export function CommandTitle(props: CommandTitleProps) {
+	const { className, ...restProps } = props;
+
+	const styles = command();
+	return (
+		<div
+			data-slot="command-title"
+			className={styles.title({ className })}
+			{...restProps}
+		/>
+	);
+}
+
+export type CommandDescriptionProps = ComponentProps<"p">;
+
+export function CommandDescription(props: CommandDescriptionProps) {
+	const { className, ...restProps } = props;
+
+	const styles = command();
+	return (
+		<p
+			data-slot="command-description"
+			className={styles.description({ className })}
+			{...restProps}
+		/>
+	);
+}

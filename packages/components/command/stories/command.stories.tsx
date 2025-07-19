@@ -16,6 +16,10 @@ const Template = (args: Command.RootProps) => {
 	return (
 		<div className="max-w-2xl w-full rounded-lg border shadow-md">
 			<Command.Root {...args}>
+				<Command.Header>
+					<Command.Title>Command Menu</Command.Title>
+					<Command.Description>Search and execute commands</Command.Description>
+				</Command.Header>
 				<Command.Input placeholder="Type a command..." />
 				<Command.List>
 					<Command.Empty>No results found.</Command.Empty>

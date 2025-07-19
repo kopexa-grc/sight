@@ -1,20 +1,26 @@
 export type {
+	CommandDescriptionProps as DescriptionProps,
 	CommandEmptyProps as EmptyProps,
 	CommandGroupProps as GroupProps,
+	CommandHeaderProps as HeaderProps,
 	CommandInputProps as InputProps,
 	CommandItemProps as ItemProps,
 	CommandListProps as ListProps,
 	CommandRootProps as RootProps,
 	CommandSeparatorProps as SeparatorProps,
 	CommandShortcutProps as ShortcutProps,
+	CommandTitleProps as TitleProps,
 } from "./command";
 export {
+	CommandDescription as Description,
 	CommandEmpty as Empty,
 	CommandGroup as Group,
+	CommandHeader as Header,
 	CommandInput as Input,
 	CommandItem as Item,
 	CommandList as List,
 	CommandRoot as Root,
 	CommandSeparator as Separator,
 	CommandShortcut as Shortcut,
+	CommandTitle as Title,
 } from "./command";
