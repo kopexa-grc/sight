@@ -1,5 +1,25 @@
 # @kopexa/button
 
+## 4.0.0
+
+### Minor Changes
+
+- [`e812509`](https://github.com/kopexa-grc/sight/commit/e812509464d8375a4fdb7df6d90374446bf6477e) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a icon button
+
+### Patch Changes
+
+- [`1e6b9c6`](https://github.com/kopexa-grc/sight/commit/1e6b9c6e228e50ef72b2dd1e33fe3f723f8f06f1) Thanks [@juliankoehn](https://github.com/juliankoehn)! - a11y support for icon button
+
+- [`a420a65`](https://github.com/kopexa-grc/sight/commit/a420a6526ce6be694d0fa9358c5590f10e9d3179) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created the button with theme and added new icons
+
+- Updated dependencies [[`37898c2`](https://github.com/kopexa-grc/sight/commit/37898c278f467c572322ad0c9832e0f3f0aac9de), [`e812509`](https://github.com/kopexa-grc/sight/commit/e812509464d8375a4fdb7df6d90374446bf6477e), [`a4f6e66`](https://github.com/kopexa-grc/sight/commit/a4f6e661a1ba6b4e2c2e5ad19ab4c9a730a31008), [`a420a65`](https://github.com/kopexa-grc/sight/commit/a420a6526ce6be694d0fa9358c5590f10e9d3179), [`5515dc9`](https://github.com/kopexa-grc/sight/commit/5515dc95a29c099b2cf83d0354c0d270de5b3877)]:
+  - @kopexa/theme@1.3.0
+  - @kopexa/tooltip@2.0.0
+  - @kopexa/shared-utils@1.1.1
+  - @kopexa/ripple@6.0.0
+  - @kopexa/spinner@2.0.0
+  - @kopexa/react-utils@2.0.1
+
 ## 3.0.0
 
 ### Patch Changes

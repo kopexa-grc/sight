@@ -1,5 +1,17 @@
 # @kopexa/command
 
+## 3.0.0
+
+### Patch Changes
+
+- [`37898c2`](https://github.com/kopexa-grc/sight/commit/37898c278f467c572322ad0c9832e0f3f0aac9de) Thanks [@juliankoehn](https://github.com/juliankoehn)! - added a header to the command
+
+- Updated dependencies [[`37898c2`](https://github.com/kopexa-grc/sight/commit/37898c278f467c572322ad0c9832e0f3f0aac9de), [`e812509`](https://github.com/kopexa-grc/sight/commit/e812509464d8375a4fdb7df6d90374446bf6477e), [`a420a65`](https://github.com/kopexa-grc/sight/commit/a420a6526ce6be694d0fa9358c5590f10e9d3179), [`5515dc9`](https://github.com/kopexa-grc/sight/commit/5515dc95a29c099b2cf83d0354c0d270de5b3877)]:
+  - @kopexa/theme@1.3.0
+  - @kopexa/shared-utils@1.1.1
+  - @kopexa/icons@6.0.0
+  - @kopexa/react-utils@2.0.1
+
 ## 2.0.0
 
 ### Patch Changes
