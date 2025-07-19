@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/spinner",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A loading spinner package",
   "keywords": [
     "spinner"
@@ -47,7 +47,7 @@
     "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^19.1.0",
-	"react-dom": "^19.1.0"
+    "react-dom": "^19.1.0"
   },
   "clean-package": "../../../clean-package.config.json"
 }
