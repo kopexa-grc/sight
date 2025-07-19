@@ -4,11 +4,11 @@ import { createContext } from "@kopexa/react-utils";
 import { type DrawerVariantProps, drawer } from "@kopexa/theme";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import {
-    AnimatePresence,
-    domAnimation,
-    LazyMotion,
-    motion,
-    type Variants,
+	AnimatePresence,
+	domAnimation,
+	LazyMotion,
+	motion,
+	type Variants,
 } from "motion/react";
 import { type ComponentProps, useMemo } from "react";
 import { useControllableState } from "../../../hooks/use-controllable-state/src";

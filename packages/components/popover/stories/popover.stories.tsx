@@ -17,7 +17,7 @@ const Template = (args: Popover.RootProps) => (
 				trigger
 			</button>
 		</Popover.Trigger>
-		<Popover.Content>
+		<Popover.Content className="p-0">
 			<p>Content of this popover</p>
 		</Popover.Content>
 	</Popover.Root>

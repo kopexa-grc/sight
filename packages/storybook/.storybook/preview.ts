@@ -2,8 +2,6 @@ import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react-vite";
 import "../tailwind.css";
 
-
-
 const preview: Preview = {
 	parameters: {
 		controls: {

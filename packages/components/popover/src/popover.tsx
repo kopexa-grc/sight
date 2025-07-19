@@ -4,10 +4,10 @@ import { popover } from "@kopexa/theme";
 import { useControllableState } from "@kopexa/use-controllable-state";
 import * as PopoverPrimitive from "@radix-ui/react-popover";
 import {
-    AnimatePresence,
-    domAnimation,
-    LazyMotion,
-    motion,
+	AnimatePresence,
+	domAnimation,
+	LazyMotion,
+	motion,
 } from "motion/react";
 import type { ComponentProps } from "react";
 
@@ -57,34 +57,36 @@ export type PopoverContentProps = ComponentProps<
 > & {
 	align?: "start" | "center" | "end";
 	sideOffset?: number;
-    portalled?: boolean;
+	portalled?: boolean;
 };
 
 type PortalProps = {
-    disabled?: boolean;
-    children?: React.ReactNode;
-}
+	disabled?: boolean;
+	children?: React.ReactNode;
+};
 
 const Portal = ({ disabled, children }: PortalProps) => {
 	if (disabled) return children;
 
-	return <PopoverPrimitive.Portal forceMount>{children}</PopoverPrimitive.Portal>;
+	return (
+		<PopoverPrimitive.Portal forceMount>{children}</PopoverPrimitive.Portal>
+	);
 };
 
 export function PopoverContent({
 	className,
 	align = "center",
 	sideOffset = 4,
-    portalled = true,
+	portalled = true,
+	children,
 	...props
 }: PopoverContentProps) {
 	const { open, styles } = usePopoverContext();
 
-
 	return (
 		<AnimatePresence>
 			{open ? (
-                <Portal disabled={!portalled}>
+				<Portal disabled={!portalled}>
 					<LazyMotion features={domAnimation}>
 						<PopoverPrimitive.Content
 							data-slot="popover-content"
@@ -93,18 +95,20 @@ export function PopoverContent({
 							className={styles.content({ className })}
 							{...props}
 							asChild
-                            forceMount={!portalled ? true : undefined}
+							forceMount={!portalled ? true : undefined}
 						>
 							<motion.div
 								animate="enter"
 								exit="exit"
 								initial="initial"
 								variants={TRANSITION_VARIANTS.scaleSpringOpacity}
-							/>
+							>
+								{children}
+							</motion.div>
 						</PopoverPrimitive.Content>
 					</LazyMotion>
-				</Portal>)
-			: null}
+				</Portal>
+			) : null}
 		</AnimatePresence>
 	);
 }

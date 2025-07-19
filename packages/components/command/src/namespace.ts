@@ -1,0 +1,20 @@
+export type {
+	CommandEmptyProps as EmptyProps,
+	CommandGroupProps as GroupProps,
+	CommandInputProps as InputProps,
+	CommandItemProps as ItemProps,
+	CommandListProps as ListProps,
+	CommandRootProps as RootProps,
+	CommandSeparatorProps as SeparatorProps,
+	CommandShortcutProps as ShortcutProps,
+} from "./command";
+export {
+	CommandEmpty as Empty,
+	CommandGroup as Group,
+	CommandInput as Input,
+	CommandItem as Item,
+	CommandList as List,
+	CommandRoot as Root,
+	CommandSeparator as Separator,
+	CommandShortcut as Shortcut,
+} from "./command";
