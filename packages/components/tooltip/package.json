@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/sight",
-  "version": "2.0.5",
-  "description": "Kopexas react UI Library",
+  "name": "@kopexa/tooltip",
+  "version": "0.0.0",
+  "description": "Floating element that provides a control with contextual information via pointer or focus.",
   "keywords": [
-    "sight"
+    "tooltip"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/core/sight"
+    "directory": "packages/components/tooltip"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -34,20 +34,16 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "react": ">=19.0.0-rc.0",
-    "react-dom": ">=19.0.0-rc.0",
+    "@kopexa/theme": "workspace:*",
     "motion": ">=12.23.6",
-    "@kopexa/theme": "workspace:*"
+    "react": ">=19.0.0-rc.0",
+    "react-dom": ">=19.0.0-rc.0"
   },
   "dependencies": {
-    "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/button": "workspace:*",
-    "@kopexa/dialog": "workspace:*",
-    "@kopexa/drawer": "workspace:*",
-    "@kopexa/popover": "workspace:*",
-    "@kopexa/command": "workspace:*",
-    "@kopexa/tooltip": "workspace:*"
+    "@kopexa/shared-utils": "workspace:*",
+    "@kopexa/use-controllable-state": "workspace:*",
+    "@radix-ui/react-tooltip": "^1.2.7"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

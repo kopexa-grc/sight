@@ -13,11 +13,11 @@ const defaultProps = {};
 const Template = (args: Popover.RootProps) => (
 	<Popover.Root {...args}>
 		<Popover.Trigger asChild>
-			<button type="button" className="btn">
+			<button type="button" className="px-2 py-1.5 rounded-md border">
 				trigger
 			</button>
 		</Popover.Trigger>
-		<Popover.Content className="p-0">
+		<Popover.Content className="p-0" align="start">
 			<p>Content of this popover</p>
 		</Popover.Content>
 	</Popover.Root>
