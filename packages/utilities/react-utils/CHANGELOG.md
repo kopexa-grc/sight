@@ -1,5 +1,12 @@
 # @kopexa/react-utils
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`a420a65`](https://github.com/kopexa-grc/sight/commit/a420a6526ce6be694d0fa9358c5590f10e9d3179)]:
+  - @kopexa/shared-utils@1.1.1
+
 ## 2.0.0
 
 ### Major Changes

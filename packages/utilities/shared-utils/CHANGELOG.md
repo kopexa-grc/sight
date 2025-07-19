@@ -1,5 +1,11 @@
 # @kopexa/shared-utils
 
+## 1.1.1
+
+### Patch Changes
+
+- [`a420a65`](https://github.com/kopexa-grc/sight/commit/a420a6526ce6be694d0fa9358c5590f10e9d3179) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created the button with theme and added new icons
+
 ## 1.1.0
 
 ### Minor Changes
