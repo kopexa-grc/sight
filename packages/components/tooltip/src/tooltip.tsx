@@ -40,7 +40,7 @@ export function Tooltip(props: TooltipProps) {
 				delayDuration={delayDuration}
 				{...rest}
 			>
-				<TooltipPrimitive.Trigger data-slot="tooltip-trigger">
+				<TooltipPrimitive.Trigger asChild data-slot="tooltip-trigger">
 					{children}
 				</TooltipPrimitive.Trigger>
 				<TooltipPrimitive.Content
