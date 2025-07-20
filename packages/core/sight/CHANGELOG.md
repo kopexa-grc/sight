@@ -1,5 +1,24 @@
 # @kopexa/sight
 
+## 5.0.0
+
+### Minor Changes
+
+- [`e790503`](https://github.com/kopexa-grc/sight/commit/e790503cd6a01d3c7961029622c408fa6ddef926) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created the page layout component
+
+### Patch Changes
+
+- Updated dependencies [[`e790503`](https://github.com/kopexa-grc/sight/commit/e790503cd6a01d3c7961029622c408fa6ddef926)]:
+  - @kopexa/page-layout@2.0.0
+  - @kopexa/theme@1.4.0
+  - @kopexa/button@5.0.0
+  - @kopexa/command@4.0.0
+  - @kopexa/dialog@7.0.0
+  - @kopexa/drawer@7.0.0
+  - @kopexa/popover@7.0.0
+  - @kopexa/spinner@3.0.0
+  - @kopexa/tooltip@3.0.0
+
 ## 4.0.0
 
 ### Patch Changes
