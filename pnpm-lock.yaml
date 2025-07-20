@@ -217,6 +217,31 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/page-layout:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/popover:
     dependencies:
       '@kopexa/motion-utils':
@@ -346,6 +371,9 @@ importers:
       '@kopexa/drawer':
         specifier: workspace:*
         version: link:../../components/drawer
+      '@kopexa/page-layout':
+        specifier: workspace:*
+        version: link:../../components/page-layout
       '@kopexa/popover':
         specifier: workspace:*
         version: link:../../components/popover

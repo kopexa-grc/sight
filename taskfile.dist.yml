@@ -13,10 +13,20 @@ tasks:
 
   dev:
     desc: run the development server
-    tasks:
-      - install
     cmds:
+      - task: install
       - pnpm run dev
+
+  build:
+    desc: build the project
+    cmds:
+      - task: install
+      - pnpm run build
+
+  create:cmp:
+    desc: create a new component
+    cmds:
+      - pnpm run create:cmp
 
   lint:
     desc: run the linter
