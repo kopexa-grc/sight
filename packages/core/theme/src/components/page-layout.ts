@@ -16,7 +16,7 @@ export const pageLayout = tv({
 			"data-[position=end]:flex-col-reverse",
 			// md+
 			"md:w-auto md:mt-0 md:mb-0",
-			"md:data-[sticky=true]:sticky md:data-[sticky=true]:top-2 md:data-[sticky=true]:max-h-[calc(100dvh-0.5rem)]",
+			"md:data-[sticky=true]:sticky md:data-[sticky=true]:top-2 md:data-[sticky=true]:max-h-[calc(100dvh-1rem)]",
 			"md:data-[position=end]:flex-row-reverse",
 			"md:data-[position=start]:flex-row",
 		],
