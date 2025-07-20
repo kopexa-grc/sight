@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.4.1
+
+### Patch Changes
+
+- [`85a384a`](https://github.com/kopexa-grc/sight/commit/85a384a844537314f9f742b614277847ca564976) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed the sticky offset
+
 ## 1.4.0
 
 ### Minor Changes

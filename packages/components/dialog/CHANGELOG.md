@@ -1,5 +1,14 @@
 # @kopexa/dialog
 
+## 7.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`85a384a`](https://github.com/kopexa-grc/sight/commit/85a384a844537314f9f742b614277847ca564976)]:
+  - @kopexa/theme@1.4.1
+  - @kopexa/icons@7.0.1
+  - @kopexa/motion-utils@7.0.1
+
 ## 7.0.0
 
 ### Patch Changes
