@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/input",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A basic text input component",
   "keywords": [
     "input"
@@ -53,7 +53,7 @@
     "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^19.1.0",
-	"react-dom": "^19.1.0"
+    "react-dom": "^19.1.0"
   },
   "clean-package": "../../../clean-package.config.json"
 }
