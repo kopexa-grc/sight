@@ -2,6 +2,7 @@ export * from "@kopexa/button";
 export * from "@kopexa/command";
 export * from "@kopexa/dialog";
 export * from "@kopexa/drawer";
+export * from "@kopexa/dropdown-menu";
 export * from "@kopexa/page-layout";
 export * from "@kopexa/popover";
 export * from "@kopexa/spinner";

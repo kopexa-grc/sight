@@ -4,9 +4,10 @@ export const dialog = tv({
 	slots: {
 		overlay: ["fixed inset-0 z-50 bg-black/25"],
 		content: [
+			"flex flex-col",
 			"bg-background fixed top-[50%] left-[50%] z-50",
-			"grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%]",
-			"gap-4 border shadow-lg",
+			"w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%]",
+			"border shadow-lg",
 			//  mobile animation vars
 			"[--scale-enter:100%]",
 			"[--scale-exit:100%]",

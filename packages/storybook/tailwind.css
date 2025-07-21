@@ -5,4 +5,4 @@
 @source "../components/*/src/**/*.{js,jsx,ts,tsx}";
 @source "../components/*/src/**/*.{js,jsx,ts,tsx}";
 @source "../components/*/stories/**/*.{js,jsx,ts,tsx}";
-@source "../core/theme/"
+@source "../core/theme/src/**/*.{js,jsx,ts,tsx}";

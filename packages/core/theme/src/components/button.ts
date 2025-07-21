@@ -25,7 +25,7 @@ export const button = tv({
 		"group relative inline-flex items-center justify-center select-none",
 		"box-border appearance-none",
 		"whitespace-nowrap min-w-max font-normal subpixel-antialiased",
-		"transform-gpu cursor-pointer hover:opacity-80",
+		"transform-gpu cursor-pointer hover:opacity-80 overflow-hidden",
 		...focusVisibleClasses,
 		// shadcn below
 		"disabled:pointer-events-none disabled:opacity-50",
