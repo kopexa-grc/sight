@@ -1,5 +1,29 @@
 # @kopexa/sight
 
+## 5.0.3
+
+### Patch Changes
+
+- [`0fe5b29`](https://github.com/kopexa-grc/sight/commit/0fe5b2960a027b4cc692e5da718a14c99b1dc4f5) Thanks [@juliankoehn](https://github.com/juliankoehn)! - Created a new Calendar Component which will be used for Kopexa's Datepickers
+
+- [`30ece28`](https://github.com/kopexa-grc/sight/commit/30ece28af080450ff47a8786461852d74be4adcc) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new input component to be used within kopexa
+
+- Updated dependencies [[`0fe5b29`](https://github.com/kopexa-grc/sight/commit/0fe5b2960a027b4cc692e5da718a14c99b1dc4f5), [`30ece28`](https://github.com/kopexa-grc/sight/commit/30ece28af080450ff47a8786461852d74be4adcc), [`58439e3`](https://github.com/kopexa-grc/sight/commit/58439e37772afead2f7d2828952cdcc0ba3cd5cc)]:
+  - @kopexa/calendar@0.0.1
+  - @kopexa/theme@1.4.3
+  - @kopexa/input@0.0.1
+  - @kopexa/shared-utils@1.1.2
+  - @kopexa/button@5.0.3
+  - @kopexa/command@4.0.3
+  - @kopexa/dialog@7.0.3
+  - @kopexa/drawer@7.0.3
+  - @kopexa/dropdown-menu@0.0.2
+  - @kopexa/page-layout@2.0.3
+  - @kopexa/popover@7.0.3
+  - @kopexa/spinner@3.0.3
+  - @kopexa/tooltip@3.0.3
+  - @kopexa/react-utils@2.0.2
+
 ## 5.0.2
 
 ### Patch Changes
