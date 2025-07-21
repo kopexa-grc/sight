@@ -1,4 +1,5 @@
 export * from "@kopexa/button";
+export * from "@kopexa/calendar";
 export * from "@kopexa/command";
 export * from "@kopexa/dialog";
 export * from "@kopexa/drawer";
