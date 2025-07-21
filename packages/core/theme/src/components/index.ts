@@ -4,6 +4,7 @@ export { type CommandVariants, command } from "./command";
 export { type DialogSlots, type DialogVariantProps, dialog } from "./dialog";
 export { type DrawerVariantProps, drawer } from "./drawer";
 export { type DropdownMenuVariantProps, dropdownMenu } from "./dropdown-menu";
+export { type InputVariantProps, input } from "./input";
 export { type PageLayoutVariantProps, pageLayout } from "./page-layout";
 export { type PopoverVariants, popover } from "./popover";
 export { type SpinnerVariants, spinner } from "./spinner";
