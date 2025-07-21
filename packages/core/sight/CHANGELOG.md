@@ -1,5 +1,23 @@
 # @kopexa/sight
 
+## 5.0.2
+
+### Patch Changes
+
+- [`faea1ed`](https://github.com/kopexa-grc/sight/commit/faea1edd8989e7f840a29f527bab68045ed21666) Thanks [@juliankoehn](https://github.com/juliankoehn)! - Added the Dropdown Menu component to the Kopexa Sight stack
+
+- Updated dependencies [[`faea1ed`](https://github.com/kopexa-grc/sight/commit/faea1edd8989e7f840a29f527bab68045ed21666)]:
+  - @kopexa/dropdown-menu@0.0.1
+  - @kopexa/theme@1.4.2
+  - @kopexa/button@5.0.2
+  - @kopexa/command@4.0.2
+  - @kopexa/dialog@7.0.2
+  - @kopexa/drawer@7.0.2
+  - @kopexa/page-layout@2.0.2
+  - @kopexa/popover@7.0.2
+  - @kopexa/spinner@3.0.2
+  - @kopexa/tooltip@3.0.2
+
 ## 5.0.1
 
 ### Patch Changes
