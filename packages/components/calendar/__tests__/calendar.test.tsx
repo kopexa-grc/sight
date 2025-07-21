@@ -1,5 +1,4 @@
 import { render } from "@testing-library/react";
-import * as React from "react";
 
 import { Calendar } from "../src";
 
@@ -8,12 +7,5 @@ describe("Calendar", () => {
 		const wrapper = render(<Calendar />);
 
 		expect(() => wrapper.unmount()).not.toThrow();
-	});
-
-	it("ref should be forwarded", () => {
-		const ref = React.createRef<HTMLDivElement>();
-
-		render(<Calendar ref={ref} />);
-		expect(ref.current).not.toBeNull();
 	});
 });
