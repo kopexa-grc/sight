@@ -28,6 +28,11 @@ tasks:
     cmds:
       - pnpm run create:cmp
 
+  create:hook:
+    desc: create a new hook
+    cmds:
+      - pnpm run create:hook
+
   lint:
     desc: run the linter
     cmds:

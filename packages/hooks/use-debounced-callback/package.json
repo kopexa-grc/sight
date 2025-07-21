@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/input",
-  "version": "0.0.0",
-  "description": "A basic text input component",
+  "name": "@kopexa/use-debounced-callback",
+  "version": "1.0.0",
+  "description": "",
   "keywords": [
-    "input"
+    "use-debounced-callback"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/components/input"
+    "directory": "packages/hooks/use-debounced-callback"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -34,26 +34,24 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "react": ">=19.0.0-rc.0",
-    "react-dom": ">=19.0.0-rc.0",
-    "motion": ">=12.23.6",
-    "@kopexa/theme": "workspace:*"
+    "react": ">=19.0.0-rc.0"
   },
   "dependencies": {
-    "@kopexa/shared-utils": "workspace:*",
-    "@kopexa/react-utils": "workspace:*",
-    "@kopexa/icons": "workspace:*",
-    "@kopexa/tooltip": "workspace:*",
-    "@kopexa/use-controllable-state": "workspace:*",
-    "@kopexa/use-safe-layout-effect": "workspace:*",
-    "@kopexa/spinner": "workspace:*",
-    "@kopexa/use-debounced-callback": "workspace:*"
+    "@kopexa/use-unmount": "workspace:*",
+    "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
-    "@kopexa/theme": "workspace:*",
+    "@types/lodash.debounce": "^4.0.9",
     "clean-package": "2.2.0",
-    "react": "^19.1.0",
-	"react-dom": "^19.1.0"
+    "react": "^19.1.0"
   },
-  "clean-package": "../../../clean-package.config.json"
+  "clean-package": "../../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
 }

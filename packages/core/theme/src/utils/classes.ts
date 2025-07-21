@@ -6,4 +6,8 @@ export const focusVisibleClasses = [
 	//"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
 ];
 
+export const focusWithinClasses = [
+	"focus-within:outline-2 focus-within:outline-ring focus-within:outline-offset-2",
+];
+
 export const dataFocusVisibleClasses = ["outline-hidden"];

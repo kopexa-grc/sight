@@ -4,6 +4,8 @@ export { ChevronLeftIcon } from "./chevron-left";
 export { ChevronRightIcon } from "./chevron-right";
 export { CircleIcon } from "./circle";
 export { CloseIcon } from "./close";
+export { EyeIcon } from "./eye";
+export { EyeOffIcon } from "./eye-off";
 export { PlusIcon } from "./plus";
 export { SaveIcon } from "./save";
 export { SearchIcon } from "./search";

@@ -26,6 +26,9 @@ importers:
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.0)(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      '@testing-library/user-event':
+        specifier: ^14.6.1
+        version: 14.6.1(@testing-library/dom@10.4.0)
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
@@ -287,12 +290,30 @@ importers:
 
   packages/components/input:
     dependencies:
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
       '@kopexa/shared-utils':
         specifier: workspace:*
         version: link:../../utilities/shared-utils
+      '@kopexa/spinner':
+        specifier: workspace:*
+        version: link:../spinner
+      '@kopexa/tooltip':
+        specifier: workspace:*
+        version: link:../tooltip
+      '@kopexa/use-controllable-state':
+        specifier: workspace:*
+        version: link:../../hooks/use-controllable-state
+      '@kopexa/use-debounced-callback':
+        specifier: workspace:*
+        version: link:../../hooks/use-debounced-callback
+      '@kopexa/use-safe-layout-effect':
+        specifier: workspace:*
+        version: link:../../hooks/use-safe-layout-effect
       motion:
         specifier: '>=12.23.6'
         version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
@@ -565,6 +586,43 @@ importers:
       '@kopexa/use-callback-ref':
         specifier: workspace:*
         version: link:../use-callback-ref
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-debounced-callback:
+    dependencies:
+      '@kopexa/use-unmount':
+        specifier: workspace:*
+        version: link:../use-unmount
+      lodash.debounce:
+        specifier: ^4.0.8
+        version: 4.0.8
+    devDependencies:
+      '@types/lodash.debounce':
+        specifier: ^4.0.9
+        version: 4.0.9
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-safe-layout-effect:
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-unmount:
     devDependencies:
       clean-package:
         specifier: 2.2.0
@@ -3681,6 +3739,16 @@ packages:
       '@types/node': 24.0.14
     dev: true
 
+  /@types/lodash.debounce@4.0.9:
+    resolution: {integrity: sha512-Ma5JcgTREwpLRwMM+XwBR7DaWe96nC38uCBDFKZWbNKD+osjVzdpnUSwBcqCptrp16sSOLBAUb50Car5I0TCsQ==}
+    dependencies:
+      '@types/lodash': 4.17.20
+    dev: true
+
+  /@types/lodash@4.17.20:
+    resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
+    dev: true
+
   /@types/mdx@2.0.13:
     resolution: {integrity: sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==}
     dev: true
@@ -6777,6 +6845,10 @@ packages:
     dependencies:
       p-locate: 6.0.0
     dev: true
+
+  /lodash.debounce@4.0.8:
+    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+    dev: false
 
   /lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}

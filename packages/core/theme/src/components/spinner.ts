@@ -11,6 +11,13 @@ export const spinner = tv({
 	},
 	variants: {
 		size: {
+			xs: {
+				wrapper: "w-4 h-4",
+				circle1: "border-2",
+				circle2: "border-2",
+				dots: "size-1",
+				label: "text-xs",
+			},
 			sm: {
 				wrapper: "w-5 h-5",
 				circle1: "border-2",
