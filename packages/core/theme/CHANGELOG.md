@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.4.2
+
+### Patch Changes
+
+- [`faea1ed`](https://github.com/kopexa-grc/sight/commit/faea1edd8989e7f840a29f527bab68045ed21666) Thanks [@juliankoehn](https://github.com/juliankoehn)! - Added the Dropdown Menu component to the Kopexa Sight stack
+
 ## 1.4.1
 
 ### Patch Changes
