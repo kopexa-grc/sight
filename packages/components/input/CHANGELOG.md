@@ -1,5 +1,11 @@
 # @kopexa/input
 
+## 1.0.1
+
+### Patch Changes
+
+- [`3830418`](https://github.com/kopexa-grc/sight/commit/383041870196c23ff6f9a169c4dae9e9559ae98d) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed import of mergeRefs
+
 ## 1.0.0
 
 ### Patch Changes
