@@ -109,6 +109,19 @@ export const avatar = tv({
 				root: "opacity-50",
 			},
 		},
+		isInGroup: {
+			true: {
+				root: [
+					"-ms-2 hover:-translate-x-3 rtl:hover:translate-x-3 transition-transform",
+					"focus-visible:-translate-x-3 rtl:focus-visible:translate-x-3",
+				],
+			},
+		},
+		isInGridGroup: {
+			true: {
+				root: "m-0 hover:translate-x-0",
+			},
+		},
 	},
 	defaultVariants: {
 		size: "md",

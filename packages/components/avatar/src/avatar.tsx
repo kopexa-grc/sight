@@ -1,81 +1,20 @@
 import { getInitials } from "@kopexa/shared-utils";
-import {
-	type AvatarSlots,
-	type AvatarVariantProps,
-	avatar,
-	type SlotsToClasses,
-} from "@kopexa/theme";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
-import { type ComponentProps, type RefObject, useState } from "react";
+import { type UseAvatarProps, useAvatar } from "./use-avatar";
 
-type BaseProps = {
-	classNames?: SlotsToClasses<AvatarSlots>;
-	/**
-	 * The name of the person in the avatar. -
-	 * if **src** has loaded, the name will be used as the **alt** attribute of the **img**
-	 * - If **src** is not loaded, the name will be used to create the initials
-	 */
-	name?: string;
-	src?: string | undefined;
-	onLoadingStatusChange?: (
-		status: "idle" | "loading" | "loaded" | "error",
-	) => void;
-	imgRef?: RefObject<HTMLImageElement | null>;
-	alt?: string;
-};
-
-export type AvatarProps = ComponentProps<typeof AvatarPrimitive.Root> &
-	BaseProps &
-	AvatarVariantProps;
+export interface AvatarProps extends UseAvatarProps {}
 
 export const Avatar = (props: AvatarProps) => {
-	const {
-		className,
-		size,
-		radius,
-		name,
-		color,
-		src,
-		onLoadingStatusChange,
-		isBordered,
-		isDisabled,
-		imgRef,
-		classNames,
-		alt,
-		...rest
-	} = props;
-
-	const [status, setStatus] = useState<"idle" | "loading" | "loaded" | "error">(
-		"idle",
-	);
-	const styles = avatar({ size, radius, color, isBordered, isDisabled });
-
-	const handleLoadingStatusChange = (
-		status: "idle" | "loading" | "loaded" | "error",
-	) => {
-		onLoadingStatusChange?.(status);
-		setStatus(status);
-	};
+	const { alt, getAvatarProps, getImageProps, slots, classNames, name } =
+		useAvatar(props);
 
 	return (
-		<AvatarPrimitive.Root
-			data-slot="avatar"
-			className={styles.root({ className })}
-			{...rest}
-		>
-			<AvatarPrimitive.Image
-				data-slot="avatar-image"
-				src={src}
-				data-status={status}
-				className={styles.img()}
-				onLoadingStatusChange={handleLoadingStatusChange}
-				ref={imgRef}
-				alt={alt}
-			/>
+		<AvatarPrimitive.Root {...getAvatarProps()}>
+			<AvatarPrimitive.Image {...getImageProps()} />
 			<AvatarPrimitive.Fallback data-slot="avatar-fallback">
 				{name ? (
 					<span
-						className={styles.name({
+						className={slots.name({
 							className: classNames?.name,
 						})}
 						role="img"
@@ -85,7 +24,7 @@ export const Avatar = (props: AvatarProps) => {
 					</span>
 				) : (
 					<span
-						className={styles.icon({
+						className={slots.icon({
 							className: classNames?.icon,
 						})}
 						role="img"
