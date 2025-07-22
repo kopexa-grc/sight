@@ -1,5 +1,27 @@
 # @kopexa/sight
 
+## 6.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`5174eec`](https://github.com/kopexa-grc/sight/commit/5174eec87fac03275181b8b0e864f734db4e66ff), [`e232895`](https://github.com/kopexa-grc/sight/commit/e23289587bd49386e109697332a7c7f122033576)]:
+  - @kopexa/theme@1.5.2
+  - @kopexa/alert-dialog@1.0.2
+  - @kopexa/avatar@1.0.1
+  - @kopexa/button@6.0.2
+  - @kopexa/calendar@1.0.2
+  - @kopexa/card@0.1.1
+  - @kopexa/chip@1.0.2
+  - @kopexa/command@5.0.2
+  - @kopexa/dialog@8.0.2
+  - @kopexa/drawer@8.0.2
+  - @kopexa/dropdown-menu@1.0.2
+  - @kopexa/input@1.0.3
+  - @kopexa/page-layout@3.0.2
+  - @kopexa/popover@8.0.2
+  - @kopexa/spinner@4.0.2
+  - @kopexa/tooltip@4.0.2
+
 ## 6.0.2
 
 ### Patch Changes

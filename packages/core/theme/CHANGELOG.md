@@ -1,5 +1,13 @@
 # @kopexa/theme
 
+## 1.5.2
+
+### Patch Changes
+
+- [`5174eec`](https://github.com/kopexa-grc/sight/commit/5174eec87fac03275181b8b0e864f734db4e66ff) Thanks [@juliankoehn](https://github.com/juliankoehn)! - updated exports of the index.css file
+
+- [`e232895`](https://github.com/kopexa-grc/sight/commit/e23289587bd49386e109697332a7c7f122033576) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed theme inline to inline
+
 ## 1.5.1
 
 ### Patch Changes
