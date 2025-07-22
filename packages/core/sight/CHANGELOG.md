@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 6.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`3830418`](https://github.com/kopexa-grc/sight/commit/383041870196c23ff6f9a169c4dae9e9559ae98d)]:
+  - @kopexa/input@1.0.1
+
 ## 6.0.0
 
 ### Minor Changes
