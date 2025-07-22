@@ -1,5 +1,29 @@
 # @kopexa/sight
 
+## 6.0.0
+
+### Minor Changes
+
+- [`7c811f8`](https://github.com/kopexa-grc/sight/commit/7c811f8ead98402393913667246139efa7855ed8) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new alert dialog component with useConfirm hook
+
+### Patch Changes
+
+- Updated dependencies [[`7c811f8`](https://github.com/kopexa-grc/sight/commit/7c811f8ead98402393913667246139efa7855ed8)]:
+  - @kopexa/alert-dialog@1.0.0
+  - @kopexa/theme@1.5.0
+  - @kopexa/button@6.0.0
+  - @kopexa/calendar@1.0.0
+  - @kopexa/chip@1.0.0
+  - @kopexa/command@5.0.0
+  - @kopexa/dialog@8.0.0
+  - @kopexa/drawer@8.0.0
+  - @kopexa/dropdown-menu@1.0.0
+  - @kopexa/input@1.0.0
+  - @kopexa/page-layout@3.0.0
+  - @kopexa/popover@8.0.0
+  - @kopexa/spinner@4.0.0
+  - @kopexa/tooltip@4.0.0
+
 ## 5.0.4
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @kopexa/chip
 
+## 1.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`7c811f8`](https://github.com/kopexa-grc/sight/commit/7c811f8ead98402393913667246139efa7855ed8)]:
+  - @kopexa/theme@1.5.0
+  - @kopexa/icons@8.0.0
+
 ## 0.1.0
 
 ### Minor Changes

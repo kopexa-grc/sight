@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.5.0
+
+### Minor Changes
+
+- [`7c811f8`](https://github.com/kopexa-grc/sight/commit/7c811f8ead98402393913667246139efa7855ed8) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new alert dialog component with useConfirm hook
+
 ## 1.4.4
 
 ### Patch Changes
