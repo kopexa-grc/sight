@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/sight",
-  "version": "5.0.4",
-  "description": "Kopexas react UI Library",
+  "name": "@kopexa/alert-dialog",
+  "version": "0.0.0",
+  "description": "A modal dialog that interrupts the user with important content and expects a response.",
   "keywords": [
-    "sight"
+    "alert-dialog"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/core/sight"
+    "directory": "packages/components/alert-dialog"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -31,32 +31,18 @@
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
-    "postpack": "clean-package restore",
-    "postbuild": "node scripts/postbuild.js",
-    "prebuild": "node scripts/prebuild.js"
+    "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "react": ">=19.0.0-rc.0",
-    "react-dom": ">=19.0.0-rc.0",
+    "@kopexa/theme": "workspace:*",
     "motion": ">=12.23.6",
-    "@kopexa/theme": "workspace:*"
+    "react": ">=19.0.0-rc.0",
+    "react-dom": ">=19.0.0-rc.0"
   },
   "dependencies": {
-    "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/button": "workspace:*",
-    "@kopexa/dialog": "workspace:*",
-    "@kopexa/drawer": "workspace:*",
-    "@kopexa/popover": "workspace:*",
-    "@kopexa/command": "workspace:*",
-    "@kopexa/tooltip": "workspace:*",
-    "@kopexa/spinner": "workspace:*",
-    "@kopexa/page-layout": "workspace:*",
-    "@kopexa/dropdown-menu": "workspace:*",
-    "@kopexa/calendar": "workspace:*",
-    "@kopexa/input": "workspace:*",
-    "@kopexa/chip": "workspace:*",
-    "@kopexa/alert-dialog": "workspace:*"
+    "@kopexa/shared-utils": "workspace:*",
+    "@radix-ui/react-alert-dialog": "^1.1.14"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

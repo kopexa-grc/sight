@@ -1,3 +1,8 @@
+export {
+	type AlertDialogSlots,
+	type AlertDialogVariants,
+	alertDialog,
+} from "./alert-dialog";
 export { type ButtonVariantProps, button } from "./button";
 export { type CalendarVariantProps, calendar } from "./calendar";
 export { type ChipSlots, type ChipVariantProps, chip } from "./chip";
