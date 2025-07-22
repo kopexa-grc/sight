@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/popover",
-	"version": "8.0.1",
+	"version": "8.0.2",
 	"description": "Displays rich content in a portal, triggered by a button.",
 	"keywords": [
 		"popover"
