@@ -1,5 +1,14 @@
 # @kopexa/react-utils
 
+## 2.0.3
+
+### Patch Changes
+
+- [`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b) Thanks [@juliankoehn](https://github.com/juliankoehn)! - added apache license
+
+- Updated dependencies [[`4bce6f0`](https://github.com/kopexa-grc/sight/commit/4bce6f0c191db25d501d9d0e2d9613669b46db7d), [`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b)]:
+  - @kopexa/shared-utils@1.1.3
+
 ## 2.0.2
 
 ### Patch Changes
