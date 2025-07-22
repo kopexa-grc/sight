@@ -1,5 +1,35 @@
 # @kopexa/sight
 
+## 6.0.2
+
+### Patch Changes
+
+- [`4bce6f0`](https://github.com/kopexa-grc/sight/commit/4bce6f0c191db25d501d9d0e2d9613669b46db7d) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created the avatar package
+
+- [`efcb73b`](https://github.com/kopexa-grc/sight/commit/efcb73bfeb78d1dc8ef2d21ea27283a44941c15a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - Create a card component as foundation for compliance cards
+
+- [`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b) Thanks [@juliankoehn](https://github.com/juliankoehn)! - added apache license
+
+- Updated dependencies [[`4bce6f0`](https://github.com/kopexa-grc/sight/commit/4bce6f0c191db25d501d9d0e2d9613669b46db7d), [`efcb73b`](https://github.com/kopexa-grc/sight/commit/efcb73bfeb78d1dc8ef2d21ea27283a44941c15a), [`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b)]:
+  - @kopexa/avatar@1.0.0
+  - @kopexa/shared-utils@1.1.3
+  - @kopexa/theme@1.5.1
+  - @kopexa/card@0.1.0
+  - @kopexa/dropdown-menu@1.0.1
+  - @kopexa/alert-dialog@1.0.1
+  - @kopexa/page-layout@3.0.1
+  - @kopexa/react-utils@2.0.3
+  - @kopexa/calendar@1.0.1
+  - @kopexa/command@5.0.1
+  - @kopexa/popover@8.0.1
+  - @kopexa/spinner@4.0.1
+  - @kopexa/tooltip@4.0.1
+  - @kopexa/button@6.0.1
+  - @kopexa/dialog@8.0.1
+  - @kopexa/drawer@8.0.1
+  - @kopexa/input@1.0.2
+  - @kopexa/chip@1.0.1
+
 ## 6.0.1
 
 ### Patch Changes

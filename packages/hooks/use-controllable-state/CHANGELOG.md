@@ -1,5 +1,14 @@
 # @kopexa/use-controllable-state
 
+## 1.1.1
+
+### Patch Changes
+
+- [`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b) Thanks [@juliankoehn](https://github.com/juliankoehn)! - added apache license
+
+- Updated dependencies [[`a9509f7`](https://github.com/kopexa-grc/sight/commit/a9509f7405616770d3db877f6f067a5659d5d60b)]:
+  - @kopexa/use-callback-ref@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
