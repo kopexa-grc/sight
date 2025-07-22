@@ -1,5 +1,26 @@
 # @kopexa/sight
 
+## 5.0.4
+
+### Patch Changes
+
+- [`aae5988`](https://github.com/kopexa-grc/sight/commit/aae5988ca7c21365ff74c4c0b6f1d6a3be3c08d9) Thanks [@juliankoehn](https://github.com/juliankoehn)! - Created a new chip component
+
+- Updated dependencies [[`aae5988`](https://github.com/kopexa-grc/sight/commit/aae5988ca7c21365ff74c4c0b6f1d6a3be3c08d9)]:
+  - @kopexa/chip@0.1.0
+  - @kopexa/theme@1.4.4
+  - @kopexa/button@5.0.4
+  - @kopexa/calendar@0.0.2
+  - @kopexa/command@4.0.4
+  - @kopexa/dialog@7.0.4
+  - @kopexa/drawer@7.0.4
+  - @kopexa/dropdown-menu@0.0.3
+  - @kopexa/input@0.0.2
+  - @kopexa/page-layout@2.0.4
+  - @kopexa/popover@7.0.4
+  - @kopexa/spinner@3.0.4
+  - @kopexa/tooltip@3.0.4
+
 ## 5.0.3
 
 ### Patch Changes
