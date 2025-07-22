@@ -86,7 +86,7 @@
 	--sidebar-ring: oklch(0.439 0 0);
 }
 
-@theme inline {
+@theme {
     --color-primary-50: oklch(96.58% 0.016 262.77);
     --color-primary-100: oklch(92.21% 0.037 262.15);
     --color-primary-200: oklch(84.55% 0.074 259.28);
