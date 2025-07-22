@@ -1,5 +1,5 @@
 import { CloseIcon } from "@kopexa/icons";
-import { mergeRefs } from "@kopexa/react-utils/src/dom";
+import { mergeRefs } from "@kopexa/react-utils";
 import { ariaAttr, chain, cn, dataAttr, isEmpty } from "@kopexa/shared-utils";
 import { Spinner } from "@kopexa/spinner";
 import {
