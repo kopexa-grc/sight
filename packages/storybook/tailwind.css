@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@import "@kopexa/theme/dist/index.css";
+@import "../core/theme/styles/index.css";
 
 @source "../components/*/src/**/*.{js,jsx,ts,tsx}";
 @source "../components/*/src/**/*.{js,jsx,ts,tsx}";

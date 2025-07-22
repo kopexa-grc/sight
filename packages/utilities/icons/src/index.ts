@@ -6,6 +6,7 @@ export { CircleIcon } from "./circle";
 export { CloseIcon } from "./close";
 export { EyeIcon } from "./eye";
 export { EyeOffIcon } from "./eye-off";
+export { NotificationIcon } from "./notification-icon";
 export { PlusIcon } from "./plus";
 export { SaveIcon } from "./save";
 export { SearchIcon } from "./search";

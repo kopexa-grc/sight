@@ -10,7 +10,7 @@ import type { Meta } from "@storybook/react";
 import { useState } from "react";
 
 export default {
-	title: "Components/Input",
+	title: "Components/Forms/Input",
 	component: Input,
 	argTypes: {
 		size: {
