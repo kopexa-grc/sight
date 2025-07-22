@@ -13,7 +13,7 @@
 	],
 	"author": "Kopexa <support@kopexa.com>",
 	"homepage": "https://kopexa.com",
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"main": "src/index.ts",
 	"sideEffects": false,
 	"files": [
