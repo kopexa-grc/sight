@@ -3,7 +3,7 @@ import type { Meta } from "@storybook/react";
 
 export default {
 	id: "components-popover",
-	title: "Components/Modal/Popover",
+	title: "Components/Overlays and layering/Popover",
 	component: Popover.Root,
 } as Meta<Popover.RootProps>;
 

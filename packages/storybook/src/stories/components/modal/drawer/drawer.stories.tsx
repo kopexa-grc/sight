@@ -4,7 +4,7 @@ import type { Meta } from "@storybook/react";
 
 export default {
 	id: "components-drawer",
-	title: "Components/Modal/Drawer",
+	title: "Components/Overlays and layering/Drawer",
 	component: Drawer.Root,
 	argTypes: {
 		size: {

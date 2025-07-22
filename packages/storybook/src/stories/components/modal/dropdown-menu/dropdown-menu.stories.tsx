@@ -3,7 +3,7 @@ import { dropdownMenu } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
 export default {
-	title: "Components/Modal/DropdownMenu",
+	title: "Components/Overlays and layering/DropdownMenu",
 	component: DropdownMenu.Root,
 } as Meta<DropdownMenu.RootProps>;
 

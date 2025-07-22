@@ -3,7 +3,7 @@ import { spinner } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
 export default {
-	title: "Components/Spinner",
+	title: "Components/Loading/Spinner",
 	component: Spinner,
 	argTypes: {
 		color: {

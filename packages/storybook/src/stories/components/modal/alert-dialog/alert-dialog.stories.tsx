@@ -9,7 +9,7 @@ import type { Meta } from "@storybook/react";
 import { useState } from "react";
 
 export default {
-	title: "Components/Modal/AlertDialog",
+	title: "Components/Overlays and layering/AlertDialog",
 	component: AlertDialog.Root,
 	decorators: [
 		(Story) => (

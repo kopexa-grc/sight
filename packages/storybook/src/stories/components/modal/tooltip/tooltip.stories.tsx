@@ -3,7 +3,7 @@ import { tooltip } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
 export default {
-	title: "Components/Modal/Tooltip",
+	title: "Components/Overlays and layering/Tooltip",
 	component: Tooltip,
 } as Meta<TooltipProps>;
 
