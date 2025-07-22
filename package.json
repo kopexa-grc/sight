@@ -35,7 +35,7 @@
 		"@types/react": "^19.1.8",
 		"@types/react-dom": "^19.1.6",
 		"jest": "^30.0.5",
-		"jest-environment-jsdom": "^30.0.4",
+		"jest-environment-jsdom": "^30.0.5",
 		"jest-watch-typeahead": "^3.0.1",
 		"plop": "^4.0.1",
 		"prettier": "^3.2.5",
