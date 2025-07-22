@@ -1,6 +1,7 @@
 export * from "@kopexa/alert-dialog";
 export * from "@kopexa/button";
 export * from "@kopexa/calendar";
+export * from "@kopexa/card";
 export * from "@kopexa/chip";
 export * from "@kopexa/command";
 export * from "@kopexa/dialog";

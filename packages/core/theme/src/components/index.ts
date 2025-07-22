@@ -5,6 +5,7 @@ export {
 } from "./alert-dialog";
 export { type ButtonVariantProps, button } from "./button";
 export { type CalendarVariantProps, calendar } from "./calendar";
+export { type CardSlots, type CardVariantProps, card } from "./card";
 export { type ChipSlots, type ChipVariantProps, chip } from "./chip";
 export { type CommandVariants, command } from "./command";
 export { type DialogSlots, type DialogVariantProps, dialog } from "./dialog";
