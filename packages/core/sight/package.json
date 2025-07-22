@@ -57,7 +57,8 @@
     "@kopexa/input": "workspace:*",
     "@kopexa/chip": "workspace:*",
     "@kopexa/alert-dialog": "workspace:*",
-    "@kopexa/card": "workspace:*"
+    "@kopexa/card": "workspace:*",
+    "@kopexa/avatar": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

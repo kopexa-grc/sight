@@ -3,6 +3,7 @@ export {
 	type AlertDialogVariants,
 	alertDialog,
 } from "./alert-dialog";
+export { type AvatarSlots, type AvatarVariantProps, avatar } from "./avatar";
 export { type ButtonVariantProps, button } from "./button";
 export { type CalendarVariantProps, calendar } from "./calendar";
 export { type CardSlots, type CardVariantProps, card } from "./card";
