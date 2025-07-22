@@ -4,7 +4,7 @@ import type { Meta } from "@storybook/react";
 
 export default {
 	id: "components-dialog",
-	title: "Components/Dialog",
+	title: "Components/Modal/Dialog",
 	component: Dialog.Root,
 	argTypes: {
 		size: {
