@@ -1,4 +1,5 @@
 export { CheckIcon } from "./check";
+export { CheckCirleIcon } from "./check-circle";
 export { ChevronDownIcon } from "./chevron-down";
 export { ChevronLeftIcon } from "./chevron-left";
 export { ChevronRightIcon } from "./chevron-right";
