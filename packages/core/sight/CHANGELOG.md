@@ -1,5 +1,19 @@
 # @kopexa/sight
 
+## 6.0.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @kopexa/button@6.0.3
+  - @kopexa/calendar@1.0.4
+  - @kopexa/chip@1.0.4
+  - @kopexa/command@5.0.4
+  - @kopexa/dialog@8.0.4
+  - @kopexa/drawer@8.0.4
+  - @kopexa/dropdown-menu@1.0.4
+  - @kopexa/input@1.0.5
+
 ## 6.0.4
 
 ### Patch Changes
