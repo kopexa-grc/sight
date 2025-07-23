@@ -1,5 +1,15 @@
 # @kopexa/popover
 
+## 8.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`a3e1afa`](https://github.com/kopexa-grc/sight/commit/a3e1afac5068cb7d6bacce5b41385ffb86b19e46)]:
+  - @kopexa/shared-utils@1.1.4
+  - @kopexa/react-utils@2.0.4
+  - @kopexa/theme@1.5.3
+  - @kopexa/motion-utils@8.0.3
+
 ## 8.0.2
 
 ### Patch Changes
