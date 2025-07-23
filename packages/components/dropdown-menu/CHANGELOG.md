@@ -1,5 +1,12 @@
 # @kopexa/dropdown-menu
 
+## 1.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`a1ff074`](https://github.com/kopexa-grc/sight/commit/a1ff0747a304f0c2573094966923b2692df3a843)]:
+  - @kopexa/icons@8.0.4
+
 ## 1.0.3
 
 ### Patch Changes
