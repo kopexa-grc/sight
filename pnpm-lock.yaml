@@ -264,6 +264,31 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/code:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/command:
     dependencies:
       '@kopexa/icons':
@@ -552,6 +577,34 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/table:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@kopexa/use-hover':
+        specifier: workspace:*
+        version: link:../../hooks/use-hover
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/tooltip:
     dependencies:
       '@kopexa/react-utils':
@@ -603,6 +656,9 @@ importers:
       '@kopexa/chip':
         specifier: workspace:*
         version: link:../../components/chip
+      '@kopexa/code':
+        specifier: workspace:*
+        version: link:../../components/code
       '@kopexa/command':
         specifier: workspace:*
         version: link:../../components/command
@@ -633,6 +689,9 @@ importers:
       '@kopexa/spinner':
         specifier: workspace:*
         version: link:../../components/spinner
+      '@kopexa/table':
+        specifier: workspace:*
+        version: link:../../components/table
       '@kopexa/tooltip':
         specifier: workspace:*
         version: link:../../components/tooltip
@@ -730,6 +789,32 @@ importers:
       '@types/lodash.debounce':
         specifier: ^4.0.9
         version: 4.0.9
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-event-listener:
+    dependencies:
+      '@kopexa/use-safe-layout-effect':
+        specifier: workspace:*
+        version: link:../use-safe-layout-effect
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-hover:
+    dependencies:
+      '@kopexa/use-event-listener':
+        specifier: workspace:*
+        version: link:../use-event-listener
+    devDependencies:
       clean-package:
         specifier: 2.2.0
         version: 2.2.0

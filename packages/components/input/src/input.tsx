@@ -47,7 +47,7 @@ type BaseProps = {
 	loading?: boolean;
 };
 
-export type InputProps = ComponentProps<"input"> &
+export type InputProps = Omit<ComponentProps<"input">, "size"> &
 	InputVariantProps &
 	BaseProps;
 

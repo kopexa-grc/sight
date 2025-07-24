@@ -37,7 +37,7 @@ export const button = tv({
 		variant: {
 			solid: "shadow-xs",
 			ghost: "",
-			outline: "border-2 bg-transparent",
+			outline: "border-1 bg-transparent",
 			link: "",
 		},
 		size: {

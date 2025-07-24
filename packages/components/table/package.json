@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/sight",
-  "version": "6.0.5",
-  "description": "Kopexas react UI Library",
+  "name": "@kopexa/table",
+  "version": "0.0.0",
+  "description": "ables are used to display tabular data using rows and columns. ",
   "keywords": [
-    "sight"
+    "table"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/core/sight"
+    "directory": "packages/components/table"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -31,9 +31,7 @@
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
-    "postpack": "clean-package restore",
-    "postbuild": "node scripts/postbuild.js",
-    "prebuild": "node scripts/prebuild.js"
+    "postpack": "clean-package restore"
   },
   "peerDependencies": {
     "react": ">=19.0.0-rc.0",
@@ -44,29 +42,13 @@
   "dependencies": {
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/button": "workspace:*",
-    "@kopexa/dialog": "workspace:*",
-    "@kopexa/drawer": "workspace:*",
-    "@kopexa/popover": "workspace:*",
-    "@kopexa/command": "workspace:*",
-    "@kopexa/tooltip": "workspace:*",
-    "@kopexa/spinner": "workspace:*",
-    "@kopexa/page-layout": "workspace:*",
-    "@kopexa/dropdown-menu": "workspace:*",
-    "@kopexa/calendar": "workspace:*",
-    "@kopexa/input": "workspace:*",
-    "@kopexa/chip": "workspace:*",
-    "@kopexa/alert-dialog": "workspace:*",
-    "@kopexa/card": "workspace:*",
-    "@kopexa/avatar": "workspace:*",
-    "@kopexa/table": "workspace:*",
-    "@kopexa/code": "workspace:*"
+    "@kopexa/use-hover": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+	"react-dom": "^19.1.0"
   },
   "clean-package": "../../../clean-package.config.json"
 }
