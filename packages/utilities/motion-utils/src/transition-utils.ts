@@ -1,4 +1,4 @@
-import type { Target, TargetAndTransition, Transition } from "motion";
+import type { Variants as MotionVariants, Target, Transition } from "motion";
 
 type WithMotionState<P> = Partial<Record<"enter" | "exit", P>>;
 
@@ -15,21 +15,6 @@ export type TransitionProperties = {
 	 */
 	transitionEnd?: TransitionEndConfig;
 };
-
-type TargetResolver<P = object> = (
-	props: P & TransitionProperties,
-) => TargetAndTransition;
-
-type Variant<P = object> = TargetAndTransition | TargetResolver<P>;
-
-export type Variants<P = object> = Record<
-	string,
-	{
-		enter: Variant<P>;
-		exit: Variant<P>;
-		initial?: Variant<P>;
-	}
->;
 
 export const TRANSITION_EASINGS = {
 	ease: [0.36, 0.66, 0.4, 1],
@@ -52,7 +37,11 @@ export const TRANSITION_DEFAULTS = {
 	},
 } as const;
 
-export const TRANSITION_VARIANTS: Variants = {
+type VariantTypes = "fade" | "scaleSpringOpacity" | "scale";
+
+export type Variants = Record<VariantTypes, MotionVariants>;
+
+export const TRANSITION_VARIANTS = {
 	fade: {
 		enter: {
 			opacity: 1,
@@ -68,5 +57,33 @@ export const TRANSITION_VARIANTS: Variants = {
 				ease: TRANSITION_EASINGS.ease,
 			},
 		},
-	},
+	} satisfies MotionVariants,
+	scaleSpringOpacity: {
+		initial: {
+			opacity: 0,
+			transform: "scale(0.8)",
+		},
+		enter: {
+			opacity: 1,
+			transform: "scale(1)",
+			transition: {
+				type: "spring",
+				bounce: 0,
+				duration: 0.3,
+			},
+		},
+		exit: {
+			opacity: 0,
+			transform: "scale(0.96)",
+			transition: {
+				ease: TRANSITION_EASINGS.easeOut,
+				bounce: 0,
+				duration: 0.15,
+			},
+		},
+	} satisfies MotionVariants,
+	scale: {
+		enter: { scale: 1 },
+		exit: { scale: 0.95 },
+	} satisfies MotionVariants,
 };

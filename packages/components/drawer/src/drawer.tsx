@@ -91,7 +91,7 @@ export function DrawerOverlay({ className, ...props }: DrawerOverlayProps) {
 					animate="enter"
 					exit="exit"
 					initial="exit"
-					variants={TRANSITION_VARIANTS.fade}
+					variants={TRANSITION_VARIANTS.fade as Variants}
 				/>
 			</DialogPrimitive.Overlay>
 		</LazyMotion>
@@ -105,7 +105,7 @@ export type DrawerContentProps = ComponentProps<
 };
 
 export const DrawerContent = (props: DrawerContentProps) => {
-	const { className, children, showCloseButton, ...rest } = props;
+	const { className, children, showCloseButton = false, ...rest } = props;
 
 	const { open, styles, placement } = useDrawerContext();
 

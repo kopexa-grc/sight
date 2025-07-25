@@ -10,6 +10,7 @@ import {
 	domAnimation,
 	LazyMotion,
 	motion,
+	type Variants,
 } from "motion/react";
 import type { ComponentProps } from "react";
 import { scaleInOut } from "./transition";
@@ -94,7 +95,7 @@ export function DialogOverlay({ className, ...props }: DialogOverlayProps) {
 					animate="enter"
 					exit="exit"
 					initial="exit"
-					variants={TRANSITION_VARIANTS.fade}
+					variants={TRANSITION_VARIANTS.fade as Variants}
 				/>
 			</DialogPrimitive.Overlay>
 		</LazyMotion>
