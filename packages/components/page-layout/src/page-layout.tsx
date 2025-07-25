@@ -31,12 +31,13 @@ export const PageLayoutRoot = (props: PageLayoutRootProps) => {
 		gap,
 		className,
 		classNames,
+		inModal,
 		...rest
 	} = props;
 
 	const styles = useMemo(
-		() => pageLayout({ width, spacing, paneWidth, gap }),
-		[width, spacing, paneWidth, gap],
+		() => pageLayout({ width, spacing, paneWidth, gap, inModal }),
+		[width, spacing, paneWidth, gap, inModal],
 	);
 
 	const header: React.ReactNode[] = [];

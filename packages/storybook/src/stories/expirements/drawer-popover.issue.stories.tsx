@@ -1,7 +1,7 @@
 import { Button, Command, Drawer, Popover } from "@kopexa/sight";
 
 const meta = {
-	title: "Issues/Drawer Popover Issue",
+	title: "Experiments/Drawer Popover Issue",
 	parameters: {
 		layout: "centered",
 	},

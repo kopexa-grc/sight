@@ -36,11 +36,11 @@ export const pageLayout = tv({
 				],
 			},
 			normal: {
-				header: "mb-4 lg:mb-6",
-				footerWrapper: "mt-4 lg:mt-6",
+				header: "mb-2 lg:mb-3",
+				footerWrapper: "mt-2 lg:mt-3",
 				paneWrapper: [
-					"max-md:data-[position=start]:mb-4 md:data-[position=start]:mr-6",
-					"max-md:data-[position=end]:mt-4 md:data-[position=end]:ml-6",
+					"max-md:data-[position=start]:mb-2 md:data-[position=start]:mr-3",
+					"max-md:data-[position=end]:mt-2 md:data-[position=end]:ml-3",
 				],
 			},
 		},
@@ -57,8 +57,8 @@ export const pageLayout = tv({
 				wrapper: "max-w-5xl",
 			},
 			xl: {
-				wrapper: "max-w-7xl",
-				content: "max-w-7xl",
+				wrapper: "max-w-8xl",
+				content: "max-w-8xl",
 			},
 		},
 		paneWidth: {
@@ -83,10 +83,19 @@ export const pageLayout = tv({
 			},
 			// 1.5rem
 			normal: {
-				wrapper: "p-4 md:p-6",
-				header: "p-4 md:p-6",
-				content: "p-4 md:p-6",
-				pane: "p-4 md:p-6",
+				wrapper: "p-2 md:p-3",
+				header: "p-2 md:p-3",
+				content: "p-2 md:p-3",
+				pane: "p-2 md:p-3",
+				footerContent: "p-2 md:p-3",
+			},
+		},
+		inModal: {
+			true: {
+				wrapper: "overflow-auto flex-1 min-h-0",
+				baseContent: "min-h-0 ",
+				header: "shrink grow-0",
+				contentWrapper: "grow shrink-0",
 			},
 		},
 	},
