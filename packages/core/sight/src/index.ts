@@ -18,5 +18,6 @@ export * from "@kopexa/page-layout";
 export * from "@kopexa/popover";
 export * from "@kopexa/skeleton";
 export * from "@kopexa/spinner";
+export * from "@kopexa/tab-nav";
 export * from "@kopexa/table";
 export * from "@kopexa/tooltip";

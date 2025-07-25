@@ -65,7 +65,8 @@
     "@kopexa/checkbox": "workspace:*",
     "@kopexa/skeleton": "workspace:*",
     "@kopexa/page-header": "workspace:*",
-    "@kopexa/heading": "workspace:*"
+    "@kopexa/heading": "workspace:*",
+    "@kopexa/tab-nav": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

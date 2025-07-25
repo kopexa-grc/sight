@@ -1,4 +1,10 @@
-import type { Ref, RefCallback } from "react";
+import {
+	Children,
+	cloneElement,
+	type ReactNode,
+	type Ref,
+	type RefCallback,
+} from "react";
 
 /**
  * A function that merges React refs into one.
@@ -32,4 +38,30 @@ export function mergeRefs<T>(
 			}
 		}
 	};
+}
+
+/**
+ * This is a helper function that is used when a component supports `asChild`
+ * using the `Slot` component but its implementation contains nested DOM elements.
+ *
+ * Using it ensures if a consumer uses the `asChild` prop, the elements are in
+ * correct order in the DOM, adopting the intended consumer `children`.
+ */
+export function getSubtree(
+	options: { asChild: boolean | undefined; children: ReactNode },
+	content: ReactNode | ((children: ReactNode) => ReactNode),
+) {
+	const { asChild, children } = options;
+	if (!asChild)
+		return typeof content === "function" ? content(children) : content;
+
+	const firstChild = Children.only(children) as React.ReactElement;
+	return cloneElement(firstChild, {
+		// @ts-expect-error
+		children:
+			typeof content === "function"
+				? // @ts-expect-error
+					content(firstChild.props.children)
+				: content,
+	});
 }

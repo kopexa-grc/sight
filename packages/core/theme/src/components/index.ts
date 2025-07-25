@@ -31,5 +31,6 @@ export {
 export { type PopoverVariants, popover } from "./popover";
 export { skeleton } from "./skeleton";
 export { type SpinnerVariants, spinner } from "./spinner";
+export { type TabNavSlots, type TabNavVariantProps, tabNav } from "./tab-nav";
 export { type TableSlots, type TableVariantProps, table } from "./table";
 export { type TooltipVariants, tooltip } from "./tooltip";
