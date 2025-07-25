@@ -55,14 +55,19 @@ export const PageLayoutRoot = (props: PageLayoutRootProps) => {
 	);
 };
 
-export type PageLayoutHeaderProps = ComponentProps<"header">;
+export type PageLayoutHeaderProps = ComponentProps<"header"> & {
+	spacing?: PageLayoutVariantProps["spacing"];
+	gap?: PageLayoutVariantProps["gap"];
+};
 
 export const PageLayoutHeader = (props: PageLayoutHeaderProps) => {
-	const { className, ...rest } = props;
+	const { className, spacing, gap, ...rest } = props;
 
 	const { styles } = usePageLayoutContext();
 
-	return <header className={styles.header({ className })} {...rest} />;
+	return (
+		<header className={styles.header({ className, spacing, gap })} {...rest} />
+	);
 };
 
 PageLayoutHeader.displayName = "PageLayoutHeader";
@@ -96,15 +101,25 @@ export type PageLayoutPaneProps = ComponentProps<"div"> & {
 	 * @default false
 	 */
 	sticky?: boolean;
+	spacing?: PageLayoutVariantProps["spacing"];
+	gap?: PageLayoutVariantProps["gap"];
 };
 
 export function PageLayoutPane(props: PageLayoutPaneProps) {
-	const { className, children, position = "end", sticky, ...rest } = props;
+	const {
+		className,
+		children,
+		position = "end",
+		sticky,
+		spacing,
+		gap,
+		...rest
+	} = props;
 	const { styles } = usePageLayoutContext();
 
 	return (
 		<div
-			className={styles.paneWrapper({ className })}
+			className={styles.paneWrapper({ className, spacing, gap })}
 			data-position={position}
 			data-sticky={dataAttr(sticky)}
 			{...rest}
@@ -114,14 +129,20 @@ export function PageLayoutPane(props: PageLayoutPaneProps) {
 	);
 }
 
-export type PageLayoutContentProps = ComponentProps<"div">;
+export type PageLayoutContentProps = ComponentProps<"div"> & {
+	spacing?: PageLayoutVariantProps["spacing"];
+	gap?: PageLayoutVariantProps["gap"];
+};
 
 export function PageLayoutContent(props: PageLayoutContentProps) {
-	const { className, children, ...rest } = props;
+	const { className, children, spacing, gap, ...rest } = props;
 	const { styles } = usePageLayoutContext();
 
 	return (
-		<div className={styles.contentWrapper({ className })} {...rest}>
+		<div
+			className={styles.contentWrapper({ className, spacing, gap })}
+			{...rest}
+		>
 			<div className={styles.content()}>{children}</div>
 		</div>
 	);

@@ -3,6 +3,7 @@ import type { Preview } from "@storybook/react-vite";
 import { initialize, mswLoader } from "msw-storybook-addon";
 import "../tailwind.css";
 import { handlers } from "./mocks/handlers";
+import theme from "./theme";
 
 initialize();
 
@@ -29,6 +30,7 @@ const preview: Preview = {
 		},
 		docs: {
 			codePanel: true,
+			theme: theme,
 		},
 		msw: {
 			handlers,
