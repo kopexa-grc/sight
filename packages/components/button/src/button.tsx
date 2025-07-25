@@ -111,7 +111,7 @@ export const Button = (props: ButtonProps) => {
 
 	const spinnerSize = useMemo(() => {
 		const buttonSpinnerSizeMap: Record<string, SpinnerProps["size"]> = {
-			sm: "sm",
+			sm: "xs",
 			md: "sm",
 			lg: "md",
 		};
@@ -133,15 +133,17 @@ export const Button = (props: ButtonProps) => {
 			tabIndex={isDisabled ? -1 : undefined}
 			{...rest}
 		>
-			{startContent}
-			{isLoading && spinnerPlacement === "start" && (
+			{isLoading && spinnerPlacement === "start" ? (
 				<Spinner color="current" size={spinnerSize} />
+			) : (
+				startContent
 			)}
 			<Slot.Slottable>{children}</Slot.Slottable>
-			{isLoading && spinnerPlacement === "end" && (
+			{isLoading && spinnerPlacement === "end" ? (
 				<Spinner color="current" size={spinnerSize} />
+			) : (
+				endContent
 			)}
-			{endContent}
 			{!disableRipple && <Ripple {...getRippleProps()} />}
 		</Comp>
 	);
