@@ -3,7 +3,7 @@ import { tv, type VariantProps } from "tailwind-variants";
 export const pageLayout = tv({
 	slots: {
 		root: "",
-		wrapper: "flex mx-auto flex-wrap",
+		wrapper: "flex mx-auto flex-wrap w-full",
 		baseContent: "flex flex-1 flex-wrap max-w-full",
 		header: "w-full grow-0 shrink-0",
 		footerWrapper: "w-full",
