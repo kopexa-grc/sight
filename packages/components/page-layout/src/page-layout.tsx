@@ -45,7 +45,7 @@ export const PageLayoutRoot = (props: PageLayoutRootProps) => {
 
 	return (
 		<Provider value={{ styles }}>
-			<div className={styles.wrapper({ className })} {...rest}>
+			<div className={styles.wrapper({ className, spacing, gap })} {...rest}>
 				{header}
 				<div className={styles.baseContent()}>{content}</div>
 				{footer}
