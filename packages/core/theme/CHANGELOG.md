@@ -1,5 +1,15 @@
 # @kopexa/theme
 
+## 1.5.6
+
+### Patch Changes
+
+- [`897d24d`](https://github.com/kopexa-grc/sight/commit/897d24d667ce1fe417d74e3f610fbc17bba09d7a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fix: update wrapper slot in pageLayout to ensure full width layout
+
+- [`7561336`](https://github.com/kopexa-grc/sight/commit/75613367c4b053b5b58f6e4d77adee7d7327bfb8) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fix: update PageLayout components to support classNames and improve layout styles
+
+- [`125b3b9`](https://github.com/kopexa-grc/sight/commit/125b3b92f356a72597667e289fb3dcce64b1a31c) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed basecontnt styling...
+
 ## 1.5.5
 
 ### Patch Changes
