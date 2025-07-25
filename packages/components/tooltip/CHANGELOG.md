@@ -1,5 +1,12 @@
 # @kopexa/tooltip
 
+## 4.0.6
+
+### Patch Changes
+
+- Updated dependencies [[`897d24d`](https://github.com/kopexa-grc/sight/commit/897d24d667ce1fe417d74e3f610fbc17bba09d7a), [`7561336`](https://github.com/kopexa-grc/sight/commit/75613367c4b053b5b58f6e4d77adee7d7327bfb8), [`125b3b9`](https://github.com/kopexa-grc/sight/commit/125b3b92f356a72597667e289fb3dcce64b1a31c)]:
+  - @kopexa/theme@1.5.6
+
 ## 4.0.5
 
 ### Patch Changes
