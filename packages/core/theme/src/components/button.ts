@@ -41,9 +41,9 @@ export const button = tv({
 			link: "",
 		},
 		size: {
-			sm: "px-3 min-w-16 h-8 text-xs gap-2 rounded-sm has-[>svg]:px-2.5",
-			md: "px-4 min-w-20 h-10 text-sm gap-2 rounded-md has-[>svg]:px-3",
-			lg: "px-6 min-w-24 h-12 text-base gap-3 rounded-lg has-[>svg]:px-4",
+			sm: "px-3 min-w-16 h-8 text-xs gap-2 rounded-sm has-[>svg]:px-2.5 [&_svg]:size-3",
+			md: "px-4 min-w-20 h-10 text-sm gap-2 rounded-md has-[>svg]:px-3 [&_svg]:size-4",
+			lg: "px-6 min-w-24 h-12 text-base gap-3 rounded-lg has-[>svg]:px-4 [&_svg]:size-4",
 		},
 		color: {
 			primary: "",

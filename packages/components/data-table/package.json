@@ -1,0 +1,61 @@
+{
+  "name": "@kopexa/data-table",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "data-table"
+  ],
+  "author": "Kopexa <hello@kopexa.com>",
+  "homepage": "https://kopexa.com",
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopexa-grc/sight.git",
+    "directory": "packages/components/data-table"
+  },
+  "bugs": {
+    "url": "https://github.com/kopexa-grc/sight/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "@kopexa/theme": "workspace:*",
+    "motion": ">=12.23.6",
+    "react": ">=19.0.0-rc.0",
+    "react-dom": ">=19.0.0-rc.0"
+  },
+  "dependencies": {
+    "@kopexa/react-utils": "workspace:*",
+    "@kopexa/shared-utils": "workspace:*",
+    "@kopexa/dropdown-menu": "workspace:*",
+    "@kopexa/button": "workspace:*",
+    "@kopexa/icons": "workspace:*",
+    "@kopexa/checkbox": "workspace:*",
+    "@kopexa/table": "workspace:*",
+    "@kopexa/input": "workspace:*",
+    "@kopexa/skeleton": "workspace:*",
+    "@tanstack/react-table": "^8.21.3"
+  },
+  "devDependencies": {
+    "@kopexa/theme": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

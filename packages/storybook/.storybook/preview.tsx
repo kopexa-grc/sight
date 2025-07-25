@@ -1,8 +1,13 @@
 import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react-vite";
+import { initialize, mswLoader } from "msw-storybook-addon";
 import "../tailwind.css";
+import { handlers } from "./mocks/handlers";
+
+initialize();
 
 const preview: Preview = {
+	loaders: [mswLoader],
 	parameters: {
 		html: {
 			root: "#html-addon-root",
@@ -24,6 +29,9 @@ const preview: Preview = {
 		},
 		docs: {
 			codePanel: true,
+		},
+		msw: {
+			handlers,
 		},
 	},
 	decorators: [

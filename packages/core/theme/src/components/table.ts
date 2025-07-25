@@ -2,9 +2,6 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const table = tv({
 	slots: {
-		base: "flex flex-col relative gap-4",
-		wrapper:
-			"z-0 flex flex-col relative justify-between gap-4 bg-background overflow-auto",
 		table: "min-w-full h-auto",
 		thead: "",
 		tbody: "after:block divide-y",
@@ -14,18 +11,18 @@ export const table = tv({
 			"[&_td:first-child]:pl-4 [&_th:first-child]:pl-4",
 		],
 		th: [
-			"group/th px-3 py-3.5 text-start text-sm font-semibold",
+			"group/th px-3 py-3.5 text-start text-xs font-semibold whitespace-normal",
 			"text-foreground border-b",
 		],
 		td: [
-			"py-2 px-3 text-sm font-normal whitespace-normal relative",
-			"[&>*]:z-10",
+			"py-2 px-3 text-xs font-normal whitespace-normal relative",
+			"[&>*]:z-[1]",
 			"[&>*]:relative",
 			// after content for selection
 			"after:pointer-events-none",
 			"after:content-['']",
 			"after:absolute",
-			"after:z-0",
+			"after:-z-[1]",
 			"after:inset-0",
 			"after:opacity-0",
 			"group-aria-[selected=true]/tr:after:opacity-100",
@@ -33,7 +30,7 @@ export const table = tv({
 			"before:pointer-events-none",
 			"before:content-['']",
 			"before:absolute",
-			"before:-z-1",
+			"before:-z-[1]",
 			"before:inset-y-0",
 			"before:start-0",
 			"before:w-0.5",
@@ -42,6 +39,12 @@ export const table = tv({
 		],
 	},
 	variants: {
+		overscroll: {
+			horizontal: {
+				th: "whitespace-nowrap",
+				td: "whitespace-nowrap",
+			},
+		},
 		color: {
 			default: {
 				td: [
@@ -55,6 +58,14 @@ export const table = tv({
 				],
 			},
 		},
+		layout: {
+			auto: {
+				table: "table-auto",
+			},
+			fixed: {
+				table: "table-fixed",
+			},
+		},
 		isSelectable: {
 			true: {
 				tr: "cursor-default",
@@ -63,11 +74,57 @@ export const table = tv({
 				],
 			},
 		},
+		hasSelect: {
+			true: {
+				tr: "[&_th:first-of-type]:w-[1%] [&_th:first-of-type]:whitespace-nowrap",
+			},
+		},
+		hasActions: {
+			true: {
+				tr: "[&_th:last-of-type]:w-[1%] [&_th:last-of-type]:whitespace-nowrap",
+			},
+		},
+		isStickyCell: {
+			true: {
+				th: "sticky bg-background z-[2]",
+				td: "sticky h-full bg-background z-[2]",
+			},
+		},
+		isSelectCell: {
+			true: {
+				td: "w-[calc(20px+24px+24px)] min-w-[calc(20px+24px+24px)] max-w-[calc(20px+24px+24px)]",
+			},
+		},
+		isActionCell: {
+			true: {
+				td: "w-[calc(28px+24px+4px)] min-w-[calc(28px+24px+4px)] max-w-[calc(28px+24px+4px)]",
+			},
+		},
+		fullWidth: {
+			true: {
+				base: "w-full",
+				wrapper: "w-full",
+				table: "w-full",
+			},
+		},
 	},
 	defaultVariants: {
+		layout: "auto",
 		color: "default",
+		fullWidth: true,
 	},
 });
 
 export type TableVariantProps = VariantProps<typeof table>;
 export type TableSlots = keyof ReturnType<typeof table>;
+
+// computed classes for table row
+// left-0 left-[calc(20px+24px+24px)] cursor-pointer
+// group w-fit flex cursor-default items-center gap-2
+//
+// packages/components/data-table/src/internal/data-table-sorting-icon.tsx
+// opacity-0 transition-opacity group-hover:opacity-100
+// opacity-100 when sorted
+//
+// left-0
+// left-[calc(20px+24px+24px)]

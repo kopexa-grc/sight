@@ -53,13 +53,13 @@ export const avatar = tv({
 	variants: {
 		size: {
 			sm: {
-				root: "w-8 h-8 text-tiny",
+				root: "w-8 h-8 text-[11px]",
 			},
 			md: {
-				root: "w-10 h-10 text-tiny",
+				root: "w-10 h-10 text-[12px]",
 			},
 			lg: {
-				root: "w-14 h-14 text-small",
+				root: "w-14 h-14 text-[14px]",
 			},
 		},
 		color: {

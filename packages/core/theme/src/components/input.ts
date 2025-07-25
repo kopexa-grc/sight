@@ -90,3 +90,5 @@ export const input = tv({
 
 export type InputVariantProps = VariantProps<typeof input>;
 export type InputSlots = keyof ReturnType<typeof input>;
+
+// pointer-events-none text-muted-foreground

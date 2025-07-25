@@ -7,7 +7,7 @@ import {
 	table,
 } from "@kopexa/theme";
 import { useHover } from "@kopexa/use-hover";
-import { type ComponentProps, type ReactNode, useRef } from "react";
+import { type ComponentProps, useRef } from "react";
 
 type TableProviderContextValue = {
 	styles: ReturnType<typeof table>;
@@ -18,27 +18,7 @@ const [Provider, useTableContext] = createContext<TableProviderContextValue>(
 	{},
 );
 
-type TableContentPlacement = "inside" | "outside";
-
 type TableOptions = {
-	/**
-	 * Where to place the `topContent` component.
-	 * @default "inside"
-	 */
-	topContentPlacement?: TableContentPlacement;
-	/**
-	 * Provides content to include a component in the top of the table.
-	 */
-	topContent?: ReactNode;
-	/**
-	 * Where to place the `bottomContent` component.
-	 * @default "inside"
-	 */
-	bottomContentPlacement?: TableContentPlacement;
-	/**
-	 * Provides content to include a component in the bottom of the table.
-	 */
-	bottomContent?: ReactNode;
 	/**
 	 * Classname or List of classes to change the classNames of the element.
 	 * if `className` is passed, it will be added to the base slot.
@@ -60,33 +40,27 @@ export const TableRoot = (props: TableRootProps) => {
 	const {
 		className,
 		children,
-		topContent,
-		topContentPlacement = "inside",
-		bottomContentPlacement = "inside",
-		bottomContent,
 		isSelectable,
 		onRowClick,
+		layout,
+		fullWidth,
+		overscroll,
 		...rest
 	} = props;
 
 	const styles = table({
 		className,
 		isSelectable,
+		layout,
+		fullWidth,
+		overscroll,
 	});
 
 	return (
 		<Provider value={{ styles, onRowClick }}>
-			<div data-slot="table-base" className={styles.base()}>
-				{topContentPlacement === "outside" && topContent}
-				<div className={styles.wrapper()}>
-					{topContentPlacement === "inside" && topContent}
-					<table className={styles.table()} {...rest}>
-						{children}
-					</table>
-					{bottomContentPlacement === "inside" && bottomContent}
-				</div>
-				{bottomContentPlacement === "outside" && bottomContent}
-			</div>
+			<table className={styles.table()} {...rest}>
+				{children}
+			</table>
 		</Provider>
 	);
 };
@@ -127,10 +101,20 @@ export function TableBody(props: TableBodyProps) {
 
 export type TableRowProps = ComponentProps<"tr"> & {
 	isSelected?: boolean;
+	hasSelect?: boolean;
+	hasActions?: boolean;
 };
 
 export function TableRow(props: TableRowProps) {
-	const { className, ref, isSelected = false, onClick, ...rest } = props;
+	const {
+		className,
+		ref,
+		isSelected = false,
+		onClick,
+		hasSelect,
+		hasActions,
+		...rest
+	} = props;
 	const { styles, onRowClick } = useTableContext();
 	const innerRef = useRef<HTMLTableRowElement>(null);
 
@@ -143,6 +127,8 @@ export function TableRow(props: TableRowProps) {
 			aria-selected={isSelected}
 			className={styles.tr({
 				className,
+				hasSelect,
+				hasActions,
 			})}
 			ref={mergeRefs(innerRef, ref)}
 			onClick={callAllHandlers(onRowClick, onClick)}
@@ -151,10 +137,15 @@ export function TableRow(props: TableRowProps) {
 	);
 }
 
-export type TableHeaderCellProps = ComponentProps<"th">;
+export type TableHeaderCellProps = ComponentProps<"th"> & {
+	isSelectCell?: boolean;
+	isActionCell?: boolean;
+	isStickyCell?: boolean;
+};
 
 export function TableHeaderCell(props: TableHeaderCellProps) {
-	const { className, ...rest } = props;
+	const { className, isSelectCell, isActionCell, isStickyCell, ...rest } =
+		props;
 	const { styles } = useTableContext();
 
 	return (
@@ -162,16 +153,24 @@ export function TableHeaderCell(props: TableHeaderCellProps) {
 			data-slot="table-header-cell"
 			className={styles.th({
 				className,
+				isSelectCell,
+				isActionCell,
+				isStickyCell,
 			})}
 			{...rest}
 		/>
 	);
 }
 
-export type TableCellProps = ComponentProps<"td">;
+export type TableCellProps = ComponentProps<"td"> & {
+	isSelectCell?: boolean;
+	isActionCell?: boolean;
+	isStickyCell?: boolean;
+};
 
 export function TableCell(props: TableCellProps) {
-	const { className, ...rest } = props;
+	const { className, isSelectCell, isActionCell, isStickyCell, ...rest } =
+		props;
 	const { styles } = useTableContext();
 
 	return (
@@ -179,6 +178,9 @@ export function TableCell(props: TableCellProps) {
 			data-slot="table-cell"
 			className={styles.td({
 				className,
+				isSelectCell,
+				isActionCell,
+				isStickyCell,
 			})}
 			{...rest}
 		/>

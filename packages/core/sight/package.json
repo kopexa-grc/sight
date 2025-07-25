@@ -60,7 +60,10 @@
     "@kopexa/card": "workspace:*",
     "@kopexa/avatar": "workspace:*",
     "@kopexa/table": "workspace:*",
-    "@kopexa/code": "workspace:*"
+    "@kopexa/code": "workspace:*",
+    "@kopexa/data-table": "workspace:*",
+    "@kopexa/checkbox": "workspace:*",
+    "@kopexa/skeleton": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
