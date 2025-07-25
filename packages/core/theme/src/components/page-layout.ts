@@ -92,8 +92,8 @@ export const pageLayout = tv({
 		},
 		inModal: {
 			true: {
-				wrapper: "overflow-auto flex-1 min-h-0",
-				baseContent: "min-h-0 ",
+				wrapper: "overflow-auto flex-1 min-h-0 flex-col",
+				baseContent: "min-h-0",
 				header: "shrink grow-0",
 				contentWrapper: "grow shrink-0",
 			},

@@ -73,11 +73,11 @@ export const Default = () => {
 					<PageLayout.Pane>
 						<div className="space-y-4">
 							<p>This is the pane content.</p>
+							{/* <div className="border-2 border-dashed h-[300px]" />
 							<div className="border-2 border-dashed h-[300px]" />
 							<div className="border-2 border-dashed h-[300px]" />
 							<div className="border-2 border-dashed h-[300px]" />
-							<div className="border-2 border-dashed h-[300px]" />
-							<div className="border-2 border-dashed h-[300px]" />
+							<div className="border-2 border-dashed h-[300px]" /> */}
 						</div>
 					</PageLayout.Pane>
 					<PageLayout.Footer>
