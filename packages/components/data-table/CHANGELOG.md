@@ -1,5 +1,19 @@
 # @kopexa/data-table
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`2091ae6`](https://github.com/kopexa-grc/sight/commit/2091ae683088411ecc4aec83afd48a186856d8bd)]:
+  - @kopexa/theme@1.5.7
+  - @kopexa/button@6.0.7
+  - @kopexa/checkbox@0.0.4
+  - @kopexa/dropdown-menu@1.0.8
+  - @kopexa/input@1.0.9
+  - @kopexa/skeleton@0.0.4
+  - @kopexa/table@0.0.4
+  - @kopexa/icons@8.0.8
+
 ## 0.0.3
 
 ### Patch Changes

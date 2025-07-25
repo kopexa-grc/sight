@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.5.7
+
+### Patch Changes
+
+- [`2091ae6`](https://github.com/kopexa-grc/sight/commit/2091ae683088411ecc4aec83afd48a186856d8bd) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: enhance PageLayout and Drawer components with inModal support and improved styles
+
 ## 1.5.6
 
 ### Patch Changes
