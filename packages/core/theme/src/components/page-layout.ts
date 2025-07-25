@@ -75,6 +75,7 @@ export const pageLayout = tv({
 		spacing: {
 			none: "",
 			condensed: {
+				root: "p-2",
 				header: "p-4",
 				content: "p-4",
 				pane: "p-4",
@@ -82,7 +83,7 @@ export const pageLayout = tv({
 			},
 			// 1.5rem
 			normal: {
-				root: "p-4 md:p-6",
+				root: "p-2",
 				header: "p-4 md:p-6",
 				content: "p-4 md:p-6",
 				pane: "p-4 md:p-6",
