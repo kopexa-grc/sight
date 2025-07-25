@@ -1,0 +1,76 @@
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import * as HeadingStories from "./heading.stories";
+
+<Meta of={HeadingStories} />
+
+# Heading Tokens
+
+Die folgenden Design Tokens definieren die typografischen Größen, Abstände und Gewichtungen für Überschriften in der Kopexa Application UI.  
+Sie sind für eine moderne, kompakte Enterprise-Oberfläche optimiert – ideal in Kombination mit **Inter** oder **Roboto**.
+
+## 📐 Design Tokens
+
+```css
+--text-h1-core: 1.5rem;
+--text-h1-core--line-height: 2rem;
+--text-h1-core--font-weight: 600;
+--text-h1-core--letter-spacing: -0.01em;
+
+--text-h2-core: 1.25rem;
+--text-h2-core--line-height: 1.75rem;
+--text-h2-core--font-weight: 600;
+--text-h2-core--letter-spacing: -0.01em;
+
+--text-h3-core: 1.125rem;
+--text-h3-core--line-height: 1.625rem;
+--text-h3-core--font-weight: 500;
+--text-h3-core--letter-spacing: -0.005em;
+
+--text-h4-core: 1rem;
+--text-h4-core--line-height: 1.5rem;
+--text-h4-core--font-weight: 500;
+--text-h4-core--letter-spacing: 0em;
+
+--text-h5-core: 0.875rem;
+--text-h5-core--line-height: 1.25rem;
+--text-h5-core--font-weight: 500;
+--text-h5-core--letter-spacing: 0.005em;
+
+--text-h6-core: 0.75rem;
+--text-h6-core--line-height: 1rem;
+--text-h6-core--font-weight: 500;
+--text-h6-core--letter-spacing: 0.01em;
+```
+
+## 🧠 Kontextbasierte Verwendung
+
+**Page Layouts**
+- Verwende h1 ausschließlich im Haupt-Page-Bereich.
+- h2 für wichtige Abschnitte innerhalb der Seite.
+- h3 für Unterabschnitte oder Module.
+
+**Dialogs & Drawers**
+- In regulären Dialogen: h4 als Titel (z.B. “Neues Asset erstellen”).
+- In Side Panels oder Drawern: h3, wenn sie als “Seite im Seite”-Modul fungieren.
+- In großen Preview-Drawern (z.B. Entity-Ansicht): h2 nur, wenn der Drawer als vollwertige Ansicht dient, sonst h3.
+
+**Tables, Cards & Forms**
+- Tabellenüberschriften: h4 oder h5
+- Karten-Header: h5
+- Formularabschnitte: h4
+
+## ✅ Do’s
+- Verwende h1 nur einmal pro Seite – typischerweise im Page Title.
+- Nutze h2 und h3, um Inhalte visuell zu strukturieren.
+- Achte auf ausreichenden Kontrast und Lesbarkeit.
+- Kombiniere die Tokens mit konsistentem Spacing (margin-top, margin-bottom).
+
+## 🚫 Don’ts
+- Nutze keine h1 oder h2 in Dialogs oder Drawern – dort sind h3 oder h4 korrekt.
+- Vermeide Caps Lock für Überschriften – nutze stattdessen text-transform.
+- Verwende keine Inline Styles zur Textgröße – immer die Tokens nutzen.
+
+## 🧪 Vorschau
+
+<Canvas of={HeadingStories.AllLevels} height="100%" />
+```

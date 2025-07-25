@@ -3,7 +3,7 @@ import { pageLayout } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
 export default {
-	title: "Components/PageLayout",
+	title: "Components/Layout And Structure/PageLayout",
 	component: PageLayout.Root,
 	argTypes: {
 		gap: {

@@ -84,7 +84,7 @@ export const input = tv({
 		},
 	},
 	defaultVariants: {
-		size: "md",
+		size: "sm",
 	},
 });
 
