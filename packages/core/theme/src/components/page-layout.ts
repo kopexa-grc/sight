@@ -5,7 +5,7 @@ export const pageLayout = tv({
 		root: "",
 		wrapper: "flex mx-auto flex-wrap",
 		baseContent: "flex flex-1 flex-wrap max-w-full",
-		header: "w-full",
+		header: "w-full grow-0 shrink-0",
 		footerWrapper: "w-full",
 		footerContent: "",
 		paneWrapper: [
@@ -22,7 +22,7 @@ export const pageLayout = tv({
 		],
 		pane: "w-[var(--pane-width-size)] md:overflow-auto",
 		contentWrapper: "flex min-w-px flex-col basis-0 grow shrink",
-		content: "w-full mx-auto grow",
+		content: "w-full mx-auto grow h-full",
 	},
 	variants: {
 		gap: {
@@ -99,3 +99,4 @@ export const pageLayout = tv({
 });
 
 export type PageLayoutVariantProps = VariantProps<typeof pageLayout>;
+export type PageLayoutSlots = keyof ReturnType<typeof pageLayout>;

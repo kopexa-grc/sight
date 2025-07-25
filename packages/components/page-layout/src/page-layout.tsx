@@ -1,10 +1,16 @@
 import { createContext } from "@kopexa/react-utils";
-import { dataAttr } from "@kopexa/shared-utils";
-import { type PageLayoutVariantProps, pageLayout } from "@kopexa/theme";
+import { cn, dataAttr } from "@kopexa/shared-utils";
+import {
+	type PageLayoutSlots,
+	type PageLayoutVariantProps,
+	pageLayout,
+	type SlotsToClasses,
+} from "@kopexa/theme";
 import { Children, type ComponentProps, isValidElement, useMemo } from "react";
 
 type PageLayoutContextValue = {
 	styles: ReturnType<typeof pageLayout>;
+	classNames?: SlotsToClasses<PageLayoutSlots>;
 };
 
 const [Provider, usePageLayoutContext] = createContext<PageLayoutContextValue>(
@@ -12,11 +18,21 @@ const [Provider, usePageLayoutContext] = createContext<PageLayoutContextValue>(
 );
 
 export type PageLayoutRootProps = ComponentProps<"div"> &
-	PageLayoutVariantProps;
+	PageLayoutVariantProps & {
+		classNames?: SlotsToClasses<PageLayoutSlots>;
+	};
 
 export const PageLayoutRoot = (props: PageLayoutRootProps) => {
-	const { children, width, spacing, paneWidth, gap, className, ...rest } =
-		props;
+	const {
+		children,
+		width,
+		spacing,
+		paneWidth,
+		gap,
+		className,
+		classNames,
+		...rest
+	} = props;
 
 	const styles = useMemo(
 		() => pageLayout({ width, spacing, paneWidth, gap }),
@@ -44,10 +60,23 @@ export const PageLayoutRoot = (props: PageLayoutRootProps) => {
 	});
 
 	return (
-		<Provider value={{ styles }}>
-			<div className={styles.wrapper({ className, spacing, gap })} {...rest}>
+		<Provider value={{ styles, classNames }}>
+			<div
+				className={styles.wrapper({
+					className: cn(className, classNames?.wrapper),
+					spacing,
+					gap,
+				})}
+				{...rest}
+			>
 				{header}
-				<div className={styles.baseContent()}>{content}</div>
+				<div
+					className={styles.baseContent({
+						className: classNames?.baseContent,
+					})}
+				>
+					{content}
+				</div>
 				{footer}
 			</div>
 		</Provider>
@@ -62,10 +91,17 @@ export type PageLayoutHeaderProps = ComponentProps<"header"> & {
 export const PageLayoutHeader = (props: PageLayoutHeaderProps) => {
 	const { className, spacing, gap, ...rest } = props;
 
-	const { styles } = usePageLayoutContext();
+	const { styles, classNames } = usePageLayoutContext();
 
 	return (
-		<header className={styles.header({ className, spacing, gap })} {...rest} />
+		<header
+			className={styles.header({
+				className: cn(className, classNames?.header),
+				spacing,
+				gap,
+			})}
+			{...rest}
+		/>
 	);
 };
 
@@ -75,11 +111,22 @@ export type PageLayoutFooterProps = ComponentProps<"footer">;
 
 export const PageLayoutFooter = (props: PageLayoutFooterProps) => {
 	const { className, children, ...rest } = props;
-	const { styles } = usePageLayoutContext();
+	const { styles, classNames } = usePageLayoutContext();
 
 	return (
-		<footer className={styles.footerWrapper({ className })} {...rest}>
-			<div className={styles.footerContent()}>{children}</div>
+		<footer
+			className={styles.footerWrapper({
+				className: cn(className, classNames?.footerWrapper),
+			})}
+			{...rest}
+		>
+			<div
+				className={styles.footerContent({
+					className: classNames?.footerContent,
+				})}
+			>
+				{children}
+			</div>
 		</footer>
 	);
 };
@@ -114,16 +161,24 @@ export function PageLayoutPane(props: PageLayoutPaneProps) {
 		gap,
 		...rest
 	} = props;
-	const { styles } = usePageLayoutContext();
+	const { styles, classNames } = usePageLayoutContext();
 
 	return (
 		<div
-			className={styles.paneWrapper({ className, spacing, gap })}
+			className={styles.paneWrapper({
+				className: cn(className, classNames?.paneWrapper),
+				spacing,
+				gap,
+			})}
 			data-position={position}
 			data-sticky={dataAttr(sticky)}
 			{...rest}
 		>
-			<div className={styles.pane({ spacing, gap })}>{children}</div>
+			<div
+				className={styles.pane({ spacing, gap, className: classNames?.pane })}
+			>
+				{children}
+			</div>
 		</div>
 	);
 }
@@ -135,14 +190,26 @@ export type PageLayoutContentProps = ComponentProps<"div"> & {
 
 export function PageLayoutContent(props: PageLayoutContentProps) {
 	const { className, children, spacing, gap, ...rest } = props;
-	const { styles } = usePageLayoutContext();
+	const { styles, classNames } = usePageLayoutContext();
 
 	return (
 		<div
-			className={styles.contentWrapper({ className, spacing, gap })}
+			className={styles.contentWrapper({
+				className: cn(className, classNames?.contentWrapper),
+				spacing,
+				gap,
+			})}
 			{...rest}
 		>
-			<div className={styles.content({ spacing, gap })}>{children}</div>
+			<div
+				className={styles.content({
+					spacing,
+					gap,
+					className: classNames?.content,
+				})}
+			>
+				{children}
+			</div>
 		</div>
 	);
 }

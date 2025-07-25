@@ -23,7 +23,11 @@ export { type DropdownMenuVariantProps, dropdownMenu } from "./dropdown-menu";
 export { type HeadingVariantProps, heading } from "./heading";
 export { type InputVariantProps, input, passwordInput } from "./input";
 export { type PageHeaderVariantProps, pageHeader } from "./page-header";
-export { type PageLayoutVariantProps, pageLayout } from "./page-layout";
+export {
+	type PageLayoutSlots,
+	type PageLayoutVariantProps,
+	pageLayout,
+} from "./page-layout";
 export { type PopoverVariants, popover } from "./popover";
 export { skeleton } from "./skeleton";
 export { type SpinnerVariants, spinner } from "./spinner";
