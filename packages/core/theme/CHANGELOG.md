@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.5.8
+
+### Patch Changes
+
+- [`518781f`](https://github.com/kopexa-grc/sight/commit/518781feda1e60b68b78602b71cfe5233d3cc9ae) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fix: update PageLayout styles for inModal support and clean up storybook example
+
 ## 1.5.7
 
 ### Patch Changes

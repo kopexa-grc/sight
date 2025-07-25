@@ -1,5 +1,13 @@
 # @kopexa/page-header
 
+## 0.0.5
+
+### Patch Changes
+
+- Updated dependencies [[`518781f`](https://github.com/kopexa-grc/sight/commit/518781feda1e60b68b78602b71cfe5233d3cc9ae)]:
+  - @kopexa/theme@1.5.8
+  - @kopexa/heading@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
