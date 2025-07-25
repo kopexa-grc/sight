@@ -15,7 +15,8 @@ export type PageLayoutRootProps = ComponentProps<"div"> &
 	PageLayoutVariantProps;
 
 export const PageLayoutRoot = (props: PageLayoutRootProps) => {
-	const { children, width, spacing, paneWidth, gap, ...rest } = props;
+	const { children, width, spacing, paneWidth, gap, className, ...rest } =
+		props;
 
 	const styles = useMemo(
 		() => pageLayout({ width, spacing, paneWidth, gap }),
@@ -44,12 +45,10 @@ export const PageLayoutRoot = (props: PageLayoutRootProps) => {
 
 	return (
 		<Provider value={{ styles }}>
-			<div {...rest}>
-				<div className={styles.wrapper()}>
-					{header}
-					<div className={styles.baseContent()}>{content}</div>
-					{footer}
-				</div>
+			<div className={styles.wrapper({ className })} {...rest}>
+				{header}
+				<div className={styles.baseContent()}>{content}</div>
+				{footer}
 			</div>
 		</Provider>
 	);
