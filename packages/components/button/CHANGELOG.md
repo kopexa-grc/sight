@@ -1,5 +1,15 @@
 # @kopexa/button
 
+## 6.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`518781f`](https://github.com/kopexa-grc/sight/commit/518781feda1e60b68b78602b71cfe5233d3cc9ae)]:
+  - @kopexa/theme@1.5.8
+  - @kopexa/ripple@8.0.8
+  - @kopexa/spinner@4.0.8
+  - @kopexa/tooltip@4.0.8
+
 ## 6.0.7
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @kopexa/drawer
 
+## 8.0.9
+
+### Patch Changes
+
+- Updated dependencies [[`518781f`](https://github.com/kopexa-grc/sight/commit/518781feda1e60b68b78602b71cfe5233d3cc9ae)]:
+  - @kopexa/theme@1.5.8
+  - @kopexa/icons@8.0.9
+  - @kopexa/motion-utils@8.0.8
+
 ## 8.0.8
 
 ### Patch Changes
