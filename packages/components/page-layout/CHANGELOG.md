@@ -1,5 +1,13 @@
 # @kopexa/page-layout
 
+## 3.0.7
+
+### Patch Changes
+
+- [`60268e3`](https://github.com/kopexa-grc/sight/commit/60268e31d6b84603b5d32a96954cb2bfc0f66f29) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed again spacing
+
+- [`150942a`](https://github.com/kopexa-grc/sight/commit/150942ac9545997a95d72067dca4fcddd1b5cc6f) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed page layout empty div
+
 ## 3.0.6
 
 ### Patch Changes

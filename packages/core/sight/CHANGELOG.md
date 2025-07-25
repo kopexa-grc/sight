@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 6.0.9
+
+### Patch Changes
+
+- Updated dependencies [[`60268e3`](https://github.com/kopexa-grc/sight/commit/60268e31d6b84603b5d32a96954cb2bfc0f66f29), [`150942a`](https://github.com/kopexa-grc/sight/commit/150942ac9545997a95d72067dca4fcddd1b5cc6f)]:
+  - @kopexa/page-layout@3.0.7
+
 ## 6.0.8
 
 ### Patch Changes
