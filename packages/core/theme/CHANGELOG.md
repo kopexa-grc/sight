@@ -1,5 +1,15 @@
 # @kopexa/theme
 
+## 1.5.5
+
+### Patch Changes
+
+- [`eed1756`](https://github.com/kopexa-grc/sight/commit/eed175606989b60dd404879d25fc0ccb3e47c264) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed the height of the root container of the page layout
+
+- [`5b4c8da`](https://github.com/kopexa-grc/sight/commit/5b4c8daa292d433c6549b07aeeb9fde21d40aa3e) Thanks [@juliankoehn](https://github.com/juliankoehn)! - set a default spacing for pagelayout root
+
+- [`ae9a4bb`](https://github.com/kopexa-grc/sight/commit/ae9a4bbf8c5a747f6f7f76f39687b03d430d8bc8) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fix the spacing of the root to match sidebar inset
+
 ## 1.5.4
 
 ### Patch Changes

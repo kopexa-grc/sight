@@ -1,5 +1,34 @@
 # @kopexa/sight
 
+## 6.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`232226c`](https://github.com/kopexa-grc/sight/commit/232226c45d4e1b6ebfd52f4c95568ad9ad1b2c2e), [`eed1756`](https://github.com/kopexa-grc/sight/commit/eed175606989b60dd404879d25fc0ccb3e47c264), [`5b4c8da`](https://github.com/kopexa-grc/sight/commit/5b4c8daa292d433c6549b07aeeb9fde21d40aa3e), [`ae9a4bb`](https://github.com/kopexa-grc/sight/commit/ae9a4bbf8c5a747f6f7f76f39687b03d430d8bc8)]:
+  - @kopexa/button@6.0.5
+  - @kopexa/theme@1.5.5
+  - @kopexa/calendar@1.0.6
+  - @kopexa/data-table@0.0.2
+  - @kopexa/alert-dialog@1.0.5
+  - @kopexa/avatar@1.0.4
+  - @kopexa/card@0.1.4
+  - @kopexa/checkbox@0.0.2
+  - @kopexa/chip@1.0.6
+  - @kopexa/code@0.0.2
+  - @kopexa/command@5.0.6
+  - @kopexa/dialog@8.0.6
+  - @kopexa/drawer@8.0.6
+  - @kopexa/dropdown-menu@1.0.6
+  - @kopexa/heading@0.0.2
+  - @kopexa/input@1.0.7
+  - @kopexa/page-header@0.0.2
+  - @kopexa/page-layout@3.0.6
+  - @kopexa/popover@8.0.5
+  - @kopexa/skeleton@0.0.2
+  - @kopexa/spinner@4.0.5
+  - @kopexa/table@0.0.2
+  - @kopexa/tooltip@4.0.5
+
 ## 6.0.7
 
 ### Patch Changes
