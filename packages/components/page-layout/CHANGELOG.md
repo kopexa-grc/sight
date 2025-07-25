@@ -1,5 +1,11 @@
 # @kopexa/page-layout
 
+## 3.0.5
+
+### Patch Changes
+
+- [`cc6c1fa`](https://github.com/kopexa-grc/sight/commit/cc6c1faedf340e8e6fd3da73dfa247c447f7f4c1) Thanks [@juliankoehn](https://github.com/juliankoehn)! - allow to set spacing for individuals within page layout
+
 ## 3.0.4
 
 ### Patch Changes

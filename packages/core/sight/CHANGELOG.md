@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 6.0.7
+
+### Patch Changes
+
+- Updated dependencies [[`cc6c1fa`](https://github.com/kopexa-grc/sight/commit/cc6c1faedf340e8e6fd3da73dfa247c447f7f4c1)]:
+  - @kopexa/page-layout@3.0.5
+
 ## 6.0.6
 
 ### Patch Changes
