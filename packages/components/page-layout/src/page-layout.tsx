@@ -123,7 +123,7 @@ export function PageLayoutPane(props: PageLayoutPaneProps) {
 			data-sticky={dataAttr(sticky)}
 			{...rest}
 		>
-			<div className={styles.pane()}>{children}</div>
+			<div className={styles.pane({ spacing, gap })}>{children}</div>
 		</div>
 	);
 }
@@ -142,7 +142,7 @@ export function PageLayoutContent(props: PageLayoutContentProps) {
 			className={styles.contentWrapper({ className, spacing, gap })}
 			{...rest}
 		>
-			<div className={styles.content()}>{children}</div>
+			<div className={styles.content({ spacing, gap })}>{children}</div>
 		</div>
 	);
 }
