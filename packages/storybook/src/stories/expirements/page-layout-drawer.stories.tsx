@@ -3,6 +3,7 @@ import { CheckIcon } from "@kopexa/icons";
 import {
 	Button,
 	Chip,
+	Dialog,
 	Drawer,
 	DropdownMenu,
 	PageHeader,
@@ -41,7 +42,22 @@ export const Default = () => {
 								</PageHeader.Title>
 							</PageHeader.TitleArea>
 							<PageHeader.Actions>
-								<Button size="sm">Open Dialog</Button>
+								<Dialog.Root>
+									<Dialog.Trigger asChild>
+										<Button size="sm">Open Dialog</Button>
+									</Dialog.Trigger>
+									<Dialog.Content>
+										<Dialog.Header>
+											<Dialog.Title>Dialog Title</Dialog.Title>
+											<Dialog.Description>
+												This is a dialog description.
+											</Dialog.Description>
+										</Dialog.Header>
+										<Dialog.Footer>
+											<Dialog.Close>Close</Dialog.Close>
+										</Dialog.Footer>
+									</Dialog.Content>
+								</Dialog.Root>
 								<DropdownMenu.Root>
 									<DropdownMenu.Trigger asChild>
 										<Button variant="ghost" size="sm">
