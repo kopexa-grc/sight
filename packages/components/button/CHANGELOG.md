@@ -1,5 +1,17 @@
 # @kopexa/button
 
+## 6.0.5
+
+### Patch Changes
+
+- [`232226c`](https://github.com/kopexa-grc/sight/commit/232226c45d4e1b6ebfd52f4c95568ad9ad1b2c2e) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fix the spinner to replace the content
+
+- Updated dependencies [[`eed1756`](https://github.com/kopexa-grc/sight/commit/eed175606989b60dd404879d25fc0ccb3e47c264), [`5b4c8da`](https://github.com/kopexa-grc/sight/commit/5b4c8daa292d433c6549b07aeeb9fde21d40aa3e), [`ae9a4bb`](https://github.com/kopexa-grc/sight/commit/ae9a4bbf8c5a747f6f7f76f39687b03d430d8bc8)]:
+  - @kopexa/theme@1.5.5
+  - @kopexa/ripple@8.0.5
+  - @kopexa/spinner@4.0.5
+  - @kopexa/tooltip@4.0.5
+
 ## 6.0.4
 
 ### Patch Changes
