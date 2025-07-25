@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/card",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A card to be used as container",
   "keywords": [
     "card"

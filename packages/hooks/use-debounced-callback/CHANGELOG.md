@@ -1,5 +1,14 @@
 # @kopexa/use-debounced-callback
 
+## 1.0.3
+
+### Patch Changes
+
+- [`7772e3f`](https://github.com/kopexa-grc/sight/commit/7772e3fcb6bc001cf2eb7670598fc123de08a2b0) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed motion variants, bump deps
+
+- Updated dependencies [[`7772e3f`](https://github.com/kopexa-grc/sight/commit/7772e3fcb6bc001cf2eb7670598fc123de08a2b0)]:
+  - @kopexa/use-unmount@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
