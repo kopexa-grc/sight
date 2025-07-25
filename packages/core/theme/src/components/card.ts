@@ -50,6 +50,9 @@ export const card = tv({
 			none: {
 				root: "shadow-none",
 			},
+			"2xs": {
+				root: "shadow-2xs",
+			},
 			sm: {
 				root: "shadow-sm",
 			},
@@ -58,6 +61,11 @@ export const card = tv({
 			},
 			lg: {
 				root: "shadow-lg",
+			},
+		},
+		border: {
+			true: {
+				root: "border",
 			},
 		},
 		radius: {
@@ -108,12 +116,13 @@ export const card = tv({
 	},
 	defaultVariants: {
 		radius: "lg",
-		shadow: "md",
+		shadow: "sm",
 		fullWidth: false,
 		isHoverable: false,
 		isPressable: false,
 		isBlurred: false,
 		isDisabled: false,
+		border: true,
 	},
 });
 
