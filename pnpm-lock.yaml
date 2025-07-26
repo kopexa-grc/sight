@@ -685,6 +685,108 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/risk-indicator:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
+  packages/components/separator:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@radix-ui/react-separator':
+        specifier: ^1.1.7
+        version: 1.1.7(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
+  packages/components/sidebar:
+    dependencies:
+      '@kopexa/button':
+        specifier: workspace:*
+        version: link:../button
+      '@kopexa/drawer':
+        specifier: workspace:*
+        version: link:../drawer
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/input':
+        specifier: workspace:*
+        version: link:../input
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/separator':
+        specifier: workspace:*
+        version: link:../separator
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@kopexa/tooltip':
+        specifier: workspace:*
+        version: link:../tooltip
+      '@kopexa/use-is-mobile':
+        specifier: workspace:*
+        version: link:../../hooks/use-is-mobile
+      '@radix-ui/react-slot':
+        specifier: ^1.2.3
+        version: 1.2.3(@types/react@19.1.8)(react@19.1.0)
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/skeleton:
     dependencies:
       '@kopexa/react-utils':
@@ -794,6 +896,34 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/tabs:
+    dependencies:
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@radix-ui/react-tabs':
+        specifier: ^1.1.12
+        version: 1.1.12(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/tooltip:
     dependencies:
       '@kopexa/react-utils':
@@ -884,9 +1014,18 @@ importers:
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
+      '@kopexa/risk-indicator':
+        specifier: workspace:*
+        version: link:../../components/risk-indicator
+      '@kopexa/separator':
+        specifier: workspace:*
+        version: link:../../components/separator
       '@kopexa/shared-utils':
         specifier: workspace:*
         version: link:../../utilities/shared-utils
+      '@kopexa/sidebar':
+        specifier: workspace:*
+        version: link:../../components/sidebar
       '@kopexa/skeleton':
         specifier: workspace:*
         version: link:../../components/skeleton
@@ -899,6 +1038,9 @@ importers:
       '@kopexa/table':
         specifier: workspace:*
         version: link:../../components/table
+      '@kopexa/tabs':
+        specifier: workspace:*
+        version: link:../../components/tabs
       '@kopexa/tooltip':
         specifier: workspace:*
         version: link:../../components/tooltip
@@ -1021,6 +1163,15 @@ importers:
       '@kopexa/use-event-listener':
         specifier: workspace:*
         version: link:../use-event-listener
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
+  packages/hooks/use-is-mobile:
     devDependencies:
       clean-package:
         specifier: 2.2.0
@@ -3594,6 +3745,26 @@ packages:
       react-dom: 19.1.0(react@19.1.0)
     dev: false
 
+  /@radix-ui/react-separator@1.1.7(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0):
+    resolution: {integrity: sha512-0HEb8R9E8A+jZjvmFCy/J4xhbXy3TV+9XSnGJ3KvTtjlIUy/YQ/p6UYZvi7YbeoeXdyU9+Y3scizK6hkY37baA==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    dev: false
+
   /@radix-ui/react-slot@1.2.3(@types/react@19.1.8)(react@19.1.0):
     resolution: {integrity: sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==}
     peerDependencies:
@@ -3606,6 +3777,33 @@ packages:
       '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.8)(react@19.1.0)
       '@types/react': 19.1.8
       react: 19.1.0
+    dev: false
+
+  /@radix-ui/react-tabs@1.1.12(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0):
+    resolution: {integrity: sha512-GTVAlRVrQrSw3cEARM0nAx73ixrWDPNZAruETn3oHCNP6SbZ/hNxdxp+u7VkIEv3/sFoLq1PfcHrl7Pnp0CDpw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@radix-ui/primitive': 1.1.2
+      '@radix-ui/react-context': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-presence': 1.1.4(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      '@radix-ui/react-roving-focus': 1.1.10(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.1.8)(react@19.1.0)
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
     dev: false
 
   /@radix-ui/react-tooltip@1.2.7(@types/react-dom@19.1.6)(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0):

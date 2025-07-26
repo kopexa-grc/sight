@@ -66,7 +66,11 @@
     "@kopexa/skeleton": "workspace:*",
     "@kopexa/page-header": "workspace:*",
     "@kopexa/heading": "workspace:*",
-    "@kopexa/tab-nav": "workspace:*"
+    "@kopexa/tab-nav": "workspace:*",
+    "@kopexa/sidebar": "workspace:*",
+    "@kopexa/separator": "workspace:*",
+    "@kopexa/risk-indicator": "workspace:*",
+    "@kopexa/tabs": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

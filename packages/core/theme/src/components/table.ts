@@ -2,19 +2,23 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const table = tv({
 	slots: {
+		container: ["overflow-x-auto whitespace-nowrap", "-mx-3 md:-mx-6"],
+		wrapper: ["inline-block min-w-full align-middle"],
 		table: "min-w-full h-auto",
 		thead: "",
 		tbody: "after:block divide-y",
 		tr: [
 			"group/tr outline-hidden",
-			"[&_td:last-child]:pr-4 [&_th:last-child]:pr-4",
-			"[&_td:first-child]:pl-4 [&_th:first-child]:pl-4",
+			"[&_th:last-child]:pr-4",
+			"[&_th:first-child]:pl-4",
 		],
 		th: [
 			"group/th px-3 py-3.5 text-start text-xs font-semibold whitespace-normal",
 			"text-foreground border-b",
 		],
 		td: [
+			"first:pl-3 last:pr-3",
+			"md:first:pl-6 md:last:pr-6",
 			"py-2 px-3 text-xs font-normal whitespace-normal relative",
 			"[&>*]:z-[1]",
 			"[&>*]:relative",
@@ -39,10 +43,36 @@ export const table = tv({
 		],
 	},
 	variants: {
+		bleed: {
+			true: {},
+			false: {
+				container: ["px-3 md:px-6"],
+				th: ["first:pl-1 last:pr-1"],
+				td: ["first:pl-1 last:pr-1"],
+			},
+		},
 		overscroll: {
 			horizontal: {
 				th: "whitespace-nowrap",
 				td: "whitespace-nowrap",
+			},
+		},
+		variant: {
+			default: {},
+			// a border between cells and above the table
+			// this is used for the grid variant
+			grid: {
+				table: "border-separate border-spacing-0",
+				th: [
+					"border-l first:border-l-0 border-b",
+					"first:pl-3 md:first:pl-6 last:pr-3 md:last:pr-6",
+				],
+				td: [
+					"border-l first:border-l-0",
+					"border-b",
+					// first cell has no border
+					"[&_td:first-child]:border-l-0 [&_th:first-child]:border-l-0",
+				],
 			},
 		},
 		color: {
@@ -109,8 +139,10 @@ export const table = tv({
 		},
 	},
 	defaultVariants: {
+		variant: "default",
 		layout: "auto",
 		color: "default",
+		bleed: false,
 		fullWidth: true,
 	},
 });

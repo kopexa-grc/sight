@@ -55,7 +55,9 @@ export const drawer = tv({
 		placement: {
 			top: {},
 			bottom: {},
-			left: {},
+			left: {
+				content: "inset-y-2 ms-2 left-0 border-r h-[calc(100dvh_-_1rem)]",
+			},
 			right: {
 				content: "inset-y-2 me-2 right-0 h-[calc(100%-1rem)] border-l",
 			},

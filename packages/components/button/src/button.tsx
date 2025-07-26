@@ -58,7 +58,7 @@ export const Button = (props: ButtonProps) => {
 		ref,
 		isLoading,
 		variant,
-		size = "md",
+		size = "sm",
 		className,
 		color,
 		radius,

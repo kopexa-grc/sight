@@ -3,7 +3,7 @@ import { tv, type VariantProps } from "tailwind-variants";
 export const pageLayout = tv({
 	slots: {
 		root: "",
-		wrapper: "flex mx-auto flex-wrap w-full",
+		wrapper: "flex flex-wrap w-full",
 		baseContent: "flex flex-1 flex-wrap max-w-full",
 		header: "w-full grow-0 shrink-0",
 		footerWrapper: "w-full",
@@ -23,6 +23,7 @@ export const pageLayout = tv({
 		pane: "w-[var(--pane-width-size)] md:overflow-auto",
 		contentWrapper: "flex min-w-px flex-col basis-0 grow shrink",
 		content: "w-full mx-auto grow h-full",
+		bleed: [],
 	},
 	variants: {
 		gap: {
@@ -50,14 +51,14 @@ export const pageLayout = tv({
 				content: "max-w-full",
 			},
 			md: {
-				wrapper: "max-w-3xl",
+				wrapper: "max-w-3xl mx-auto",
 				content: "max-w-3xl",
 			},
 			lg: {
-				wrapper: "max-w-5xl",
+				wrapper: "max-w-5xl mx-auto",
 			},
 			xl: {
-				wrapper: "max-w-8xl",
+				wrapper: "max-w-8xl mx-auto",
 				content: "max-w-8xl",
 			},
 		},
@@ -80,6 +81,7 @@ export const pageLayout = tv({
 				content: "p-4",
 				pane: "p-4",
 				footerContent: "p-4",
+				bleed: ["-mx-4 p-4"],
 			},
 			// 1.5rem
 			normal: {
@@ -88,6 +90,7 @@ export const pageLayout = tv({
 				content: "p-2 md:p-3",
 				pane: "p-2 md:p-3",
 				footerContent: "p-2 md:p-3",
+				bleed: ["-mx-2 md:-mx-3 p-2 md:p-3"],
 			},
 		},
 		inModal: {

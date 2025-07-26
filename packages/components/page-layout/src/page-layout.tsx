@@ -219,3 +219,14 @@ function getDisplayName(el: React.ReactElement): string | undefined {
 	// biome-ignore lint/suspicious/noExplicitAny: catching errors
 	return (el.type as any)?.displayName ?? (el.type as any)?.name;
 }
+
+export type PageLayoutBleedProps = ComponentProps<"div">;
+
+export function PageLayoutBleed({ className, ...rest }: PageLayoutBleedProps) {
+	return (
+		<div
+			className={cn(className, "relative -mx-4 md:-mx-6 px-4 md:px-6")}
+			{...rest}
+		/>
+	);
+}

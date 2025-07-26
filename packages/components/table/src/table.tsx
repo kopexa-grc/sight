@@ -1,5 +1,5 @@
 import { createContext, mergeRefs } from "@kopexa/react-utils";
-import { callAllHandlers, dataAttr } from "@kopexa/shared-utils";
+import { callAllHandlers, cn, dataAttr } from "@kopexa/shared-utils";
 import {
 	type SlotsToClasses,
 	type TableSlots,
@@ -45,22 +45,35 @@ export const TableRoot = (props: TableRootProps) => {
 		layout,
 		fullWidth,
 		overscroll,
+		variant,
+		bleed,
+		classNames,
 		...rest
 	} = props;
 
 	const styles = table({
-		className,
 		isSelectable,
 		layout,
 		fullWidth,
+		variant,
 		overscroll,
+		bleed,
 	});
 
 	return (
 		<Provider value={{ styles, onRowClick }}>
-			<table className={styles.table()} {...rest}>
-				{children}
-			</table>
+			<div className={styles.container({ className: classNames?.container })}>
+				<div className={styles.wrapper({ className: classNames?.wrapper })}>
+					<table
+						className={styles.table({
+							className: cn(className, classNames?.table),
+						})}
+						{...rest}
+					>
+						{children}
+					</table>
+				</div>
+			</div>
 		</Provider>
 	);
 };

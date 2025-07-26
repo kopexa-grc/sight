@@ -29,8 +29,22 @@ export {
 	pageLayout,
 } from "./page-layout";
 export { type PopoverVariants, popover } from "./popover";
+export {
+	type RiskIndicatorVariantProps,
+	riskIndicator,
+} from "./risk-indicator";
+export { type SeparatorVariantProps, separator } from "./separator";
+export {
+	type SidebarMenuActionVariantProps,
+	type SidebarMenuButtonVariantProps,
+	type SidebarVariantProps,
+	sidebar,
+	sidebarMenuAction,
+	sidebarMenuButton,
+} from "./sidebar";
 export { skeleton } from "./skeleton";
 export { type SpinnerVariants, spinner } from "./spinner";
 export { type TabNavSlots, type TabNavVariantProps, tabNav } from "./tab-nav";
 export { type TableSlots, type TableVariantProps, table } from "./table";
+export { type TabsVariantProps, tabs } from "./tabs";
 export { type TooltipVariants, tooltip } from "./tooltip";

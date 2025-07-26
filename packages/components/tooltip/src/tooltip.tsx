@@ -11,6 +11,7 @@ export type TooltipProps = ComponentProps<typeof TooltipPrimitive.Root> & {
 	alignOffset?: number;
 	arrowPadding?: number;
 	disabled?: boolean;
+	hidden?: boolean;
 };
 
 export function Tooltip(props: TooltipProps) {
@@ -24,6 +25,7 @@ export function Tooltip(props: TooltipProps) {
 		alignOffset,
 		arrowPadding,
 		disabled,
+		hidden,
 		...rest
 	} = props;
 
@@ -51,11 +53,25 @@ export function Tooltip(props: TooltipProps) {
 					align={align}
 					alignOffset={alignOffset}
 					arrowPadding={arrowPadding}
+					hidden={hidden || disabled}
 				>
 					{props.content}
 					<TooltipPrimitive.Arrow />
 				</TooltipPrimitive.Content>
 			</TooltipPrimitive.Root>
 		</TooltipPrimitive.Provider>
+	);
+}
+
+export function TooltipProvider({
+	delayDuration = 0,
+	...props
+}: React.ComponentProps<typeof TooltipPrimitive.Provider>) {
+	return (
+		<TooltipPrimitive.Provider
+			data-slot="tooltip-provider"
+			delayDuration={delayDuration}
+			{...props}
+		/>
 	);
 }
