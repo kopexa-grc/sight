@@ -1,5 +1,5 @@
 const solid = {
-	default: "bg-accent text-accent-foreground",
+	default: "bg-accent/70 text-accent-foreground",
 	primary: "bg-primary text-primary-foreground",
 	secondary: "bg-secondary text-secondary-foreground",
 	destructive: "bg-destructive text-destructive-foreground",

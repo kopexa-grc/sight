@@ -21,7 +21,7 @@ import { useState } from "react";
 import { AppSidebar } from "../../components/sidebar/app-sidebar";
 
 const meta = {
-	title: "Experiments/App",
+	title: "Experiments/App/Vendors",
 	parameters: {
 		layout: "fullscreen",
 	},
@@ -102,11 +102,11 @@ const groupVendorsByRiskLevel = (vendors: Vendor[]) => {
 	return groups;
 };
 
-export const Vendors = () => {
-	// Generate 20 mock vendors
-	const mockVendors = generateMockVendors(20);
-	const groupedVendors = groupVendorsByRiskLevel(mockVendors);
+// Generate 20 mock vendors
+const mockVendors = generateMockVendors(20);
+const groupedVendors = groupVendorsByRiskLevel(mockVendors);
 
+export const Vendors = () => {
 	const [search, setSearch] = useState("");
 	const [riskLevel, setRiskLevel] = useState<RiskLevel | "all">("all");
 

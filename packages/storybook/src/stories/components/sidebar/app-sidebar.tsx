@@ -20,6 +20,7 @@ import {
 	Sidebar,
 	type SidebarProps,
 } from "@kopexa/sight";
+import { linkTo } from "@storybook/addon-links";
 
 export type AppSidebarProps = SidebarProps & {
 	children?: React.ReactNode;
@@ -29,6 +30,7 @@ type Item = {
 	name: string;
 	url: string;
 	icon: React.ReactNode;
+	onClick?: () => void;
 };
 
 const data: Record<string, Item[]> = {
@@ -76,11 +78,13 @@ const data: Record<string, Item[]> = {
 			name: "Vendors",
 			url: "#",
 			icon: <VendorIcon />,
+			onClick: linkTo("Experiments/App/Vendors", "Vendors"),
 		},
 		{
 			name: "Assets",
 			url: "#",
 			icon: <AssetsIcon />,
+			onClick: linkTo("Experiments/App/Assets", "Default"),
 		},
 		{
 			name: "People",
@@ -159,11 +163,22 @@ function NavCompliance({ items, label }: NavProps) {
 			<Sidebar.Menu>
 				{items?.map((item) => (
 					<Sidebar.MenuItem key={item.name}>
-						<Sidebar.MenuButton tooltip={item.name} asChild>
-							<a href={item.url}>
-								{item.icon}
-								<span>{item.name}</span>
-							</a>
+						<Sidebar.MenuButton
+							tooltip={item.name}
+							asChild={!item.onClick}
+							onClick={item.onClick}
+						>
+							{!item.onClick && item.url ? (
+								<a href={item.url}>
+									{item.icon}
+									<span>{item.name}</span>
+								</a>
+							) : (
+								<>
+									{item.icon}
+									<span>{item.name}</span>
+								</>
+							)}
 						</Sidebar.MenuButton>
 					</Sidebar.MenuItem>
 				))}
