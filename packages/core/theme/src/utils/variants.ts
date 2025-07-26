@@ -37,7 +37,7 @@ const faded = {
 };
 
 const ghost = {
-	primary: "bg-transparent text-primary",
+	primary: "bg-transparent text-primary dark:text-primary-foreground",
 	secondary: "bg-transparent text-secondary",
 	destructive: "bg-transparent text-destructive",
 	warning: "bg-transparent text-warning",
