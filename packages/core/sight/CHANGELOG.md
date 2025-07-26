@@ -1,5 +1,44 @@
 # @kopexa/sight
 
+## 7.0.0
+
+### Patch Changes
+
+- [`15ee8fa`](https://github.com/kopexa-grc/sight/commit/15ee8fa3264661c1d44fc519cde0d89c1e11f1e0) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add @kopexa/tab-nav component with initial implementation and tests
+
+- [`4f97d9b`](https://github.com/kopexa-grc/sight/commit/4f97d9b1b8f92363eac357f5e4db95cab3e09699) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add new icons for assets, catalog, chevron up-down, controls, documents, DSAR, incident, issues, panel left, people, processing activity, program, risk, upload, and vendor
+
+- Updated dependencies [[`754b382`](https://github.com/kopexa-grc/sight/commit/754b3825dfb3f084b3ead8f5806cce7297c2c6f1), [`15ee8fa`](https://github.com/kopexa-grc/sight/commit/15ee8fa3264661c1d44fc519cde0d89c1e11f1e0), [`4f97d9b`](https://github.com/kopexa-grc/sight/commit/4f97d9b1b8f92363eac357f5e4db95cab3e09699)]:
+  - @kopexa/theme@1.6.0
+  - @kopexa/tab-nav@1.0.0
+  - @kopexa/react-utils@2.0.6
+  - @kopexa/risk-indicator@1.0.0
+  - @kopexa/page-layout@4.0.0
+  - @kopexa/separator@1.0.0
+  - @kopexa/sidebar@1.0.0
+  - @kopexa/tooltip@5.0.0
+  - @kopexa/button@7.0.0
+  - @kopexa/table@1.0.0
+  - @kopexa/tabs@1.0.0
+  - @kopexa/alert-dialog@2.0.0
+  - @kopexa/avatar@2.0.0
+  - @kopexa/calendar@2.0.0
+  - @kopexa/card@1.0.0
+  - @kopexa/checkbox@1.0.0
+  - @kopexa/chip@2.0.0
+  - @kopexa/code@1.0.0
+  - @kopexa/command@6.0.0
+  - @kopexa/data-table@1.0.0
+  - @kopexa/dialog@9.0.0
+  - @kopexa/drawer@9.0.0
+  - @kopexa/dropdown-menu@2.0.0
+  - @kopexa/heading@1.0.0
+  - @kopexa/input@2.0.0
+  - @kopexa/page-header@1.0.0
+  - @kopexa/popover@9.0.0
+  - @kopexa/skeleton@1.0.0
+  - @kopexa/spinner@5.0.0
+
 ## 6.0.12
 
 ### Patch Changes

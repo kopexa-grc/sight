@@ -1,5 +1,11 @@
 # @kopexa/react-utils
 
+## 2.0.6
+
+### Patch Changes
+
+- [`15ee8fa`](https://github.com/kopexa-grc/sight/commit/15ee8fa3264661c1d44fc519cde0d89c1e11f1e0) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add @kopexa/tab-nav component with initial implementation and tests
+
 ## 2.0.5
 
 ### Patch Changes
