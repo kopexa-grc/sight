@@ -102,7 +102,7 @@ export const pageLayout = tv({
 	defaultVariants: {
 		width: "xl",
 		spacing: "normal",
-		paneWidth: "md",
+		paneWidth: "lg",
 		gap: "normal",
 	},
 });
