@@ -144,7 +144,8 @@ const generateMockAssets = (count: number): Asset[] => {
 								faker.number.int({ min: 100, max: 999 })
 							: type === "people"
 								? faker.person.jobTitle()
-								: faker.company.name() + " " + faker.company.buzzNoun(),
+								: // biome-ignore lint/style/useTemplate: storybook
+									faker.company.name() + " " + faker.company.buzzNoun(),
 			type,
 			status,
 			owner: hasOwner
