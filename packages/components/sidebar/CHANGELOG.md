@@ -1,5 +1,11 @@
 # @kopexa/sidebar
 
+## 1.0.2
+
+### Patch Changes
+
+- [`f17becd`](https://github.com/kopexa-grc/sight/commit/f17becd19c3c9571760e27c8a260542840c52e61) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixed the export of useSidebar
+
 ## 1.0.1
 
 ### Patch Changes
