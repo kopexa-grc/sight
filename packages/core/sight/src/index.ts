@@ -19,6 +19,7 @@ export * from "@kopexa/page-header";
 export * from "@kopexa/page-layout";
 export * from "@kopexa/popover";
 export * from "@kopexa/preview-card";
+export * from "@kopexa/resizable";
 export * from "@kopexa/risk-badge";
 export * from "@kopexa/risk-indicator";
 export * from "@kopexa/section-row";

@@ -74,7 +74,8 @@
     "@kopexa/risk-badge": "workspace:*",
     "@kopexa/split-page-layout": "workspace:*",
     "@kopexa/section-row": "workspace:*",
-    "@kopexa/preview-card": "workspace:*"
+    "@kopexa/preview-card": "workspace:*",
+    "@kopexa/resizable": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

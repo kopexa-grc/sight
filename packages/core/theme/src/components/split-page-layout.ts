@@ -13,7 +13,7 @@ export const splitPageLayout = tv({
 			"bg-muted dark:bg-primary-900",
 		],
 		panel: [
-			"md:border-s",
+			//"md:border-s",
 			"p-4 md:p-6",
 			"overflow-y-auto overflow-x-hidden",
 			"flex-1",

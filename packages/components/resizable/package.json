@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/split-page-layout",
-  "version": "0.0.1",
+  "name": "@kopexa/resizable",
+  "version": "0.0.0",
   "description": "",
   "keywords": [
-    "split-page-layout"
+    "resizable"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/components/split-page-layout"
+    "directory": "packages/components/resizable"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -34,19 +34,16 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "react": ">=19.0.0-rc.0",
-    "react-dom": ">=19.0.0-rc.0",
+    "@kopexa/theme": "workspace:*",
     "motion": ">=12.23.6",
-    "@kopexa/theme": "workspace:*"
+    "react": ">=19.0.0-rc.0",
+    "react-dom": ">=19.0.0-rc.0"
   },
   "dependencies": {
-    "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/use-is-mobile": "workspace:*",
-    "@kopexa/drawer": "workspace:*",
-    "@kopexa/button": "workspace:*",
+    "@kopexa/shared-utils": "workspace:*",
     "@kopexa/icons": "workspace:*",
-    "@kopexa/resizable": "workspace:*"
+    "react-resizable-panels": "^3.0.3"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

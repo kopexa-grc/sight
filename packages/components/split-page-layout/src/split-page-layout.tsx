@@ -3,6 +3,11 @@ import { Drawer } from "@kopexa/drawer";
 import { PanelLeftIcon } from "@kopexa/icons";
 import { createContext } from "@kopexa/react-utils";
 import {
+	Resizable,
+	type ResizablePanelProps,
+	type ResizableProps,
+} from "@kopexa/resizable";
+import {
 	type SplitPageLayoutVariantProps,
 	splitPageLayout,
 } from "@kopexa/theme";
@@ -27,7 +32,7 @@ type SplitPageLayoutContext = {
 
 const [Provider, useProvider] = createContext<SplitPageLayoutContext>();
 
-export type SplitPageLayoutProps = ComponentProps<"div"> &
+export type SplitPageLayoutProps = Omit<ResizableProps, "direction"> &
 	SplitPageLayoutVariantProps & {
 		defaultOpen?: boolean;
 		open?: boolean;
@@ -84,14 +89,15 @@ const SplitPageLayoutRoot = (props: SplitPageLayoutProps) => {
 
 	return (
 		<Provider value={contextValue}>
-			<div
+			<Resizable
 				className={styles.root({
 					className,
 				})}
 				{...rest}
+				direction="horizontal"
 			>
 				{children}
-			</div>
+			</Resizable>
 		</Provider>
 	);
 };
@@ -99,17 +105,19 @@ const SplitPageLayoutRoot = (props: SplitPageLayoutProps) => {
 const SplitPageLayoutContent = ({
 	className,
 	...props
-}: ComponentProps<"div">) => {
+}: ResizablePanelProps) => {
 	const { styles } = useProvider();
 
-	return <div className={styles.content({ className })} {...props} />;
+	return (
+		<Resizable.Panel className={styles.content({ className })} {...props} />
+	);
 };
 
 const SplitPageLayoutPanel = ({
 	className,
 	children,
 	...props
-}: ComponentProps<"div">) => {
+}: ResizablePanelProps) => {
 	const { styles, isMobile, openMobile, setOpenMobile } = useProvider();
 
 	if (isMobile) {
@@ -149,11 +157,19 @@ const SplitPageLayoutPanel = ({
 	}
 
 	return (
-		<div className={styles.panelContainer()}>
-			<div className={styles.panel({ className })} {...props}>
-				{children}
-			</div>
-		</div>
+		<>
+			<Resizable.Handle />
+			<Resizable.Panel
+				className={styles.panelContainer({ className })}
+				defaultSize={33}
+				minSize={30}
+				maxSize={50}
+				order={2}
+				{...props}
+			>
+				<div className={styles.panel()}>{children}</div>
+			</Resizable.Panel>
+		</>
 	);
 };
 

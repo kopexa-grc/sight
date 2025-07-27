@@ -34,6 +34,7 @@ export {
 	type PreviewCardVariantProps,
 	previewCard,
 } from "./preview-card";
+export { type ResizableVariantProps, resizable } from "./resizable";
 export { type RiskBadgeVariantProps, riskBadge } from "./risk-badge";
 export {
 	type RiskIndicatorVariantProps,

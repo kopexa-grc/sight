@@ -18,6 +18,7 @@ export { DSARIcon } from "./dsar";
 export { EllipsisIcon } from "./ellipsis-icon";
 export { EyeIcon } from "./eye";
 export { EyeOffIcon } from "./eye-off";
+export { GripVerticalIcon } from "./grip-vertical";
 export { IncidentIcon } from "./incident";
 export { IssuesIcon } from "./issues";
 export { LinkedInIcon } from "./linkedin";
