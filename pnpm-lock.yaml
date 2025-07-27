@@ -75,6 +75,37 @@ importers:
         specifier: ~5.8.3
         version: 5.8.3
 
+  packages/blocks/risk-badge:
+    dependencies:
+      '@kopexa/button':
+        specifier: workspace:*
+        version: link:../../components/button
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/alert-dialog:
     dependencies:
       '@kopexa/react-utils':
@@ -660,6 +691,40 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/preview-card:
+    dependencies:
+      '@kopexa/button':
+        specifier: workspace:*
+        version: link:../button
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@radix-ui/react-slot':
+        specifier: ^1.2.3
+        version: 1.2.3(@types/react@19.1.8)(react@19.1.0)
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/ripple:
     dependencies:
       '@kopexa/react-utils':
@@ -685,14 +750,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
-  packages/components/risk-badge:
+  packages/components/risk-indicator:
     dependencies:
-      '@kopexa/button':
-        specifier: workspace:*
-        version: link:../button
-      '@kopexa/icons':
-        specifier: workspace:*
-        version: link:../../utilities/icons
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
@@ -716,7 +775,7 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
-  packages/components/risk-indicator:
+  packages/components/section-row:
     dependencies:
       '@kopexa/react-utils':
         specifier: workspace:*
@@ -854,6 +913,34 @@ importers:
       motion:
         specifier: '>=12.23.6'
         version: 12.23.6(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
+  packages/components/split-page-layout:
+    dependencies:
+      '@kopexa/page-layout':
+        specifier: workspace:*
+        version: link:../page-layout
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
     devDependencies:
       '@kopexa/theme':
         specifier: workspace:*
@@ -1051,15 +1138,21 @@ importers:
       '@kopexa/popover':
         specifier: workspace:*
         version: link:../../components/popover
+      '@kopexa/preview-card':
+        specifier: workspace:*
+        version: link:../../components/preview-card
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
       '@kopexa/risk-badge':
         specifier: workspace:*
-        version: link:../../components/risk-badge
+        version: link:../../blocks/risk-badge
       '@kopexa/risk-indicator':
         specifier: workspace:*
         version: link:../../components/risk-indicator
+      '@kopexa/section-row':
+        specifier: workspace:*
+        version: link:../../components/section-row
       '@kopexa/separator':
         specifier: workspace:*
         version: link:../../components/separator
@@ -1075,6 +1168,9 @@ importers:
       '@kopexa/spinner':
         specifier: workspace:*
         version: link:../../components/spinner
+      '@kopexa/split-page-layout':
+        specifier: workspace:*
+        version: link:../../components/split-page-layout
       '@kopexa/tab-nav':
         specifier: workspace:*
         version: link:../../components/tab-nav
@@ -1279,9 +1375,6 @@ importers:
       msw:
         specifier: ^2.10.4
         version: 2.10.4(@types/node@24.1.0)(typescript@5.8.3)
-      msw-storybook-addon:
-        specifier: ^2.0.5
-        version: 2.0.5(msw@2.10.4)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -8349,15 +8442,6 @@ packages:
 
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
-
-  /msw-storybook-addon@2.0.5(msw@2.10.4):
-    resolution: {integrity: sha512-uum2gtprDBoUb8GV/rPMwPytHmB8+AUr25BQUY0MpjYey5/ujaew2Edt+4oHiXpLTd0ThyMqmEvGy/sRpDV4lg==}
-    peerDependencies:
-      msw: ^2.0.0
-    dependencies:
-      is-node-process: 1.2.0
-      msw: 2.10.4(@types/node@24.1.0)(typescript@5.8.3)
-    dev: false
 
   /msw@2.10.4(@types/node@24.1.0)(typescript@5.8.3):
     resolution: {integrity: sha512-6R1or/qyele7q3RyPwNuvc0IxO8L8/Aim6Sz5ncXEgcWUNxSKE+udriTOWHtpMwmfkLYlacA2y7TIx4cL5lgHA==}

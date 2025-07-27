@@ -71,7 +71,10 @@
     "@kopexa/separator": "workspace:*",
     "@kopexa/risk-indicator": "workspace:*",
     "@kopexa/tabs": "workspace:*",
-    "@kopexa/risk-badge": "workspace:*"
+    "@kopexa/risk-badge": "workspace:*",
+    "@kopexa/split-page-layout": "workspace:*",
+    "@kopexa/section-row": "workspace:*",
+    "@kopexa/preview-card": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

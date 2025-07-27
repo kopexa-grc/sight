@@ -45,7 +45,6 @@
     "@types/node": "^24.1.0",
     "graphql-request": "^7.2.0",
     "msw": "^2.10.4",
-    "msw-storybook-addon": "^2.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.11"

@@ -10,15 +10,21 @@ import {
 	Button,
 	Chip,
 	Heading,
+	IconButton,
 	PageHeader,
 	PageLayout,
+	PreviewCard,
 	RiskBadge,
 	SearchInput,
+	SectionRow,
+	Separator,
 	SidebarProvider,
+	SplitPageLayout,
 	Table,
 	TabNav,
 	Tabs,
 } from "@kopexa/sight";
+import { linkTo } from "@storybook/addon-links";
 import { useState } from "react";
 import { AppSidebar } from "../../components/sidebar/app-sidebar";
 
@@ -263,20 +269,28 @@ const RisksTable = ({ risks }: { risks: Risk[] }) => {
 	return (
 		<Table.Root bleed variant="grid" layout="fixed" className="border-t">
 			<Table.Head>
-				<Table.HeaderCell className="min-h-[50px]">Title</Table.HeaderCell>
-				<Table.HeaderCell className="min-h-[50px]">Status</Table.HeaderCell>
-				<Table.HeaderCell className="min-h-[50px]">Owner</Table.HeaderCell>
-				<Table.HeaderCell className="min-h-[50px]">
-					Inherent Risk
-				</Table.HeaderCell>
-				<Table.HeaderCell className="min-h-[50px]">
-					Residual Risk
-				</Table.HeaderCell>
+				<Table.Row>
+					<Table.HeaderCell className="min-h-[50px]">Title</Table.HeaderCell>
+					<Table.HeaderCell className="min-h-[50px]">Status</Table.HeaderCell>
+					<Table.HeaderCell className="min-h-[50px]">Owner</Table.HeaderCell>
+					<Table.HeaderCell className="min-h-[50px]">
+						Inherent Risk
+					</Table.HeaderCell>
+					<Table.HeaderCell className="min-h-[50px]">
+						Residual Risk
+					</Table.HeaderCell>
+				</Table.Row>
 			</Table.Head>
 			<Table.Body>
 				{risks.map((risk) => (
 					<Table.Row key={risk.id}>
-						<Table.Cell className="min-h-[50px]">
+						<Table.Cell
+							className="min-h-[50px]"
+							onClick={() => {
+								console.log("Navigating to risk detail");
+								linkTo("Experiments/App/Risks", "Default");
+							}}
+						>
 							<div className="inline-flex flex-col">
 								<span className="font-medium">{risk.title}</span>
 								<span className="text-xs text-muted-foreground truncate max-w-[250px] capitalize">
@@ -344,7 +358,7 @@ export const Default = () => {
 			<PageLayout.Header>
 				<PageHeader>
 					<PageHeader.TitleArea>
-						<PageHeader.Title>Risks Directory</PageHeader.Title>
+						<PageHeader.Title>Risk Scenarios</PageHeader.Title>
 					</PageHeader.TitleArea>
 					<PageHeader.Actions>
 						<Button variant="ghost" startContent={<UploadIcon />}>
@@ -357,7 +371,7 @@ export const Default = () => {
 						<TabNav className="-mx-4 md:-mx-6 px-4 md:px-6">
 							<TabNav.Link active>
 								<AssetsIcon />
-								All Risks
+								All Risk Scenarios
 							</TabNav.Link>
 							<TabNav.Link>
 								<PlattformAssetIcon />
@@ -397,8 +411,8 @@ export const Default = () => {
 
 export const Detail = () => {
 	return (
-		<div className="grid grid-cols-3 size-full">
-			<div className="col-span-2 p-4 md:p-6">
+		<SplitPageLayout inset>
+			<SplitPageLayout.Content>
 				<PageHeader>
 					<PageHeader.TitleArea>
 						<PageHeader.Title>Risk Details</PageHeader.Title>
@@ -413,47 +427,68 @@ export const Detail = () => {
 						</p>
 					</div>
 				</div>
-			</div>
-			<div className="col-span-1 bg-slate-50 p-4 md:p-6 rounded-e-md border-s">
+			</SplitPageLayout.Content>
+			<SplitPageLayout.Panel className="w-full">
 				<Heading level="h4" className="mb-4">
 					Risk Overview
 				</Heading>
-
-				<div className="space-y-4">
-					<div>
-						<div className="text-sm font-medium text-muted-foreground mb-1">
-							Status
-						</div>
-						<StatusBadge status="IN_PROGRESS" />
-					</div>
-					<div>
-						<div className="text-sm font-medium text-muted-foreground mb-1">
-							Risk Rating
-						</div>
-						{/* <RiskBadge risk="high" /> */}
-					</div>
-					<div>
-						<div className="text-sm font-medium text-muted-foreground mb-1">
-							Residual Risk
-						</div>
-						{/* <RiskBadge level="medium" /> */}
-					</div>
-					<div>
-						<div className="text-sm font-medium text-muted-foreground mb-1">
-							Owner
-						</div>
-						<div className="inline-flex items-center justify-start gap-2">
-							<Avatar size="sm" />
-							<div className="inline-flex flex-col items-start">
-								<span className="text-sm">{faker.person.fullName()}</span>
-								<span className="text-xs text-muted-foreground">
-									{faker.internet.email()}
-								</span>
+				<div className="space-y-2">
+					<SectionRow
+						title="Status"
+						value={<StatusBadge status="IN_PROGRESS" />}
+						actions={
+							<IconButton
+								size="sm"
+								variant="ghost"
+								aria-label="Upload Mitigation Plan"
+							>
+								<UploadIcon className="mr-2" />
+							</IconButton>
+						}
+					/>
+					<SectionRow
+						title="Owner"
+						value={
+							<div className="inline-flex items-center justify-start gap-2">
+								<Avatar size="sm" />
+								<div className="inline-flex flex-col items-start">
+									<span className="text-sm">{faker.person.fullName()}</span>
+									<span className="text-xs text-muted-foreground">
+										{faker.internet.email()}
+									</span>
+								</div>
 							</div>
-						</div>
-					</div>
+						}
+						actions={
+							<IconButton size="sm" variant="ghost" aria-label="Update Owner">
+								<UploadIcon className="mr-2" />
+							</IconButton>
+						}
+					/>
 				</div>
-			</div>
-		</div>
+				<SplitPageLayout.Bleed>
+					<Separator className="my-4" />
+				</SplitPageLayout.Bleed>
+				<div>
+					<Heading level="h3" className="mb-4">
+						Related Assets
+					</Heading>
+					<PreviewCard>
+						<PreviewCard.Icon>
+							<AssetsIcon />
+						</PreviewCard.Icon>
+						<PreviewCard.Content>
+							<PreviewCard.Title>
+								{faker.company.name()} - {faker.company.catchPhrase()}
+							</PreviewCard.Title>
+							<PreviewCard.Description>
+								{faker.lorem.sentence(10)}
+							</PreviewCard.Description>
+						</PreviewCard.Content>
+						<PreviewCard.Action aria-label="Remove" />
+					</PreviewCard>
+				</div>
+			</SplitPageLayout.Panel>
+		</SplitPageLayout>
 	);
 };

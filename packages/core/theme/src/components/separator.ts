@@ -8,6 +8,7 @@ export const separator = tv({
 			horizontal: "",
 		},
 	},
+	compoundVariants: [],
 });
 
 export type SeparatorVariantProps = VariantProps<typeof separator>;

@@ -29,11 +29,21 @@ export {
 	pageLayout,
 } from "./page-layout";
 export { type PopoverVariants, popover } from "./popover";
+export {
+	type PreviewCardSlots,
+	type PreviewCardVariantProps,
+	previewCard,
+} from "./preview-card";
 export { type RiskBadgeVariantProps, riskBadge } from "./risk-badge";
 export {
 	type RiskIndicatorVariantProps,
 	riskIndicator,
 } from "./risk-indicator";
+export {
+	type SectionRowSlots,
+	type SectionRowVariantProps,
+	sectionRow,
+} from "./section-row";
 export { type SeparatorVariantProps, separator } from "./separator";
 export {
 	type SidebarMenuActionVariantProps,
@@ -45,6 +55,10 @@ export {
 } from "./sidebar";
 export { skeleton } from "./skeleton";
 export { type SpinnerVariants, spinner } from "./spinner";
+export {
+	type SplitPageLayoutVariantProps,
+	splitPageLayout,
+} from "./split-page-layout";
 export { type TabNavSlots, type TabNavVariantProps, tabNav } from "./tab-nav";
 export { type TableSlots, type TableVariantProps, table } from "./table";
 export { type TabsVariantProps, tabs } from "./tabs";
