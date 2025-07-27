@@ -1,5 +1,49 @@
 # @kopexa/sight
 
+## 7.0.1
+
+### Patch Changes
+
+- [`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932) Thanks [@juliankoehn](https://github.com/juliankoehn)! - test
+
+- [`2e32283`](https://github.com/kopexa-grc/sight/commit/2e322831e84ec37b808862e0582aea953a1f33ad) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a split page layout and migrated the preview card
+
+- [`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created aaaa few risk relaaated coomponentsss
+
+- Updated dependencies [[`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932), [`2e32283`](https://github.com/kopexa-grc/sight/commit/2e322831e84ec37b808862e0582aea953a1f33ad), [`1fb3878`](https://github.com/kopexa-grc/sight/commit/1fb3878ca5e86dd4fdaff3b59400bd54cc343ced), [`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932)]:
+  - @kopexa/risk-badge@0.0.1
+  - @kopexa/tab-nav@1.0.1
+  - @kopexa/table@1.0.1
+  - @kopexa/theme@1.6.1
+  - @kopexa/split-page-layout@0.0.1
+  - @kopexa/preview-card@0.0.1
+  - @kopexa/section-row@0.0.1
+  - @kopexa/separator@1.0.1
+  - @kopexa/data-table@1.0.1
+  - @kopexa/alert-dialog@2.0.1
+  - @kopexa/avatar@2.0.1
+  - @kopexa/button@7.0.1
+  - @kopexa/calendar@2.0.1
+  - @kopexa/card@1.0.1
+  - @kopexa/checkbox@1.0.1
+  - @kopexa/chip@2.0.1
+  - @kopexa/code@1.0.1
+  - @kopexa/command@6.0.1
+  - @kopexa/dialog@9.0.1
+  - @kopexa/drawer@9.0.1
+  - @kopexa/dropdown-menu@2.0.1
+  - @kopexa/heading@1.0.1
+  - @kopexa/input@2.0.1
+  - @kopexa/page-header@1.0.1
+  - @kopexa/page-layout@4.0.1
+  - @kopexa/popover@9.0.1
+  - @kopexa/risk-indicator@1.0.1
+  - @kopexa/sidebar@1.0.1
+  - @kopexa/skeleton@1.0.1
+  - @kopexa/spinner@5.0.1
+  - @kopexa/tabs@1.0.1
+  - @kopexa/tooltip@5.0.1
+
 ## 7.0.0
 
 ### Patch Changes

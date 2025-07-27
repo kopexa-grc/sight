@@ -1,5 +1,12 @@
 # @kopexa/tabs
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932), [`2e32283`](https://github.com/kopexa-grc/sight/commit/2e322831e84ec37b808862e0582aea953a1f33ad), [`1fb3878`](https://github.com/kopexa-grc/sight/commit/1fb3878ca5e86dd4fdaff3b59400bd54cc343ced), [`35c1a5e`](https://github.com/kopexa-grc/sight/commit/35c1a5e59ac10e2965e720e86cabb621c4c56932)]:
+  - @kopexa/theme@1.6.1
+
 ## 1.0.0
 
 ### Patch Changes
