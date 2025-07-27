@@ -9,13 +9,11 @@ export const Separator = ({
 	className,
 	orientation = "horizontal",
 	decorative = true,
-	bleed,
 	...props
 }: SeparatorProps) => {
 	const styles = separator({
 		className,
 		orientation,
-		bleed,
 	});
 
 	return (

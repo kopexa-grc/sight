@@ -929,15 +929,24 @@ importers:
 
   packages/components/split-page-layout:
     dependencies:
-      '@kopexa/page-layout':
+      '@kopexa/button':
         specifier: workspace:*
-        version: link:../page-layout
+        version: link:../button
+      '@kopexa/drawer':
+        specifier: workspace:*
+        version: link:../drawer
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
       '@kopexa/shared-utils':
         specifier: workspace:*
         version: link:../../utilities/shared-utils
+      '@kopexa/use-is-mobile':
+        specifier: workspace:*
+        version: link:../../hooks/use-is-mobile
       motion:
         specifier: '>=12.23.6'
         version: 12.23.9(react-dom@19.1.0)(react@19.1.0)

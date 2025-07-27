@@ -414,8 +414,13 @@ export const Detail = () => {
 		<SplitPageLayout inset>
 			<SplitPageLayout.Content>
 				<PageHeader>
+					<PageHeader.ContextArea>
+						<span className="text-muted-foreground">
+							Breadcrumb / Risk / {faker.lorem.sentence()} / Overview
+						</span>
+					</PageHeader.ContextArea>
 					<PageHeader.TitleArea>
-						<PageHeader.Title>Risk Details</PageHeader.Title>
+						<PageHeader.Title>{faker.lorem.sentence()}</PageHeader.Title>
 					</PageHeader.TitleArea>
 				</PageHeader>
 
@@ -426,12 +431,25 @@ export const Detail = () => {
 							{faker.lorem.paragraphs(3)}
 						</p>
 					</div>
+					<div className="bg-muted rounded-md p-4 md:p-6 border">
+						<Heading level="h4" className="mb-4">
+							Risk Mitigation Strategies
+						</Heading>
+					</div>
 				</div>
 			</SplitPageLayout.Content>
 			<SplitPageLayout.Panel className="w-full">
-				<Heading level="h4" className="mb-4">
-					Risk Overview
-				</Heading>
+				<div className="flex items-center justify-between mb-4 md:mb-6">
+					<Heading level="h4" className="mb-4">
+						Risk Overview
+					</Heading>
+					<div>
+						<Button>
+							<PlusIcon className="mr-2" />
+							Add Mitigation Plan
+						</Button>
+					</div>
+				</div>
 				<div className="space-y-2">
 					<SectionRow
 						title="Status"
@@ -467,7 +485,7 @@ export const Detail = () => {
 					/>
 				</div>
 				<SplitPageLayout.Bleed>
-					<Separator className="my-4" />
+					<Separator className="my-8" />
 				</SplitPageLayout.Bleed>
 				<div>
 					<Heading level="h3" className="mb-4">

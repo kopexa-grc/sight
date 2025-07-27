@@ -45,22 +45,31 @@ export const SectionRow = (props: SectionRowProps) => {
 			<div className={styles.title({ className: classNames?.title })}>
 				{title}
 			</div>
-			{isValueString ? (
-				<span
-					className={styles.valueText({ className: classNames?.valueText })}
-				>
-					{value ?? "-"}
-				</span>
-			) : (
+			<div
+				className={styles.valueContainer({
+					className: classNames?.valueContainer,
+				})}
+			>
+				{isValueString ? (
+					<span
+						className={styles.valueText({ className: classNames?.valueText })}
+					>
+						{value ?? "-"}
+					</span>
+				) : (
+					value
+				)}
+			</div>
+
+			{actions && (
 				<div
-					className={styles.valueContainer({
-						className: classNames?.valueContainer,
+					className={styles.action({
+						className: classNames?.action,
 					})}
 				>
-					{value}
+					{actions}
 				</div>
 			)}
-			{actions && <div>{actions}</div>}
 		</div>
 	);
 };

@@ -42,7 +42,10 @@
   "dependencies": {
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/page-layout": "workspace:*"
+    "@kopexa/use-is-mobile": "workspace:*",
+    "@kopexa/drawer": "workspace:*",
+    "@kopexa/button": "workspace:*",
+    "@kopexa/icons": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

@@ -49,7 +49,7 @@ export const drawer = tv({
 				content: "max-w-6xl",
 			},
 			full: {
-				content: "max-w-full max-h-full h-[calc(100dvh_-_1rem)] inset-2",
+				content: "max-w-full max-h-full h-[calc(100dvh_-_1rem)] !inset-2",
 			},
 		},
 		placement: {
