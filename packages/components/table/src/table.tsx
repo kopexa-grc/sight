@@ -1,3 +1,6 @@
+import { Avatar } from "@kopexa/avatar";
+import { Button } from "@kopexa/button";
+import { ChevronRightIcon, PlusIcon } from "@kopexa/icons";
 import { createContext, mergeRefs } from "@kopexa/react-utils";
 import { callAllHandlers, cn, dataAttr } from "@kopexa/shared-utils";
 import {
@@ -7,7 +10,7 @@ import {
 	table,
 } from "@kopexa/theme";
 import { useHover } from "@kopexa/use-hover";
-import { type ComponentProps, useRef } from "react";
+import { type ComponentProps, useMemo, useRef } from "react";
 
 type TableProviderContextValue = {
 	styles: ReturnType<typeof table>;
@@ -197,5 +200,101 @@ export function TableCell(props: TableCellProps) {
 			})}
 			{...rest}
 		/>
+	);
+}
+
+export type TableOwnerCellValueProps = Omit<
+	ComponentProps<"div">,
+	"children" | "onClick"
+> & {
+	owner?: {
+		firstName?: string;
+		lastName?: string;
+		name?: string;
+		email?: string;
+		avatar?: string;
+	} | null;
+	description?: string;
+	translations?: {
+		unassigned?: string;
+		assignNow?: string;
+	};
+	onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+};
+
+const defaultOwnerTranslations = {
+	unassigned: "Unassigned",
+	assignNow: "Assign now",
+};
+
+export function TableOwnerCellValue({
+	className,
+	owner,
+	description,
+	onClick,
+	translations,
+	...rest
+}: TableOwnerCellValueProps) {
+	const { styles } = useTableContext();
+
+	// get the name, use owner?.name if provided otherwise use firstName and lastName
+	const ownerName = useMemo(() => {
+		if (owner?.name) {
+			return owner.name;
+		}
+		if (owner?.firstName && owner?.lastName) {
+			return `${owner.firstName} ${owner.lastName}`;
+		}
+		return "";
+	}, [owner]);
+
+	const i18n = useMemo(() => {
+		// merge default translations with provided translations
+		return {
+			...defaultOwnerTranslations,
+			...translations,
+		};
+	}, [translations]);
+
+	const hasOwner = useMemo(() => {
+		return !!owner;
+	}, [owner]);
+
+	return (
+		<div
+			data-slot="table-owner-cell"
+			className={styles.ownerCell({ className })}
+			{...rest}
+		>
+			{hasOwner ? (
+				<>
+					<Avatar
+						src={owner?.avatar}
+						alt={owner?.name}
+						name={ownerName}
+						size="sm"
+						className={styles.ownerCellAvatar()}
+					/>
+					<div className={styles.ownerCelltextWrapper()}>
+						<span className={styles.ownerCellName()}>{ownerName}</span>
+						<span className={styles.ownerCellDescription()}>
+							{description ?? owner?.email}
+						</span>
+					</div>
+				</>
+			) : onClick ? (
+				<Button
+					onClick={onClick}
+					variant="ghost"
+					size="sm"
+					startContent={<PlusIcon />}
+					endContent={<ChevronRightIcon />}
+				>
+					{i18n.assignNow}
+				</Button>
+			) : (
+				<span className={styles.ownerCellUnassigned()}>{i18n.unassigned}</span>
+			)}
+		</div>
 	);
 }

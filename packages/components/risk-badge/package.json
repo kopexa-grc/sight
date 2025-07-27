@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/table",
-  "version": "1.0.0",
-  "description": "ables are used to display tabular data using rows and columns. ",
+  "name": "@kopexa/risk-badge",
+  "version": "0.0.0",
+  "description": "",
   "keywords": [
-    "table"
+    "risk-badge"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/components/table"
+    "directory": "packages/components/risk-badge"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -42,16 +42,14 @@
   "dependencies": {
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/use-hover": "workspace:*",
     "@kopexa/button": "workspace:*",
-    "@kopexa/avatar": "workspace:*",
     "@kopexa/icons": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+	"react-dom": "^19.1.0"
   },
   "clean-package": "../../../clean-package.config.json"
 }

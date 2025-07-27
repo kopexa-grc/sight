@@ -29,6 +29,7 @@ export {
 	pageLayout,
 } from "./page-layout";
 export { type PopoverVariants, popover } from "./popover";
+export { type RiskBadgeVariantProps, riskBadge } from "./risk-badge";
 export {
 	type RiskIndicatorVariantProps,
 	riskIndicator,

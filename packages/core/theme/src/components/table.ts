@@ -41,6 +41,15 @@ export const table = tv({
 			"before:opacity-0",
 			"group-aria-[selected=true]/tr:first:before:opacity-100",
 		],
+		ownerCell: [
+			"min-h-[50px]",
+			"inline-flex items-center justify-center gap-2",
+		],
+		ownerCellAvatar: [],
+		ownerCelltextWrapper: "inline-flex flex-col items-start",
+		ownerCellName: "text-xs font-medium",
+		ownerCellDescription: "text-[11px] text-muted-foreground truncate",
+		ownerCellUnassigned: "text-xs italic text-muted-foreground",
 	},
 	variants: {
 		bleed: {

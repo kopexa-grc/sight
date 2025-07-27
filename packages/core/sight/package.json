@@ -70,7 +70,8 @@
     "@kopexa/sidebar": "workspace:*",
     "@kopexa/separator": "workspace:*",
     "@kopexa/risk-indicator": "workspace:*",
-    "@kopexa/tabs": "workspace:*"
+    "@kopexa/tabs": "workspace:*",
+    "@kopexa/risk-badge": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

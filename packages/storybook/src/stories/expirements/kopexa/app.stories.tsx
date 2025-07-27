@@ -130,7 +130,7 @@ export const Vendors = () => {
 							<Button startContent={<PlusIcon />}>Add Vendor</Button>
 						</PageHeader.Actions>
 						<PageHeader.Navigation>
-							<TabNav className="-mx-4 md:-mx-6 px-4 md:px-6">
+							<TabNav bleed>
 								<TabNav.Link active>
 									<VendorIcon />
 									All Vendors

@@ -5,6 +5,7 @@ export const tabNav = tv({
 		base: "",
 		list: [
 			"flex",
+			"items-center",
 			"justify-start",
 			"overflow-x-auto",
 			"whitespace-nowrap",
@@ -42,6 +43,12 @@ export const tabNav = tv({
 		],
 	},
 	variants: {
+		bleed: {
+			true: {
+				list: "-mx-4 md:-mx-6 px-4 md:px-6",
+			},
+			false: {},
+		},
 		color: {
 			primary: {
 				link: ["before:bg-primary"],

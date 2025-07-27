@@ -24,7 +24,7 @@ import { useState } from "react";
 import { AppSidebar } from "../../components/sidebar/app-sidebar";
 
 const meta = {
-	title: "Experiments/App/Assets",
+	title: "Experiments/App/Controls",
 	parameters: {
 		layout: "fullscreen",
 	},
@@ -337,13 +337,13 @@ export const Default = () => {
 			<PageLayout.Header>
 				<PageHeader>
 					<PageHeader.TitleArea>
-						<PageHeader.Title>Assets Directory</PageHeader.Title>
+						<PageHeader.Title>Controls</PageHeader.Title>
 					</PageHeader.TitleArea>
 					<PageHeader.Actions>
 						<Button variant="ghost" startContent={<UploadIcon />}>
 							Import CSV
 						</Button>
-						<Button startContent={<PlusIcon />}>Add Asset</Button>
+						<Button startContent={<PlusIcon />}>Add Control</Button>
 					</PageHeader.Actions>
 					{/** part of layout.tsx in app */}
 					<PageHeader.Navigation>

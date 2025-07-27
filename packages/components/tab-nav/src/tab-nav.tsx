@@ -6,7 +6,12 @@ import {
 } from "@kopexa/react-utils";
 import { Ripple, type RippleProps, useRipple } from "@kopexa/ripple";
 import { callAllHandlers, cn } from "@kopexa/shared-utils";
-import { type SlotsToClasses, type TabNavSlots, tabNav } from "@kopexa/theme";
+import {
+	type SlotsToClasses,
+	type TabNavSlots,
+	type TabNavVariantProps,
+	tabNav,
+} from "@kopexa/theme";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { type ComponentProps, useCallback } from "react";
 
@@ -22,15 +27,29 @@ type TabNavRootElementProps = ComponentPropsWithout<"nav", RemovedProps>;
 export type TabNavProps = Omit<
 	TabNavRootElementProps,
 	"defaultValue" | "dir" | "color"
-> & {
-	classNames?: SlotsToClasses<TabNavSlots>;
-};
+> &
+	TabNavVariantProps & {
+		classNames?: SlotsToClasses<TabNavSlots>;
+	};
 
 const TabNavRoot = (props: TabNavProps) => {
-	const { className, children, classNames, ...rest } = props;
+	const {
+		className,
+		children,
+		classNames,
+		bleed,
+		size,
+		border,
+		color,
+		...rest
+	} = props;
 
 	const styles = tabNav({
 		className,
+		bleed,
+		size,
+		border,
+		color,
 	});
 
 	return (

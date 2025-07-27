@@ -61,11 +61,13 @@ const data: Record<string, Item[]> = {
 			name: "Controls",
 			url: "#",
 			icon: <ControlsIcon />,
+			onClick: linkTo("Experiments/App/Controls", "Default"),
 		},
 		{
 			name: "Risk",
 			url: "#",
 			icon: <RiskIcon />,
+			onClick: linkTo("Experiments/App/Risks", "Default"),
 		},
 		{
 			name: "Incidents",
