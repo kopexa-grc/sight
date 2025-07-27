@@ -1,5 +1,11 @@
 # @kopexa/sight
 
+## 7.0.3
+
+### Patch Changes
+
+- [`2c6bc2d`](https://github.com/kopexa-grc/sight/commit/2c6bc2d7336c75c5c82213dfa34cc626581aca02) Thanks [@juliankoehn](https://github.com/juliankoehn)! - fixe use client directive
+
 ## 7.0.2
 
 ### Patch Changes
