@@ -3,4 +3,4 @@ export type {
 	SidebarProviderProps,
 	SidebarTriggerProps,
 } from "./sidebar";
-export { Sidebar, SidebarProvider } from "./sidebar";
+export { Sidebar, SidebarProvider, useSidebar } from "./sidebar";

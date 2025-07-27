@@ -42,6 +42,8 @@ type SidebarContextProps = {
 
 const [Provider, useSidebar] = createContext<SidebarContextProps>();
 
+export { useSidebar };
+
 export type SidebarProviderProps = ComponentProps<"div"> & {
 	defaultOpen?: boolean;
 	open?: boolean;
