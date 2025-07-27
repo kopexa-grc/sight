@@ -1,5 +1,12 @@
 # @kopexa/sight
 
+## 7.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`f17becd`](https://github.com/kopexa-grc/sight/commit/f17becd19c3c9571760e27c8a260542840c52e61)]:
+  - @kopexa/sidebar@1.0.2
+
 ## 7.0.1
 
 ### Patch Changes
