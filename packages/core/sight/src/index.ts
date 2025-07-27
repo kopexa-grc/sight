@@ -1,3 +1,5 @@
+"use client";
+
 export * from "@kopexa/alert-dialog";
 export * from "@kopexa/avatar";
 export * from "@kopexa/button";
