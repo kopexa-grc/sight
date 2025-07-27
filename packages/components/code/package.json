@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a inline code component",
   "keywords": [
     "code"
