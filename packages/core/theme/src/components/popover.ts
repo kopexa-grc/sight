@@ -1,11 +1,12 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import { popoverContentClasses } from "../utils/classes";
 
 export const popover = tv({
 	slots: {
 		content: [
-			"bg-popover text-popover-foreground z-50 w-72",
+			...popoverContentClasses,
+			"w-72",
 			"origin-(--radix-popover-content-transform-origin)",
-			"rounded-md border p-4 shadow-md outline-hidden",
 		],
 	},
 });

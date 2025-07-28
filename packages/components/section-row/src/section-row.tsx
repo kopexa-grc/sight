@@ -14,6 +14,13 @@ export type SectionRowProps = Omit<ComponentProps<"div">, "children"> & {
 	 */
 	title: string;
 	/**
+	 * Optional info to render inside the section row.
+	 * This can be used to provide additional context or information about the section.
+	 * It can be a string or a ReactNode, and it will be displayed alongside the title.
+	 * If not provided, no info will be displayed.
+	 */
+	info?: ReactNode | string | null;
+	/**
 	 * Optional children to render inside the section row.
 	 * This can be any React node, such as text, icons, or other components.
 	 */
@@ -27,7 +34,7 @@ export type SectionRowProps = Omit<ComponentProps<"div">, "children"> & {
 };
 
 export const SectionRow = (props: SectionRowProps) => {
-	const { className, classNames, title, value, actions, ...rest } = props;
+	const { className, classNames, title, value, actions, info, ...rest } = props;
 	const isValueString = typeof value === "string" || !value;
 	const hasActions = !!actions;
 

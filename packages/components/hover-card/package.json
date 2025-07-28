@@ -1,9 +1,9 @@
 {
-  "name": "@kopexa/tooltip",
-  "version": "5.0.2",
-  "description": "Floating element that provides a control with contextual information via pointer or focus.",
+  "name": "@kopexa/hover-card",
+  "version": "0.0.0",
+  "description": "",
   "keywords": [
-    "tooltip"
+    "hover-card"
   ],
   "author": "Kopexa <hello@kopexa.com>",
   "homepage": "https://kopexa.com",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kopexa-grc/sight.git",
-    "directory": "packages/components/tooltip"
+    "directory": "packages/components/hover-card"
   },
   "bugs": {
     "url": "https://github.com/kopexa-grc/sight/issues"
@@ -42,11 +42,7 @@
   "dependencies": {
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
-    "@kopexa/use-controllable-state": "workspace:*",
-    "@radix-ui/react-tooltip": "^1.2.7",
-    "@kopexa/hover-card": "workspace:*",
-    "@kopexa/button": "workspace:*",
-    "@kopexa/icons": "workspace:*"
+    "@radix-ui/react-hover-card": "^1.1.14"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

@@ -22,3 +22,8 @@ export const translateCenterClasses = [
 	"-translate-x-1/2",
 	"-translate-y-1/2",
 ];
+
+export const popoverContentClasses = [
+	"bg-popover text-popover-foreground z-50",
+	"rounded-md border p-4 shadow-md outline-hidden",
+];

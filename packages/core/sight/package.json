@@ -75,7 +75,8 @@
     "@kopexa/split-page-layout": "workspace:*",
     "@kopexa/section-row": "workspace:*",
     "@kopexa/preview-card": "workspace:*",
-    "@kopexa/resizable": "workspace:*"
+    "@kopexa/resizable": "workspace:*",
+    "@kopexa/hover-card": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

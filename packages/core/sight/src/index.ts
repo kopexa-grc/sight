@@ -14,6 +14,7 @@ export * from "@kopexa/dialog";
 export * from "@kopexa/drawer";
 export * from "@kopexa/dropdown-menu";
 export * from "@kopexa/heading";
+export * from "@kopexa/hover-card";
 export * from "@kopexa/input";
 export * from "@kopexa/page-header";
 export * from "@kopexa/page-layout";
