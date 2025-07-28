@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/motion-utils",
-	"version": "9.0.3",
+	"version": "9.0.4",
 	"description": "utility package to work with motion library",
 	"keywords": [
 		"motion-utils"
