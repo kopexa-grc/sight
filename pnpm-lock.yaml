@@ -589,6 +589,40 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/infotip:
+    dependencies:
+      '@kopexa/button':
+        specifier: workspace:*
+        version: link:../button
+      '@kopexa/hover-card':
+        specifier: workspace:*
+        version: link:../hover-card
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/input:
     dependencies:
       '@kopexa/icons':
@@ -842,9 +876,6 @@ importers:
       '@kopexa/shared-utils':
         specifier: workspace:*
         version: link:../../utilities/shared-utils
-      '@kopexa/tooltip':
-        specifier: workspace:*
-        version: link:../tooltip
       motion:
         specifier: '>=12.23.6'
         version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
@@ -1127,15 +1158,6 @@ importers:
 
   packages/components/tooltip:
     dependencies:
-      '@kopexa/button':
-        specifier: workspace:*
-        version: link:../button
-      '@kopexa/hover-card':
-        specifier: workspace:*
-        version: link:../hover-card
-      '@kopexa/icons':
-        specifier: workspace:*
-        version: link:../../utilities/icons
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
@@ -1212,6 +1234,9 @@ importers:
       '@kopexa/hover-card':
         specifier: workspace:*
         version: link:../../components/hover-card
+      '@kopexa/infotip':
+        specifier: workspace:*
+        version: link:../../components/infotip
       '@kopexa/input':
         specifier: workspace:*
         version: link:../../components/input
