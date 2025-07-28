@@ -1,5 +1,48 @@
 # @kopexa/sight
 
+## 7.0.5
+
+### Patch Changes
+
+- [`f6d463a`](https://github.com/kopexa-grc/sight/commit/f6d463a1a22261d6f32f3b6aa023d2ecdefe3a9f) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add HoverCard component with context, styles, and tests; update SectionRow to include optional info prop
+
+- Updated dependencies [[`7cc324f`](https://github.com/kopexa-grc/sight/commit/7cc324f1ba79c2da0280277d7de304fc0a3aef21), [`f6d463a`](https://github.com/kopexa-grc/sight/commit/f6d463a1a22261d6f32f3b6aa023d2ecdefe3a9f)]:
+  - @kopexa/section-row@0.0.3
+  - @kopexa/sidebar@1.0.4
+  - @kopexa/theme@1.6.3
+  - @kopexa/hover-card@0.0.1
+  - @kopexa/tooltip@5.0.3
+  - @kopexa/risk-badge@0.0.3
+  - @kopexa/alert-dialog@2.0.3
+  - @kopexa/avatar@2.0.3
+  - @kopexa/button@7.0.3
+  - @kopexa/calendar@2.0.3
+  - @kopexa/card@1.0.3
+  - @kopexa/checkbox@1.0.3
+  - @kopexa/chip@2.0.3
+  - @kopexa/code@1.0.3
+  - @kopexa/command@6.0.3
+  - @kopexa/data-table@1.0.3
+  - @kopexa/dialog@9.0.3
+  - @kopexa/drawer@9.0.3
+  - @kopexa/dropdown-menu@2.0.3
+  - @kopexa/heading@1.0.3
+  - @kopexa/infotip@0.0.1
+  - @kopexa/input@2.0.3
+  - @kopexa/page-header@1.0.3
+  - @kopexa/page-layout@4.0.3
+  - @kopexa/popover@9.0.3
+  - @kopexa/preview-card@0.0.3
+  - @kopexa/resizable@0.0.2
+  - @kopexa/risk-indicator@1.0.3
+  - @kopexa/separator@1.0.3
+  - @kopexa/skeleton@1.0.3
+  - @kopexa/spinner@5.0.3
+  - @kopexa/split-page-layout@0.0.3
+  - @kopexa/tab-nav@1.0.3
+  - @kopexa/table@1.0.3
+  - @kopexa/tabs@1.0.3
+
 ## 7.0.4
 
 ### Patch Changes
