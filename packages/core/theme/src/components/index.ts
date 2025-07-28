@@ -1,4 +1,9 @@
 export {
+	type AccordionSlots,
+	type AccordionVariantProps,
+	accordion,
+} from "./accordion";
+export {
 	type AlertDialogSlots,
 	type AlertDialogVariants,
 	alertDialog,

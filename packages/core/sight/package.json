@@ -77,7 +77,8 @@
     "@kopexa/preview-card": "workspace:*",
     "@kopexa/resizable": "workspace:*",
     "@kopexa/hover-card": "workspace:*",
-    "@kopexa/infotip": "workspace:*"
+    "@kopexa/infotip": "workspace:*",
+    "@kopexa/accordion": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
