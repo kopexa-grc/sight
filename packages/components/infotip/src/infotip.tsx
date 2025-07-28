@@ -2,11 +2,11 @@ import { IconButton } from "@kopexa/button";
 import { HoverCard } from "@kopexa/hover-card";
 import { InfoIcon } from "@kopexa/icons";
 
-export type InfoTipProps = HoverCard.ContentProps & {
+export type InfotipProps = HoverCard.ContentProps & {
 	label?: string;
 };
 
-export function InfoTip(props: InfoTipProps) {
+export function Infotip(props: InfotipProps) {
 	const { label = "Info", ...restProps } = props;
 	return (
 		<HoverCard.Root>
