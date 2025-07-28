@@ -150,7 +150,7 @@ export type SidebarProps = ComponentProps<"div"> & {
 	collapsible?: "offcanvas" | "icon" | "none";
 };
 
-function SidebarRoot({
+export function SidebarRoot({
 	side = "left",
 	variant = "sidebar",
 	collapsible = "offcanvas",
@@ -250,7 +250,11 @@ export type SidebarTriggerProps = Omit<
 	"aria-label"
 >;
 
-function SidebarTrigger({ className, onClick, ...props }: SidebarTriggerProps) {
+export function SidebarTrigger({
+	className,
+	onClick,
+	...props
+}: SidebarTriggerProps) {
 	const { toggleSidebar, styles } = useSidebar();
 	return (
 		<IconButton
@@ -274,7 +278,7 @@ function SidebarTrigger({ className, onClick, ...props }: SidebarTriggerProps) {
 
 export type SidebarRailProps = ComponentProps<"button">;
 
-function SidebarRail({ className, ...props }: SidebarRailProps) {
+export function SidebarRail({ className, ...props }: SidebarRailProps) {
 	const { toggleSidebar, styles } = useSidebar();
 	return (
 		<button
@@ -292,7 +296,7 @@ function SidebarRail({ className, ...props }: SidebarRailProps) {
 
 export type SidebarInsetProps = ComponentProps<"main">;
 
-function SidebarInset({ className, ...props }: SidebarInsetProps) {
+export function SidebarInset({ className, ...props }: SidebarInsetProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -304,9 +308,9 @@ function SidebarInset({ className, ...props }: SidebarInsetProps) {
 	);
 }
 
-type SidebarInputProps = ComponentProps<typeof Input>;
+export type SidebarInputProps = ComponentProps<typeof Input>;
 
-function SidebarInput({ className, ...props }: SidebarInputProps) {
+export function SidebarInput({ className, ...props }: SidebarInputProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -319,9 +323,9 @@ function SidebarInput({ className, ...props }: SidebarInputProps) {
 	);
 }
 
-type SidebarHeaderProps = ComponentProps<"div">;
+export type SidebarHeaderProps = ComponentProps<"div">;
 
-function SidebarHeader({ className, ...props }: SidebarHeaderProps) {
+export function SidebarHeader({ className, ...props }: SidebarHeaderProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -334,9 +338,9 @@ function SidebarHeader({ className, ...props }: SidebarHeaderProps) {
 	);
 }
 
-type SidebarFooterProps = ComponentProps<"div">;
+export type SidebarFooterProps = ComponentProps<"div">;
 
-function SidebarFooter({ className, ...props }: SidebarFooterProps) {
+export function SidebarFooter({ className, ...props }: SidebarFooterProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -351,7 +355,10 @@ function SidebarFooter({ className, ...props }: SidebarFooterProps) {
 
 export type SidebarSeparatorProps = React.ComponentProps<typeof Separator>;
 
-function SidebarSeparator({ className, ...props }: SidebarSeparatorProps) {
+export function SidebarSeparator({
+	className,
+	...props
+}: SidebarSeparatorProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -366,7 +373,7 @@ function SidebarSeparator({ className, ...props }: SidebarSeparatorProps) {
 
 export type SidebarContentProps = ComponentProps<"div">;
 
-function SidebarContent({ className, ...props }: SidebarContentProps) {
+export function SidebarContent({ className, ...props }: SidebarContentProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -381,7 +388,7 @@ function SidebarContent({ className, ...props }: SidebarContentProps) {
 
 export type SidebarGroupProps = ComponentProps<"div">;
 
-function SidebarGroup({ className, ...props }: SidebarGroupProps) {
+export function SidebarGroup({ className, ...props }: SidebarGroupProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -398,7 +405,7 @@ export type SidebarGroupLabelProps = React.ComponentProps<"div"> & {
 	asChild?: boolean;
 };
 
-function SidebarGroupLabel({
+export function SidebarGroupLabel({
 	className,
 	asChild = false,
 	...props
@@ -420,7 +427,7 @@ export type SidebarGroupActionProps = ComponentProps<"button"> & {
 	asChild?: boolean;
 };
 
-function SidebarGroupAction({
+export function SidebarGroupAction({
 	className,
 	asChild = false,
 	...props
@@ -439,7 +446,7 @@ function SidebarGroupAction({
 
 export type SidebarGroupContentProps = ComponentProps<"div">;
 
-function SidebarGroupContent({
+export function SidebarGroupContent({
 	className,
 	...props
 }: SidebarGroupContentProps) {
@@ -457,7 +464,7 @@ function SidebarGroupContent({
 
 export type SidebarMenuProps = ComponentProps<"ul">;
 
-function SidebarMenu({ className, ...props }: SidebarMenuProps) {
+export function SidebarMenu({ className, ...props }: SidebarMenuProps) {
 	const { styles } = useSidebar();
 	return (
 		<ul
@@ -471,7 +478,7 @@ function SidebarMenu({ className, ...props }: SidebarMenuProps) {
 
 export type SidebarMenuItemProps = ComponentProps<"li">;
 
-function SidebarMenuItem({ className, ...props }: SidebarMenuItemProps) {
+export function SidebarMenuItem({ className, ...props }: SidebarMenuItemProps) {
 	const { styles } = useSidebar();
 
 	return (
@@ -492,7 +499,7 @@ export interface SidebarMenuButtonProps
 	tooltip?: ReactNode;
 }
 
-function SidebarMenuButton({
+export function SidebarMenuButton({
 	asChild = false,
 	isActive = false,
 	variant = "default",
@@ -534,7 +541,7 @@ export type SidebarMenuActionProps = ComponentProps<"button"> & {
 	showOnHover?: boolean;
 };
 
-function SidebarMenuAction({
+export function SidebarMenuAction({
 	className,
 	asChild = false,
 	showOnHover = false,

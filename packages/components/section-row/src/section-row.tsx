@@ -59,17 +59,16 @@ export const SectionRow = (props: SectionRowProps) => {
 				) : (
 					value
 				)}
+				{actions && (
+					<div
+						className={styles.action({
+							className: classNames?.action,
+						})}
+					>
+						{actions}
+					</div>
+				)}
 			</div>
-
-			{actions && (
-				<div
-					className={styles.action({
-						className: classNames?.action,
-					})}
-				>
-					{actions}
-				</div>
-			)}
 		</div>
 	);
 };

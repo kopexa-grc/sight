@@ -2,20 +2,22 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const sectionRow = tv({
 	slots: {
-		root: ["section-row items-start"],
-		title: "section-row__title text-muted-foreground text-sm font-semibold",
+		root: [
+			"grid grid-cols-1 text-base/6 sm:grid-cols-[min(25%,--spacing(32))_auto] sm:text-sm/6",
+			"gap-3",
+		],
+		title: [
+			"col-start-1 text-muted-foreground text-sm font-semibold",
+			"max-sm:pt-3",
+			"shrink-0",
+		],
 		valueText: "whitespace-pre-line text-pretty text-sm",
-		valueContainer: "section-row__value-container flex flex-wrap gap-1",
-		action: "section-row__action",
+		valueContainer: ["flex flex-row items-center gap-1", "max-sm:pt-1", "grow"],
+		action: "self-end ml-auto",
 	},
 	variants: {
 		hasActions: {
-			true: {
-				root: [
-					"has-actions",
-					//"md:grid-cols-[min(40%,--spacing(80))_auto_28px]",
-				],
-			},
+			true: {},
 			false: {},
 		},
 	},
