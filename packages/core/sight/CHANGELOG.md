@@ -1,5 +1,49 @@
 # @kopexa/sight
 
+## 7.0.6
+
+### Patch Changes
+
+- [`d51ff0a`](https://github.com/kopexa-grc/sight/commit/d51ff0a0f0feb2451d84b845ff468a82c8849609) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add Accordion component with README, package.json, and initial implementation
+
+- Updated dependencies [[`d51ff0a`](https://github.com/kopexa-grc/sight/commit/d51ff0a0f0feb2451d84b845ff468a82c8849609)]:
+  - @kopexa/accordion@0.0.1
+  - @kopexa/theme@1.6.4
+  - @kopexa/risk-badge@0.0.4
+  - @kopexa/alert-dialog@2.0.4
+  - @kopexa/avatar@2.0.4
+  - @kopexa/button@7.0.4
+  - @kopexa/calendar@2.0.4
+  - @kopexa/card@1.0.4
+  - @kopexa/checkbox@1.0.4
+  - @kopexa/chip@2.0.4
+  - @kopexa/code@1.0.4
+  - @kopexa/command@6.0.4
+  - @kopexa/data-table@1.0.4
+  - @kopexa/dialog@9.0.4
+  - @kopexa/drawer@9.0.4
+  - @kopexa/dropdown-menu@2.0.4
+  - @kopexa/heading@1.0.4
+  - @kopexa/hover-card@0.0.2
+  - @kopexa/infotip@0.0.2
+  - @kopexa/input@2.0.4
+  - @kopexa/page-header@1.0.4
+  - @kopexa/page-layout@4.0.4
+  - @kopexa/popover@9.0.4
+  - @kopexa/preview-card@0.0.4
+  - @kopexa/resizable@0.0.3
+  - @kopexa/risk-indicator@1.0.4
+  - @kopexa/section-row@0.0.4
+  - @kopexa/separator@1.0.4
+  - @kopexa/sidebar@1.0.5
+  - @kopexa/skeleton@1.0.4
+  - @kopexa/spinner@5.0.4
+  - @kopexa/split-page-layout@0.0.4
+  - @kopexa/tab-nav@1.0.4
+  - @kopexa/table@1.0.4
+  - @kopexa/tabs@1.0.4
+  - @kopexa/tooltip@5.0.4
+
 ## 7.0.5
 
 ### Patch Changes
