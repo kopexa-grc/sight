@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: explained */
 import { riskBadge } from "@kopexa/theme";
 import { type ComponentProps, useMemo } from "react";
 
