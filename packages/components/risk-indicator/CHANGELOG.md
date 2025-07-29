@@ -1,5 +1,12 @@
 # @kopexa/risk-indicator
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies [[`1d05383`](https://github.com/kopexa-grc/sight/commit/1d0538331fc97df6630a705a07da1ee4fb56312e)]:
+  - @kopexa/theme@1.6.5
+
 ## 1.0.4
 
 ### Patch Changes
