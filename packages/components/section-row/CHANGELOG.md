@@ -1,5 +1,14 @@
 # @kopexa/section-row
 
+## 0.0.5
+
+### Patch Changes
+
+- [`1d05383`](https://github.com/kopexa-grc/sight/commit/1d0538331fc97df6630a705a07da1ee4fb56312e) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created spacing and orientation variants for section row
+
+- Updated dependencies [[`1d05383`](https://github.com/kopexa-grc/sight/commit/1d0538331fc97df6630a705a07da1ee4fb56312e)]:
+  - @kopexa/theme@1.6.5
+
 ## 0.0.4
 
 ### Patch Changes
