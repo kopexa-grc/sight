@@ -43,7 +43,7 @@
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.9",
     "clean-package": "2.2.0",
-    "react": "^19.1.0"
+    "react": "^19.1.1"
   },
   "clean-package": "../../../clean-package.config.json",
   "tsup": {

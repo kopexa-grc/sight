@@ -51,8 +51,8 @@
 		"@kopexa/theme": "workspace:*",
 		"@kopexa/icons": "workspace:*",
 		"clean-package": "2.2.0",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0"
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1"
 	},
 	"clean-package": "../../../clean-package.config.json"
 }
