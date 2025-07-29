@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/alert-dialog",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A modal dialog that interrupts the user with important content and expects a response.",
   "keywords": [
     "alert-dialog"
