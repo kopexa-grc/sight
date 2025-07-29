@@ -1,3 +1,5 @@
+export { AlertIcon } from "./alert";
+export { AlertCircleIcon } from "./alert-circle";
 export { ArrowDown } from "./arrow-down";
 export { ArrowDownUp } from "./arrow-down-up";
 export { ArrowUp } from "./arrow-up";
@@ -36,6 +38,7 @@ export { RiskIcon } from "./risk";
 export { SaveIcon } from "./save";
 export { SearchIcon } from "./search";
 export { SettingsIcon } from "./settings";
+export { ShellIcon } from "./shell";
 export type { IconSvgProps } from "./types";
 export { UploadIcon } from "./upload";
 export { VendorIcon } from "./vendor";

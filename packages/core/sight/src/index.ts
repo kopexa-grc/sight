@@ -5,6 +5,7 @@ export * from "@kopexa/alert-dialog";
 export * from "@kopexa/avatar";
 export * from "@kopexa/button";
 export * from "@kopexa/calendar";
+export * from "@kopexa/callout";
 export * from "@kopexa/card";
 export * from "@kopexa/checkbox";
 export * from "@kopexa/chip";

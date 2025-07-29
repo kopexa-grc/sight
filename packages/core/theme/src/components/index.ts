@@ -16,6 +16,7 @@ export {
 } from "./avatar-group";
 export { type ButtonVariantProps, button } from "./button";
 export { type CalendarVariantProps, calendar } from "./calendar";
+export { type CalloutVariantProps, callout } from "./callout";
 export { type CardSlots, type CardVariantProps, card } from "./card";
 export { type CheckboxVariantProps, checkbox } from "./checkbox";
 export { type ChipSlots, type ChipVariantProps, chip } from "./chip";

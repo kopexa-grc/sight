@@ -270,6 +270,34 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
 
+  packages/components/callout:
+    dependencies:
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.9(react-dom@19.1.0)(react@19.1.0)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+
   packages/components/card:
     dependencies:
       '@kopexa/react-utils':
@@ -1235,6 +1263,9 @@ importers:
       '@kopexa/calendar':
         specifier: workspace:*
         version: link:../../components/calendar
+      '@kopexa/callout':
+        specifier: workspace:*
+        version: link:../../components/callout
       '@kopexa/card':
         specifier: workspace:*
         version: link:../../components/card
