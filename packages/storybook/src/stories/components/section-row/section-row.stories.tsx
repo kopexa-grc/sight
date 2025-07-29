@@ -9,7 +9,18 @@ export default {
 	parameters: {
 		layout: "fullscreen",
 	},
-	argTypes: {},
+	argTypes: {
+		orientation: {
+			control: { type: "select" },
+			options: ["horizontal", "vertical"],
+			defaultValue: "horizontal",
+		},
+		spacing: {
+			control: { type: "select" },
+			options: ["tight", "default", "loose"],
+			defaultValue: "default",
+		},
+	},
 	decorators: [
 		(Story) => (
 			<div className="grid place-content-center min-h-svh">
