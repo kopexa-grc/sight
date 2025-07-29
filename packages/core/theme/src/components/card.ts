@@ -3,8 +3,8 @@ import { tv, type VariantProps } from "tailwind-variants";
 export const card = tv({
 	slots: {
 		root: [
-			"flex flex-col relative overflow-hidden h-auto outline-hidden text-card-foreground bg-card box-border",
-			"border-2 border-transparent",
+			"flex flex-col relative overflow-hidden h-auto outline-hidden box-border",
+			"transition-colors duration-200",
 		],
 		header: [
 			"flex",
@@ -46,6 +46,14 @@ export const card = tv({
 		],
 	},
 	variants: {
+		variant: {
+			default: {
+				root: "bg-card text-card-foreground",
+			},
+			muted: {
+				root: "bg-muted text-muted-foreground",
+			},
+		},
 		shadow: {
 			none: {
 				root: "shadow-none",
@@ -64,8 +72,14 @@ export const card = tv({
 			},
 		},
 		border: {
-			true: {
-				root: "border",
+			none: {
+				root: "border-0",
+			},
+			default: {
+				root: "border border-border",
+			},
+			emphasized: {
+				root: "border-2 border-border",
 			},
 		},
 		radius: {
@@ -97,7 +111,10 @@ export const card = tv({
 		},
 		isHoverable: {
 			true: {
-				root: "hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-primary-600",
+				root: [
+					"hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
+					"hover:border-primary/50 hover:bg-card/80",
+				],
 			},
 		},
 		isPressable: {
@@ -113,16 +130,64 @@ export const card = tv({
 				root: "opacity-50 cursor-not-allowed pointer-events-none",
 			},
 		},
+		bleed: {
+			none: {},
+			sm: {
+				body: "px-2",
+				header: "px-2",
+				footer: "px-2",
+			},
+			md: {
+				body: "px-0",
+				header: "px-0",
+				footer: "px-0",
+			},
+			lg: {
+				body: "-mx-2",
+				header: "-mx-2",
+				footer: "-mx-2",
+			},
+			content: {
+				body: "px-0",
+				header: "px-3",
+				footer: "px-3",
+			},
+		},
+		spacing: {
+			sm: {
+				body: "p-2",
+				header: "p-2",
+				footer: "p-2",
+			},
+			md: {
+				body: "p-3",
+				header: "p-3",
+				footer: "p-3",
+			},
+			lg: {
+				body: "p-4",
+				header: "p-4",
+				footer: "p-4",
+			},
+			xl: {
+				body: "p-6",
+				header: "p-6",
+				footer: "p-6",
+			},
+		},
 	},
 	defaultVariants: {
+		variant: "default",
 		radius: "lg",
-		shadow: "sm",
+		shadow: "none",
 		fullWidth: false,
 		isHoverable: false,
 		isPressable: false,
 		isBlurred: false,
 		isDisabled: false,
-		border: true,
+		border: "default",
+		bleed: "none",
+		spacing: "md",
 	},
 });
 

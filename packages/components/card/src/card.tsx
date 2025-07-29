@@ -19,6 +19,7 @@ export const CardRoot = (props: CardRootProps) => {
 	const {
 		className,
 		children,
+		variant,
 		shadow,
 		radius,
 		isHoverable,
@@ -26,6 +27,9 @@ export const CardRoot = (props: CardRootProps) => {
 		isBlurred,
 		fullWidth,
 		isDisabled,
+		border,
+		bleed,
+		spacing,
 		asChild,
 		...rest
 	} = props;
@@ -33,6 +37,7 @@ export const CardRoot = (props: CardRootProps) => {
 	const Component = asChild ? Slot.Root : "div";
 
 	const styles = card({
+		variant,
 		shadow,
 		radius,
 		isHoverable,
@@ -40,6 +45,9 @@ export const CardRoot = (props: CardRootProps) => {
 		isBlurred,
 		fullWidth,
 		isDisabled,
+		border,
+		bleed,
+		spacing,
 	});
 
 	return (
@@ -68,7 +76,7 @@ export function CardHeader(props: CardHeaderProps) {
 	const { styles } = useCardContext();
 
 	return (
-		<Component className={styles.header({ class: className })} {...rest}>
+		<Component className={styles.header({ className })} {...rest}>
 			{children}
 		</Component>
 	);
@@ -85,7 +93,7 @@ export function CardBody(props: CardBodyProps) {
 	const { styles } = useCardContext();
 
 	return (
-		<Component className={styles.body({ class: className })} {...rest}>
+		<Component className={styles.body({ className })} {...rest}>
 			{children}
 		</Component>
 	);
@@ -102,7 +110,7 @@ export function CardFooter(props: CardFooterProps) {
 	const { styles } = useCardContext();
 
 	return (
-		<Component className={styles.footer({ class: className })} {...rest}>
+		<Component className={styles.footer({ className })} {...rest}>
 			{children}
 		</Component>
 	);

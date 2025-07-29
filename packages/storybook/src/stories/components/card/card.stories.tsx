@@ -6,17 +6,31 @@ export default {
 	title: "Components/Card",
 	component: Card.Root,
 	argTypes: {
+		variant: {
+			control: { type: "select" },
+			options: Object.keys(card.variants.variant),
+			defaultValue: card.defaultVariants.variant,
+		},
 		shadow: {
 			control: {
 				type: "select",
 			},
-			options: ["none", "sm", "md", "lg"],
+			options: Object.keys(card.variants.shadow),
+			defaultValue: card.defaultVariants.shadow,
 		},
 		radius: {
 			control: {
 				type: "select",
 			},
-			options: ["none", "sm", "md", "lg"],
+			options: Object.keys(card.variants.radius),
+			defaultValue: card.defaultVariants.radius,
+		},
+		spacing: {
+			control: {
+				type: "select",
+			},
+			options: Object.keys(card.variants.spacing),
+			defaultValue: card.defaultVariants.spacing,
 		},
 		fullWidth: {
 			control: {
