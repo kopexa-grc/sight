@@ -1,5 +1,12 @@
 # @kopexa/hover-card
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`5b8ff3f`](https://github.com/kopexa-grc/sight/commit/5b8ff3fe48440aed46b2ab38b9a96be5da207be6)]:
+  - @kopexa/theme@1.6.6
+
 ## 0.0.3
 
 ### Patch Changes

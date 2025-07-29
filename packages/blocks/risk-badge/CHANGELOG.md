@@ -1,5 +1,14 @@
 # @kopexa/risk-badge
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies [[`5b8ff3f`](https://github.com/kopexa-grc/sight/commit/5b8ff3fe48440aed46b2ab38b9a96be5da207be6)]:
+  - @kopexa/icons@9.0.6
+  - @kopexa/theme@1.6.6
+  - @kopexa/button@7.0.6
+
 ## 0.0.5
 
 ### Patch Changes

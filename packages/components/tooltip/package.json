@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/tooltip",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "description": "Floating element that provides a control with contextual information via pointer or focus.",
   "keywords": [
     "tooltip"

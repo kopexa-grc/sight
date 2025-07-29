@@ -1,5 +1,50 @@
 # @kopexa/sight
 
+## 7.0.8
+
+### Patch Changes
+
+- [`5b8ff3f`](https://github.com/kopexa-grc/sight/commit/5b8ff3fe48440aed46b2ab38b9a96be5da207be6) Thanks [@juliankoehn](https://github.com/juliankoehn)! - feat: add Callout component with README, tests, and icons
+
+- Updated dependencies [[`5b8ff3f`](https://github.com/kopexa-grc/sight/commit/5b8ff3fe48440aed46b2ab38b9a96be5da207be6)]:
+  - @kopexa/callout@0.0.1
+  - @kopexa/theme@1.6.6
+  - @kopexa/risk-badge@0.0.6
+  - @kopexa/accordion@0.0.3
+  - @kopexa/button@7.0.6
+  - @kopexa/calendar@2.0.6
+  - @kopexa/checkbox@1.0.6
+  - @kopexa/chip@2.0.6
+  - @kopexa/command@6.0.6
+  - @kopexa/data-table@1.0.6
+  - @kopexa/dialog@9.0.6
+  - @kopexa/drawer@9.0.6
+  - @kopexa/dropdown-menu@2.0.6
+  - @kopexa/infotip@0.0.4
+  - @kopexa/input@2.0.6
+  - @kopexa/preview-card@0.0.6
+  - @kopexa/resizable@0.0.5
+  - @kopexa/sidebar@1.0.7
+  - @kopexa/split-page-layout@0.0.6
+  - @kopexa/table@1.0.6
+  - @kopexa/alert-dialog@2.0.6
+  - @kopexa/avatar@2.0.6
+  - @kopexa/card@1.0.6
+  - @kopexa/code@1.0.6
+  - @kopexa/heading@1.0.6
+  - @kopexa/hover-card@0.0.4
+  - @kopexa/page-header@1.0.6
+  - @kopexa/page-layout@4.0.6
+  - @kopexa/popover@9.0.6
+  - @kopexa/risk-indicator@1.0.6
+  - @kopexa/section-row@0.0.6
+  - @kopexa/separator@1.0.6
+  - @kopexa/skeleton@1.0.6
+  - @kopexa/spinner@5.0.6
+  - @kopexa/tab-nav@1.0.6
+  - @kopexa/tabs@1.0.6
+  - @kopexa/tooltip@5.0.6
+
 ## 7.0.7
 
 ### Patch Changes
