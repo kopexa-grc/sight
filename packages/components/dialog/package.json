@@ -46,7 +46,7 @@
 		"@kopexa/motion-utils": "workspace:*",
 		"@kopexa/use-controllable-state": "workspace:*",
 		"@radix-ui/react-dialog": "^1.1.14",
-		"motion": "^12.23.11"
+		"motion": "^12.23.12"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",
