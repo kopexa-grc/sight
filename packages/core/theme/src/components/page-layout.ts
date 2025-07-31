@@ -72,6 +72,9 @@ export const pageLayout = tv({
 			lg: {
 				pane: "w-full md:w-72 lg:w-80",
 			},
+			xl: {
+				pane: "w-full md:w-80 lg:w-96",
+			},
 		},
 		spacing: {
 			none: {},
@@ -103,7 +106,7 @@ export const pageLayout = tv({
 		},
 	},
 	defaultVariants: {
-		width: "xl",
+		width: "full",
 		spacing: "normal",
 		paneWidth: "lg",
 		gap: "normal",
