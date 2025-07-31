@@ -1,5 +1,15 @@
 # @kopexa/checkbox
 
+## 1.0.7
+
+### Patch Changes
+
+- [`a28f84c`](https://github.com/kopexa-grc/sight/commit/a28f84cbcc21e76b1bb5971519fdcc1a8ac8f568) Thanks [@juliankoehn](https://github.com/juliankoehn)! - updated styles on the checkbox component
+
+- Updated dependencies [[`2d0132a`](https://github.com/kopexa-grc/sight/commit/2d0132a983dd46abb0bbd97a914d9f63489b91eb), [`a28f84c`](https://github.com/kopexa-grc/sight/commit/a28f84cbcc21e76b1bb5971519fdcc1a8ac8f568)]:
+  - @kopexa/theme@1.6.7
+  - @kopexa/icons@9.0.7
+
 ## 1.0.6
 
 ### Patch Changes
