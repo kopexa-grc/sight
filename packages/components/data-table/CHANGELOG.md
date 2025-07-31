@@ -1,5 +1,12 @@
 # @kopexa/data-table
 
+## 1.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`7eb3847`](https://github.com/kopexa-grc/sight/commit/7eb38471b5e69b3d2a7e07afc866f274dce0c59c)]:
+  - @kopexa/checkbox@1.0.8
+
 ## 1.0.7
 
 ### Patch Changes
