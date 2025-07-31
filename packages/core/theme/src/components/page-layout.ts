@@ -75,6 +75,9 @@ export const pageLayout = tv({
 			xl: {
 				pane: "w-full md:w-80 lg:w-96",
 			},
+			"2xl": {
+				pane: "w-full md:w-96 lg:w-[28rem]",
+			},
 		},
 		spacing: {
 			none: {},
