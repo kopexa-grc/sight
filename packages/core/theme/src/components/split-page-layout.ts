@@ -10,7 +10,7 @@ export const splitPageLayout = tv({
 			"flex flex-col",
 			"md:border-s",
 			//"size-full",
-			"bg-muted dark:bg-primary-900",
+			"bg-muted/50 dark:bg-primary-900",
 		],
 		panel: [
 			//"md:border-s",
