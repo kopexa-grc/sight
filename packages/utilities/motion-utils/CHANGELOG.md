@@ -1,5 +1,12 @@
 # @kopexa/motion-utils
 
+## 9.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`2f0de1c`](https://github.com/kopexa-grc/sight/commit/2f0de1cb0a8b49798f80582887e13e75afa02d77)]:
+  - @kopexa/theme@1.6.8
+
 ## 9.0.7
 
 ### Patch Changes

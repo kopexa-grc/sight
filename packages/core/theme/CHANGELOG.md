@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.6.8
+
+### Patch Changes
+
+- [`2f0de1c`](https://github.com/kopexa-grc/sight/commit/2f0de1cb0a8b49798f80582887e13e75afa02d77) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - default page layout width to full + pane width variants
+
 ## 1.6.7
 
 ### Patch Changes
