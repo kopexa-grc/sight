@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/input",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A basic text input component",
   "keywords": [
     "input"

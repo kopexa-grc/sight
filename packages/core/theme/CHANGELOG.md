@@ -1,5 +1,13 @@
 # @kopexa/theme
 
+## 1.6.7
+
+### Patch Changes
+
+- [`2d0132a`](https://github.com/kopexa-grc/sight/commit/2d0132a983dd46abb0bbd97a914d9f63489b91eb) Thanks [@juliankoehn](https://github.com/juliankoehn)! - changed he background opacity of our split page layout panel
+
+- [`a28f84c`](https://github.com/kopexa-grc/sight/commit/a28f84cbcc21e76b1bb5971519fdcc1a8ac8f568) Thanks [@juliankoehn](https://github.com/juliankoehn)! - updated styles on the checkbox component
+
 ## 1.6.6
 
 ### Patch Changes
