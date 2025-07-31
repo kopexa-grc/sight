@@ -1,6 +1,6 @@
 {
 	"name": "@kopexa/button",
-	"version": "7.0.7",
+	"version": "7.0.8",
 	"description": "Buttons allow users to perform actions and choose with a single tap.",
 	"keywords": [
 		"button"
