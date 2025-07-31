@@ -9,7 +9,7 @@ type IconProps = ComponentProps<"svg"> & CheckboxIconProps;
  * state of a checkbox.
  */
 export function CheckboxIcon(props: IconProps) {
-	const { isIndeterminate, ...otherProps } = props;
+	const { isIndeterminate, isSelected: _, ...otherProps } = props;
 	const BaseIcon = isIndeterminate ? MinusIcon : CheckIcon;
 
 	return <BaseIcon {...otherProps} />;
