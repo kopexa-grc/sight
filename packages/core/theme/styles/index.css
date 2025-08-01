@@ -39,8 +39,8 @@
 	--sidebar-foreground: var(--color-white);
 	--sidebar-primary: oklch(0.205 0 0);
 	--sidebar-primary-foreground:  var(--color-white);
-	--sidebar-accent:var(--color-default-200);
-	--sidebar-accent-foreground: oklch(0.205 0 0);
+	--sidebar-accent:var(--color-primary-700);
+	--sidebar-accent-foreground: var(--color-primary-50);
 	--sidebar-border: var(--color-default-200);
 	--sidebar-ring: oklch(0.708 0 0);
 }
