@@ -1,5 +1,16 @@
 # @kopexa/drawer
 
+## 9.0.9
+
+### Patch Changes
+
+- [`c973b49`](https://github.com/kopexa-grc/sight/commit/c973b4953849b4abe83d8dfdad8c4558c59d2e45) Thanks [@juliankoehn](https://github.com/juliankoehn)! - removed framer motion from dialog and drawer, using tw-animate
+
+- Updated dependencies [[`c973b49`](https://github.com/kopexa-grc/sight/commit/c973b4953849b4abe83d8dfdad8c4558c59d2e45), [`99db878`](https://github.com/kopexa-grc/sight/commit/99db8786314e4a12e5f96f9989f790e2653fb34a)]:
+  - @kopexa/theme@1.6.9
+  - @kopexa/icons@9.0.9
+  - @kopexa/motion-utils@9.0.9
+
 ## 9.0.8
 
 ### Patch Changes
