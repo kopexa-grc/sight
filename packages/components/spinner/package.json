@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/spinner",
-  "version": "5.0.8",
+  "version": "5.0.9",
   "description": "A loading spinner package",
   "keywords": [
     "spinner"
