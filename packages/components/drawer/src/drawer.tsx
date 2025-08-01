@@ -1,16 +1,8 @@
 import { CloseIcon } from "@kopexa/icons";
-import { TRANSITION_EASINGS, TRANSITION_VARIANTS } from "@kopexa/motion-utils";
 import { createContext } from "@kopexa/react-utils";
 import { type DrawerVariantProps, drawer } from "@kopexa/theme";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import {
-	AnimatePresence,
-	domAnimation,
-	LazyMotion,
-	motion,
-	type Variants,
-} from "motion/react";
-import { type ComponentProps, useMemo } from "react";
+import type { ComponentProps } from "react";
 import { useControllableState } from "../../../hooks/use-controllable-state/src";
 
 type DrawerContextValue = {
@@ -78,23 +70,13 @@ export type DrawerOverlayProps = ComponentProps<typeof DialogPrimitive.Overlay>;
 export function DrawerOverlay({ className, ...props }: DrawerOverlayProps) {
 	const { styles } = useDrawerContext();
 	return (
-		<LazyMotion features={domAnimation}>
-			<DialogPrimitive.Overlay
-				data-slot="drawer-overlay"
-				className={styles.overlay({
-					className,
-				})}
-				{...props}
-				asChild
-			>
-				<motion.div
-					animate="enter"
-					exit="exit"
-					initial="exit"
-					variants={TRANSITION_VARIANTS.fade as Variants}
-				/>
-			</DialogPrimitive.Overlay>
-		</LazyMotion>
+		<DialogPrimitive.Overlay
+			data-slot="drawer-overlay"
+			className={styles.overlay({
+				className,
+			})}
+			{...props}
+		/>
 	);
 }
 
@@ -107,68 +89,29 @@ export type DrawerContentProps = ComponentProps<
 export const DrawerContent = (props: DrawerContentProps) => {
 	const { className, children, showCloseButton = false, ...rest } = props;
 
-	const { open, styles, placement } = useDrawerContext();
-
-	const motionProps = useMemo(() => {
-		const key = placement === "left" || placement === "right" ? "x" : "y";
-
-		return {
-			variants: {
-				enter: {
-					[key]: 0,
-					transition: {
-						[key]: {
-							duration: 0.2,
-							ease: TRANSITION_EASINGS.easeOut,
-						},
-					},
-				},
-				exit: {
-					[key]: placement === "top" || placement === "left" ? "-100%" : "100%",
-					transition: {
-						[key]: {
-							duration: 0.1,
-							ease: TRANSITION_EASINGS.easeIn,
-						},
-					},
-				},
-			} as Variants,
-		};
-	}, [placement]);
+	const { styles } = useDrawerContext();
 
 	return (
-		<AnimatePresence>
-			{open ? (
-				<DrawerPortal data-slot="drawer-portal" forceMount>
-					<DrawerOverlay />
-					<DialogPrimitive.Content
-						data-slot="drawer-content"
-						className={styles.content({ className })}
-						asChild
-						{...rest}
-					>
-						<motion.div
-							animate="enter"
-							exit="exit"
-							initial="exit"
-							{...motionProps}
-						>
-							{children}
+		<DrawerPortal data-slot="drawer-portal">
+			<DrawerOverlay />
+			<DialogPrimitive.Content
+				data-slot="drawer-content"
+				className={styles.content({ className })}
+				{...rest}
+			>
+				{children}
 
-							{showCloseButton && (
-								<DialogPrimitive.Close
-									data-slot="dialog-close"
-									className={styles.close()}
-								>
-									<CloseIcon />
-									<span className="sr-only">Close</span>
-								</DialogPrimitive.Close>
-							)}
-						</motion.div>
-					</DialogPrimitive.Content>
-				</DrawerPortal>
-			) : null}
-		</AnimatePresence>
+				{showCloseButton && (
+					<DialogPrimitive.Close
+						data-slot="dialog-close"
+						className={styles.close()}
+					>
+						<CloseIcon />
+						<span className="sr-only">Close</span>
+					</DialogPrimitive.Close>
+				)}
+			</DialogPrimitive.Content>
+		</DrawerPortal>
 	);
 };
 

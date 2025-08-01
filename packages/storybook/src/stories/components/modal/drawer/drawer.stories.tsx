@@ -7,23 +7,16 @@ export default {
 	title: "Components/Overlays and layering/Drawer",
 	component: Drawer.Root,
 	argTypes: {
+		placement: {
+			control: { type: "select" },
+			options: ["left", "right", "top", "bottom"],
+			defaultValue: "right",
+		},
 		size: {
 			control: {
 				type: "select",
 			},
-			options: [
-				"xs",
-				"sm",
-				"md",
-				"lg",
-				"xl",
-				"2xl",
-				"3xl",
-				"4xl",
-				"5xl",
-				"6xl",
-				"full",
-			],
+			options: Object.keys(drawer.variants.size),
 		},
 		radius: {
 			control: {

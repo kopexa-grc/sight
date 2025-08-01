@@ -1,19 +1,10 @@
 import { CloseIcon } from "@kopexa/icons";
-import { TRANSITION_VARIANTS } from "@kopexa/motion-utils";
 import { createContext } from "@kopexa/react-utils";
 import { cn } from "@kopexa/shared-utils";
 import { type DialogVariantProps, dialog } from "@kopexa/theme";
 import { useControllableState } from "@kopexa/use-controllable-state";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import {
-	AnimatePresence,
-	domAnimation,
-	LazyMotion,
-	motion,
-	type Variants,
-} from "motion/react";
 import type { ComponentProps } from "react";
-import { scaleInOut } from "./transition";
 
 type DialogContextValue = {
 	styles: ReturnType<typeof dialog>;
@@ -82,23 +73,13 @@ export type DialogOverlayProps = ComponentProps<typeof DialogPrimitive.Overlay>;
 export function DialogOverlay({ className, ...props }: DialogOverlayProps) {
 	const { styles } = useDialogContext();
 	return (
-		<LazyMotion features={domAnimation}>
-			<DialogPrimitive.Overlay
-				data-slot="dialog-overlay"
-				className={styles.overlay({
-					className,
-				})}
-				{...props}
-				asChild
-			>
-				<motion.div
-					animate="enter"
-					exit="exit"
-					initial="exit"
-					variants={TRANSITION_VARIANTS.fade as Variants}
-				/>
-			</DialogPrimitive.Overlay>
-		</LazyMotion>
+		<DialogPrimitive.Overlay
+			data-slot="dialog-overlay"
+			className={styles.overlay({
+				className,
+			})}
+			{...props}
+		/>
 	);
 }
 
@@ -114,41 +95,27 @@ export function DialogContent({
 	showCloseButton = true,
 	...props
 }: DialogContentProps) {
-	const { styles, open } = useDialogContext();
+	const { styles } = useDialogContext();
 	return (
-		<AnimatePresence>
-			{open ? (
-				<DialogPortal data-slot="dialog-portal" forceMount>
-					<DialogOverlay />
-					<LazyMotion features={domAnimation}>
-						<DialogPrimitive.Content
-							data-slot="dialog-content"
-							className={cn(styles.content(), className)}
-							asChild
-							{...props}
-						>
-							<motion.div
-								animate="enter"
-								exit="exit"
-								initial="exit"
-								variants={scaleInOut}
-							>
-								{children}
-								{showCloseButton && (
-									<DialogPrimitive.Close
-										data-slot="dialog-close"
-										className={styles.close()}
-									>
-										<CloseIcon />
-										<span className="sr-only">Close</span>
-									</DialogPrimitive.Close>
-								)}
-							</motion.div>
-						</DialogPrimitive.Content>
-					</LazyMotion>
-				</DialogPortal>
-			) : null}
-		</AnimatePresence>
+		<DialogPortal data-slot="dialog-portal">
+			<DialogOverlay />
+			<DialogPrimitive.Content
+				data-slot="dialog-content"
+				className={cn(styles.content(), className)}
+				{...props}
+			>
+				{children}
+				{showCloseButton && (
+					<DialogPrimitive.Close
+						data-slot="dialog-close"
+						className={styles.close()}
+					>
+						<CloseIcon />
+						<span className="sr-only">Close</span>
+					</DialogPrimitive.Close>
+				)}
+			</DialogPrimitive.Content>
+		</DialogPortal>
 	);
 }
 

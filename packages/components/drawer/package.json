@@ -35,7 +35,6 @@
 	},
 	"peerDependencies": {
 		"@kopexa/theme": "workspace:*",
-		"motion": ">=12.23.6",
 		"react": ">=19.0.0-rc.0",
 		"react-dom": ">=19.0.0-rc.0"
 	},
@@ -45,8 +44,7 @@
 		"@kopexa/icons": "workspace:*",
 		"@kopexa/use-controllable-state": "workspace:*",
 		"@kopexa/motion-utils": "workspace:*",
-		"@radix-ui/react-dialog": "^1.1.14",
-		"motion": "^12.23.12"
+		"@radix-ui/react-dialog": "^1.1.14"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",

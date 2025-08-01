@@ -2,22 +2,20 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const dialog = tv({
 	slots: {
-		overlay: ["fixed inset-0 z-50 bg-black/25"],
+		overlay: [
+			"fixed inset-0 z-50 bg-black/25",
+			"data-[state=open]:animate-in data-[state=closed]:animate-out",
+			"data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+		],
 		content: [
 			"flex flex-col",
 			"bg-background fixed top-[50%] left-[50%] z-50",
 			"w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%]",
 			"border shadow-lg",
-			//  mobile animation vars
-			"[--scale-enter:100%]",
-			"[--scale-exit:100%]",
-			"[--slide-enter:0px]",
-			"[--slide-exit:80px]",
-			// tablet/desktop animation vars
-			"sm:[--scale-enter:100%]",
-			"sm:[--scale-exit:103%]",
-			"sm:[--slide-enter:0px]",
-			"sm:[--slide-exit:0px]",
+			"data-[state=open]:animate-in data-[state=closed]:animate-out",
+			"data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+			"data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95",
+			"duration-200 sm:max-w-lg",
 		],
 		close: [
 			"ring-offset-background focus:ring-ring",
@@ -67,7 +65,7 @@ export const dialog = tv({
 			full: {
 				content: [
 					"my-0 mx:0 sm:mx-0 sm:my-0 max-w-[calc(100%-1rem)] w-full h-[calc(100dvh-1rem)] inset-2",
-					"translate-0",
+					"translate-0 sm:max-w-[calc(100%-1rem)]",
 				],
 			},
 		},
