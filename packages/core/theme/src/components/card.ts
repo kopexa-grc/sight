@@ -3,7 +3,7 @@ import { tv, type VariantProps } from "tailwind-variants";
 export const card = tv({
 	slots: {
 		root: [
-			"flex flex-col relative overflow-hidden h-auto outline-hidden box-border",
+			"flex flex-col relative h-auto outline-hidden box-border",
 			"transition-colors duration-200",
 		],
 		header: [
