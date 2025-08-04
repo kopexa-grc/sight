@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.6.10
+
+### Patch Changes
+
+- [`c65b944`](https://github.com/kopexa-grc/sight/commit/c65b9444b7cde9ec7aceddbda279f4b1fdc0cf08) Thanks [@juliankoehn](https://github.com/juliankoehn)! - removed overflow-hidden
+
 ## 1.6.9
 
 ### Patch Changes
