@@ -1,5 +1,12 @@
 # @kopexa/tabs
 
+## 1.0.11
+
+### Patch Changes
+
+- Updated dependencies [[`ae9a1d0`](https://github.com/kopexa-grc/sight/commit/ae9a1d0ccf5812eee0d54025bbeb1065850ce66a)]:
+  - @kopexa/theme@1.6.11
+
 ## 1.0.10
 
 ### Patch Changes

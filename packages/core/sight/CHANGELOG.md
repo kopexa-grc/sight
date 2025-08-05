@@ -1,5 +1,51 @@
 # @kopexa/sight
 
+## 7.0.14
+
+### Patch Changes
+
+- [`ae9a1d0`](https://github.com/kopexa-grc/sight/commit/ae9a1d0ccf5812eee0d54025bbeb1065850ce66a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new blankstate component
+
+- Updated dependencies [[`ae9a1d0`](https://github.com/kopexa-grc/sight/commit/ae9a1d0ccf5812eee0d54025bbeb1065850ce66a)]:
+  - @kopexa/blankstate@0.0.1
+  - @kopexa/theme@1.6.11
+  - @kopexa/risk-badge@0.0.11
+  - @kopexa/accordion@0.0.8
+  - @kopexa/alert-dialog@2.0.11
+  - @kopexa/avatar@2.0.11
+  - @kopexa/button@7.0.11
+  - @kopexa/calendar@2.0.11
+  - @kopexa/callout@0.0.6
+  - @kopexa/card@1.0.11
+  - @kopexa/checkbox@1.0.12
+  - @kopexa/chip@2.0.11
+  - @kopexa/code@1.0.11
+  - @kopexa/command@6.0.11
+  - @kopexa/data-table@1.0.12
+  - @kopexa/dialog@9.0.11
+  - @kopexa/drawer@9.0.11
+  - @kopexa/dropdown-menu@2.0.11
+  - @kopexa/heading@1.0.11
+  - @kopexa/hover-card@0.0.9
+  - @kopexa/infotip@0.0.9
+  - @kopexa/input@2.0.11
+  - @kopexa/page-header@1.0.11
+  - @kopexa/page-layout@4.0.11
+  - @kopexa/popover@9.0.11
+  - @kopexa/preview-card@0.0.11
+  - @kopexa/resizable@0.0.10
+  - @kopexa/risk-indicator@1.0.11
+  - @kopexa/section-row@0.0.11
+  - @kopexa/separator@1.0.11
+  - @kopexa/sidebar@1.0.12
+  - @kopexa/skeleton@1.0.11
+  - @kopexa/spinner@5.0.11
+  - @kopexa/split-page-layout@0.0.11
+  - @kopexa/tab-nav@1.0.11
+  - @kopexa/table@1.0.11
+  - @kopexa/tabs@1.0.11
+  - @kopexa/tooltip@5.0.11
+
 ## 7.0.13
 
 ### Patch Changes

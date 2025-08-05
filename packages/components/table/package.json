@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/table",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ables are used to display tabular data using rows and columns. ",
   "keywords": [
     "table"
