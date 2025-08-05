@@ -1584,8 +1584,8 @@ importers:
         version: 4.1.11
     devDependencies:
       '@storybook/addon-a11y':
-        specifier: ^9.0.18
-        version: 9.0.18(storybook@9.0.18)
+        specifier: ^9.1.1
+        version: 9.1.1(storybook@9.0.18)
       '@storybook/addon-docs':
         specifier: ^9.0.18
         version: 9.0.18(@types/react@19.1.9)(storybook@9.0.18)
@@ -4483,10 +4483,10 @@ packages:
       '@sinonjs/commons': 3.0.1
     dev: true
 
-  /@storybook/addon-a11y@9.0.18(storybook@9.0.18):
-    resolution: {integrity: sha512-msbsTI9TmePQ5ElVclLi7ns5WaAntouJFaj9ElNugFWME21k68RiyXnioDjDfEoi/+y8tthQNNqjsHoX/Ev0Og==}
+  /@storybook/addon-a11y@9.1.1(storybook@9.0.18):
+    resolution: {integrity: sha512-ZCKxYQmHnisAdpjYeRRD41NfA5UlTFpej0xgGLiAc9PGz264RRP5B+pZUHHNIyEKA9JCDcyc4BPe+xnXZgDjSA==}
     peerDependencies:
-      storybook: ^9.0.18
+      storybook: ^9.1.1
     dependencies:
       '@storybook/global': 5.0.0
       axe-core: 4.10.3
