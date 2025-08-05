@@ -195,9 +195,6 @@ importers:
 
   packages/components/blankstate:
     dependencies:
-      '@kopexa/heading':
-        specifier: workspace:*
-        version: link:../heading
       '@kopexa/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
