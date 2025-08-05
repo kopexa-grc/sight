@@ -3,6 +3,7 @@
 export * from "@kopexa/accordion";
 export * from "@kopexa/alert-dialog";
 export * from "@kopexa/avatar";
+export * from "@kopexa/blankstate";
 export * from "@kopexa/button";
 export * from "@kopexa/calendar";
 export * from "@kopexa/callout";

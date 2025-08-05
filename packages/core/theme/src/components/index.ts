@@ -14,6 +14,11 @@ export {
 	type AvatarGroupVariantProps,
 	avatarGroup,
 } from "./avatar-group";
+export {
+	type BlankStateSlots,
+	type BlankStateVariantProps,
+	blankstate,
+} from "./blankstate";
 export { type ButtonVariantProps, button } from "./button";
 export { type CalendarVariantProps, calendar } from "./calendar";
 export { type CalloutVariantProps, callout } from "./callout";

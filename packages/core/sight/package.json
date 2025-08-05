@@ -79,7 +79,8 @@
     "@kopexa/hover-card": "workspace:*",
     "@kopexa/infotip": "workspace:*",
     "@kopexa/accordion": "workspace:*",
-    "@kopexa/callout": "workspace:*"
+    "@kopexa/callout": "workspace:*",
+    "@kopexa/blankstate": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
