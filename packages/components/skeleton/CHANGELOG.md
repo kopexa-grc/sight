@@ -1,5 +1,16 @@
 # @kopexa/skeleton
 
+## 2.0.0
+
+### Minor Changes
+
+- [`d324456`](https://github.com/kopexa-grc/sight/commit/d324456e4a290b6862aa065205bcc01eb0768392) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - SkeletonAvatar component + smaller avatar sizes
+
+### Patch Changes
+
+- Updated dependencies [[`d324456`](https://github.com/kopexa-grc/sight/commit/d324456e4a290b6862aa065205bcc01eb0768392)]:
+  - @kopexa/theme@1.7.0
+
 ## 1.0.11
 
 ### Patch Changes
