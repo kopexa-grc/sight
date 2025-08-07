@@ -5,6 +5,9 @@ import type { Meta } from "@storybook/react";
 export default {
 	title: "Components/Skeleton",
 	component: Skeleton,
+	args: {
+		className: "w-30 h-10",
+	},
 } as Meta<typeof Skeleton>;
 
 const defaultProps = {

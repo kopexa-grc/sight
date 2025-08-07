@@ -71,6 +71,10 @@ export {
 	sidebarMenuButton,
 } from "./sidebar";
 export { skeleton } from "./skeleton";
+export {
+	type SkeletonAvatarVariantProps,
+	skeletonAvatar,
+} from "./skeleton-avatar";
 export { type SpinnerVariants, spinner } from "./spinner";
 export {
 	type SplitPageLayoutVariantProps,

@@ -52,6 +52,12 @@ export const avatar = tv({
 	},
 	variants: {
 		size: {
+			"2xs": {
+				root: "w-4 h-4 text-[8px]",
+			},
+			xs: {
+				root: "w-6 h-6 text-[10px]",
+			},
 			sm: {
 				root: "w-8 h-8 text-[11px]",
 			},

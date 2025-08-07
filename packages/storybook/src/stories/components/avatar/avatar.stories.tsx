@@ -29,7 +29,7 @@ export default {
 			control: {
 				type: "select",
 			},
-			options: ["sm", "md", "lg"],
+			options: ["2xs", "xs", "sm", "md", "lg"],
 		},
 	},
 } as Meta<typeof Avatar>;
