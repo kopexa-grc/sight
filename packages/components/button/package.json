@@ -45,7 +45,8 @@
 		"@kopexa/spinner": "workspace:*",
 		"@kopexa/tooltip": "workspace:*",
 		"@radix-ui/react-slot": "^1.2.3",
-		"@kopexa/ripple": "workspace:*"
+		"@kopexa/ripple": "workspace:*",
+        "@kopexa/icons": "workspace:*"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",

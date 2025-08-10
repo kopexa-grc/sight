@@ -14,6 +14,7 @@ export { ChevronUpDown } from "./chevron-up-down";
 export { CircleIcon } from "./circle";
 export { CloseIcon } from "./close";
 export { ControlsIcon } from "./controls";
+export { CopyIcon } from "./copy-icon";
 export { DataAssetIcon } from "./data-asset";
 export { DocumentsIcon } from "./documents";
 export { DSARIcon } from "./dsar";

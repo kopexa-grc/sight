@@ -2,7 +2,7 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 export const table = tv({
 	slots: {
-		container: ["overflow-x-auto whitespace-nowrap", "-mx-3 md:-mx-6"],
+		container: ["overflow-x-auto whitespace-nowrap", "-mx-(--gutter)"],
 		wrapper: ["inline-block min-w-full align-middle"],
 		table: "min-w-full h-auto",
 		thead: "",
@@ -53,7 +53,9 @@ export const table = tv({
 	},
 	variants: {
 		bleed: {
-			true: {},
+			true: {
+				container: ["[--gutter:--spacing(3)] md:[--gutter:--spacing(6)]"],
+			},
 			false: {
 				container: ["px-3 md:px-6"],
 				th: ["first:pl-1 last:pr-1"],
@@ -68,6 +70,9 @@ export const table = tv({
 		},
 		variant: {
 			default: {},
+			elevated: {
+				container: "shadow-sm rounded-md border-1 !px-0",
+			},
 			// a border between cells and above the table
 			// this is used for the grid variant
 			grid: {

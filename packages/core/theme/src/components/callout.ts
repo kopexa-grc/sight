@@ -6,7 +6,7 @@ export const callout = tv({
 		iconContainer: "flex-shrink-0 mt-0.5",
 		icon: "h-5 w-5",
 		title: "font-semibold leading-none tracking-tight mb-2",
-		content: "text-sm/6",
+		content: "text-sm/6 grow",
 		closeButton:
 			"absolute top-2 right-2 opacity-70 hover:opacity-100 transition-opacity focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
 	},
