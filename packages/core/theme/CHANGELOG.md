@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.7.1
+
+### Patch Changes
+
+- [`82dd0df`](https://github.com/kopexa-grc/sight/commit/82dd0df5cc8952f10960abfc7d0d6cd6b2db01c1) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created copy button
+
 ## 1.7.0
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @kopexa/button
 
+## 8.0.1
+
+### Patch Changes
+
+- [`82dd0df`](https://github.com/kopexa-grc/sight/commit/82dd0df5cc8952f10960abfc7d0d6cd6b2db01c1) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created copy button
+
+- Updated dependencies [[`82dd0df`](https://github.com/kopexa-grc/sight/commit/82dd0df5cc8952f10960abfc7d0d6cd6b2db01c1)]:
+  - @kopexa/icons@10.0.1
+  - @kopexa/theme@1.7.1
+  - @kopexa/ripple@10.0.1
+  - @kopexa/spinner@6.0.1
+  - @kopexa/tooltip@6.0.1
+
 ## 8.0.0
 
 ### Patch Changes
