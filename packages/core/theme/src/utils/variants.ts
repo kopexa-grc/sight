@@ -1,5 +1,5 @@
 const solid = {
-	default: "bg-accent/70 text-accent-foreground",
+	default: "bg-foreground text-background",
 	primary: "bg-primary text-primary-foreground",
 	secondary: "bg-secondary text-secondary-foreground",
 	destructive: "bg-destructive text-destructive-foreground",
@@ -38,10 +38,12 @@ const faded = {
 
 const ghost = {
 	primary: "bg-transparent text-primary dark:text-primary-foreground",
-	secondary: "bg-transparent text-secondary",
+	secondary:
+		"bg-transparent text-secondary data-[active-state=on]:text-accent-foreground",
 	destructive: "bg-transparent text-destructive",
 	warning: "bg-transparent text-warning",
 	success: "bg-transparent text-success",
+	default: "bg-transparent text-accent-foreground",
 };
 
 export const colorVariants = {

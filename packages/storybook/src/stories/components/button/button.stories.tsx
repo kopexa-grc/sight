@@ -8,6 +8,13 @@ export default {
 	title: "Components/Button",
 	component: Button,
 	argTypes: {
+		active: {
+			control: {
+				type: "boolean",
+			},
+			options: [true, false],
+			defaultValue: false,
+		},
 		variant: {
 			control: {
 				type: "select",
@@ -18,7 +25,14 @@ export default {
 			control: {
 				type: "select",
 			},
-			options: ["primary", "secondary", "destructive", "warning", "success"],
+			options: [
+				"primary",
+				"secondary",
+				"destructive",
+				"warning",
+				"success",
+				"default",
+			],
 		},
 		size: {
 			control: {
@@ -37,6 +51,25 @@ export default {
 			},
 		},
 	},
+	parameters: {
+		controls: { expanded: true },
+	},
+	decorators: [
+		(Story, context) => {
+			const { active, ...rest } = context.args as {
+				active?: boolean;
+			} & typeof context.args;
+			return (
+				<Story
+					{...context}
+					args={{
+						...rest,
+						...(active ? { "data-active-state": "on" } : {}),
+					}}
+				/>
+			);
+		},
+	],
 } as Meta<typeof Button>;
 
 const defaultProps = {

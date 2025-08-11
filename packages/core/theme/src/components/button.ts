@@ -36,7 +36,7 @@ export const button = tv({
 	variants: {
 		variant: {
 			solid: "shadow-xs",
-			ghost: "",
+			ghost: "data-[active-state=on]:bg-accent/70",
 			outline: "border-1 bg-transparent",
 			link: "",
 		},
@@ -51,6 +51,7 @@ export const button = tv({
 			destructive: "",
 			warning: "",
 			success: "",
+			default: "",
 		},
 		radius: {},
 		fullWidth: {
@@ -95,6 +96,11 @@ export const button = tv({
 			color: "success",
 			class: colorVariants.solid.success,
 		},
+		{
+			variant: "solid",
+			color: "default",
+			class: colorVariants.solid.default,
+		},
 		// ghost color
 		{
 			variant: "ghost",
@@ -121,6 +127,11 @@ export const button = tv({
 			color: "success",
 			class: colorVariants.ghost.success,
 		},
+		{
+			variant: "ghost",
+			color: "default",
+			class: colorVariants.ghost.default,
+		},
 		// outline color
 		{
 			variant: "outline",
@@ -146,6 +157,11 @@ export const button = tv({
 			variant: "outline",
 			color: "success",
 			class: colorVariants.outline.success,
+		},
+		{
+			variant: "outline",
+			color: "default",
+			class: colorVariants.outline.default,
 		},
 		// icon
 		{

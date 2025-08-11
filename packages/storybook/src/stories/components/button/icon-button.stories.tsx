@@ -17,7 +17,14 @@ export default {
 			control: {
 				type: "select",
 			},
-			options: ["primary", "secondary", "destructive", "warning", "success"],
+			options: [
+				"primary",
+				"secondary",
+				"destructive",
+				"warning",
+				"success",
+				"default",
+			],
 		},
 		size: {
 			control: {
