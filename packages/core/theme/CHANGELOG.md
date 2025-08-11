@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.7.2
+
+### Patch Changes
+
+- [`87103d7`](https://github.com/kopexa-grc/sight/commit/87103d77ae7e38145a2de2d75cb0b98b53b3570a) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - add button color 'default' and active state for ghost buttons
+
 ## 1.7.1
 
 ### Patch Changes

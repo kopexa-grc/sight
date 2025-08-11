@@ -1,5 +1,18 @@
 # @kopexa/sidebar
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`87103d7`](https://github.com/kopexa-grc/sight/commit/87103d77ae7e38145a2de2d75cb0b98b53b3570a)]:
+  - @kopexa/theme@1.7.2
+  - @kopexa/button@8.0.2
+  - @kopexa/drawer@10.0.2
+  - @kopexa/input@3.0.2
+  - @kopexa/separator@2.0.2
+  - @kopexa/tooltip@6.0.2
+  - @kopexa/icons@10.0.2
+
 ## 2.0.1
 
 ### Patch Changes

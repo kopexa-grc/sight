@@ -1,5 +1,12 @@
 # @kopexa/icons
 
+## 10.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`87103d7`](https://github.com/kopexa-grc/sight/commit/87103d77ae7e38145a2de2d75cb0b98b53b3570a)]:
+  - @kopexa/theme@1.7.2
+
 ## 10.0.1
 
 ### Patch Changes
