@@ -37,8 +37,8 @@
     "@kopexa/icons": "workspace:*",
     "@kopexa/sight": "workspace:*",
     "@kopexa/theme": "workspace:*",
-    "@storybook/addon-links": "^9.0.18",
-    "@storybook/addon-themes": "^9.0.18",
+    "@storybook/addon-links": "^9.1.1",
+    "@storybook/addon-themes": "^9.1.1",
     "@storybook/react": "^9.1.1",
     "@tailwindcss/vite": "^4.1.11",
     "@tanstack/react-query": "^5.84.1",
@@ -52,25 +52,19 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^9.1.1",
     "@storybook/addon-docs": "^9.1.1",
-    "@storybook/addon-vitest": "^9.0.18",
-    "@storybook/react-vite": "^9.0.18",
+    "@storybook/addon-vitest": "^9.1.1",
+    "@storybook/react-vite": "^9.1.1",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
+    "@vitejs/plugin-react": "^5.0.0",
     "@vitest/browser": "^3.2.4",
     "@vitest/coverage-v8": "^3.2.4",
     "globals": "^16.3.0",
     "playwright": "^1.54.1",
-    "storybook": "^9.0.18",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.38.0",
+    "storybook": "^9.1.1",
+    "typescript": "~5.9.2",
     "vite": "^7.0.6",
     "vitest": "^3.2.4"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   },
   "msw": {
     "workerDirectory": [
