@@ -25,6 +25,7 @@ export const sectionRow = tv({
 			},
 			horizontalCentered: {
 				root: "sm:grid-cols-[min(33%,--spacing(80))_auto] sm:items-center",
+				valueContainer: "items-center",
 			},
 		},
 		spacing: {
