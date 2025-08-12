@@ -1,5 +1,12 @@
 # @kopexa/avatar
 
+## 3.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`3c0b34a`](https://github.com/kopexa-grc/sight/commit/3c0b34ad349d21f8be53669294f4e191264fd9fd)]:
+  - @kopexa/theme@1.7.3
+
 ## 3.0.2
 
 ### Patch Changes
