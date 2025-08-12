@@ -1,5 +1,49 @@
 # @kopexa/sight
 
+## 8.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`3c0b34a`](https://github.com/kopexa-grc/sight/commit/3c0b34ad349d21f8be53669294f4e191264fd9fd)]:
+  - @kopexa/theme@1.7.3
+  - @kopexa/risk-badge@1.0.3
+  - @kopexa/accordion@1.0.3
+  - @kopexa/alert-dialog@3.0.3
+  - @kopexa/avatar@3.0.3
+  - @kopexa/blankstate@1.0.3
+  - @kopexa/button@8.0.3
+  - @kopexa/calendar@3.0.3
+  - @kopexa/callout@1.0.3
+  - @kopexa/card@2.0.3
+  - @kopexa/checkbox@2.0.3
+  - @kopexa/chip@3.0.3
+  - @kopexa/code@2.0.3
+  - @kopexa/command@7.0.3
+  - @kopexa/data-table@2.0.3
+  - @kopexa/dialog@10.0.3
+  - @kopexa/drawer@10.0.3
+  - @kopexa/dropdown-menu@3.0.3
+  - @kopexa/heading@2.0.3
+  - @kopexa/hover-card@1.0.3
+  - @kopexa/infotip@1.0.3
+  - @kopexa/input@3.0.3
+  - @kopexa/page-header@2.0.3
+  - @kopexa/page-layout@5.0.3
+  - @kopexa/popover@10.0.3
+  - @kopexa/preview-card@1.0.3
+  - @kopexa/resizable@1.0.3
+  - @kopexa/risk-indicator@2.0.3
+  - @kopexa/section-row@1.0.3
+  - @kopexa/separator@2.0.3
+  - @kopexa/sidebar@2.0.3
+  - @kopexa/skeleton@2.0.3
+  - @kopexa/spinner@6.0.3
+  - @kopexa/split-page-layout@1.0.3
+  - @kopexa/tab-nav@2.0.3
+  - @kopexa/table@2.0.3
+  - @kopexa/tabs@2.0.3
+  - @kopexa/tooltip@6.0.3
+
 ## 8.0.2
 
 ### Patch Changes

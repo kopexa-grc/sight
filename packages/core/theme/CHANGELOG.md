@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.7.3
+
+### Patch Changes
+
+- [`3c0b34a`](https://github.com/kopexa-grc/sight/commit/3c0b34ad349d21f8be53669294f4e191264fd9fd) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - added horizontalCentered to section row
+
 ## 1.7.2
 
 ### Patch Changes
