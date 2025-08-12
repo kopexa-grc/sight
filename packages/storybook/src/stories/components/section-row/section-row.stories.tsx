@@ -12,7 +12,7 @@ export default {
 	argTypes: {
 		orientation: {
 			control: { type: "select" },
-			options: ["horizontal", "vertical"],
+			options: ["horizontal", "vertical", "horizontalCentered"],
 			defaultValue: "horizontal",
 		},
 		spacing: {
