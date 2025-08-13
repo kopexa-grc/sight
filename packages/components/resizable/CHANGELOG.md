@@ -1,5 +1,12 @@
 # @kopexa/resizable
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies [[`df36d80`](https://github.com/kopexa-grc/sight/commit/df36d807af1118b095600b36d634f0cadf863235)]:
+  - @kopexa/icons@10.0.5
+
 ## 1.0.4
 
 ### Patch Changes

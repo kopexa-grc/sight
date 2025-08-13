@@ -1,5 +1,13 @@
 # @kopexa/calendar
 
+## 3.0.5
+
+### Patch Changes
+
+- Updated dependencies [[`df36d80`](https://github.com/kopexa-grc/sight/commit/df36d807af1118b095600b36d634f0cadf863235)]:
+  - @kopexa/icons@10.0.5
+  - @kopexa/button@8.0.5
+
 ## 3.0.4
 
 ### Patch Changes

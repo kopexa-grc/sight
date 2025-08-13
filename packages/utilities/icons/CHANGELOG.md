@@ -1,5 +1,11 @@
 # @kopexa/icons
 
+## 10.0.5
+
+### Patch Changes
+
+- [`df36d80`](https://github.com/kopexa-grc/sight/commit/df36d807af1118b095600b36d634f0cadf863235) Thanks [@juliankoehn](https://github.com/juliankoehn)! - added the domain icon
+
 ## 10.0.4
 
 ### Patch Changes
