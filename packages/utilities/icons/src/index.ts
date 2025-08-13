@@ -17,6 +17,7 @@ export { ControlsIcon } from "./controls";
 export { CopyIcon } from "./copy-icon";
 export { DataAssetIcon } from "./data-asset";
 export { DocumentsIcon } from "./documents";
+export { DomainIcon } from "./domain-icon";
 export { DSARIcon } from "./dsar";
 export { EllipsisIcon } from "./ellipsis-icon";
 export { EyeIcon } from "./eye";
