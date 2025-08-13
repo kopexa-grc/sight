@@ -1,5 +1,5 @@
 const solid = {
-	default: "bg-foreground text-background",
+	default: "bg-default-100 text-foreground dark:bg-default-900",
 	primary: "bg-primary text-primary-foreground",
 	secondary: "bg-secondary text-secondary-foreground",
 	destructive: "bg-destructive text-destructive-foreground",
