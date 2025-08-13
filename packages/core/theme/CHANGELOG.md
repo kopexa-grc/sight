@@ -1,5 +1,11 @@
 # @kopexa/theme
 
+## 1.7.4
+
+### Patch Changes
+
+- [`018c74a`](https://github.com/kopexa-grc/sight/commit/018c74ad9e99915b8d899e962e68f0d2ccb269d8) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - fix section row value container for variant horizontalCentered
+
 ## 1.7.3
 
 ### Patch Changes
