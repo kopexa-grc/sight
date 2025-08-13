@@ -1,0 +1,56 @@
+---
+"@kopexa/risk-badge": patch
+"@kopexa/accordion": patch
+"@kopexa/alert-dialog": patch
+"@kopexa/avatar": patch
+"@kopexa/blankstate": patch
+"@kopexa/button": patch
+"@kopexa/calendar": patch
+"@kopexa/callout": patch
+"@kopexa/card": patch
+"@kopexa/checkbox": patch
+"@kopexa/chip": patch
+"@kopexa/code": patch
+"@kopexa/command": patch
+"@kopexa/data-table": patch
+"@kopexa/dialog": patch
+"@kopexa/drawer": patch
+"@kopexa/dropdown-menu": patch
+"@kopexa/heading": patch
+"@kopexa/hover-card": patch
+"@kopexa/infotip": patch
+"@kopexa/input": patch
+"@kopexa/page-header": patch
+"@kopexa/page-layout": patch
+"@kopexa/popover": patch
+"@kopexa/preview-card": patch
+"@kopexa/resizable": patch
+"@kopexa/ripple": patch
+"@kopexa/risk-indicator": patch
+"@kopexa/section-row": patch
+"@kopexa/separator": patch
+"@kopexa/sidebar": patch
+"@kopexa/skeleton": patch
+"@kopexa/spinner": patch
+"@kopexa/split-page-layout": patch
+"@kopexa/tab-nav": patch
+"@kopexa/table": patch
+"@kopexa/tabs": patch
+"@kopexa/tooltip": patch
+"@kopexa/sight": patch
+"@kopexa/theme": patch
+"@kopexa/use-callback-ref": patch
+"@kopexa/use-controllable-state": patch
+"@kopexa/use-debounced-callback": patch
+"@kopexa/use-event-listener": patch
+"@kopexa/use-hover": patch
+"@kopexa/use-is-mobile": patch
+"@kopexa/use-safe-layout-effect": patch
+"@kopexa/use-unmount": patch
+"@kopexa/icons": patch
+"@kopexa/motion-utils": patch
+"@kopexa/react-utils": patch
+"@kopexa/shared-utils": patch
+---
+
+created a new component for chips + theme update
