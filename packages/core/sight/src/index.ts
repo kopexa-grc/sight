@@ -9,7 +9,14 @@ export * from "@kopexa/calendar";
 export * from "@kopexa/callout";
 export * from "@kopexa/card";
 export * from "@kopexa/checkbox";
-export * from "@kopexa/chip";
+export {
+	Chip,
+	type ChipProps,
+	RelatedControlChip,
+	type RelatedControlChipProps,
+	StandardChip,
+	type StandardChipProps,
+} from "@kopexa/chip";
 export * from "@kopexa/code";
 export * from "@kopexa/command";
 export * from "@kopexa/data-table";

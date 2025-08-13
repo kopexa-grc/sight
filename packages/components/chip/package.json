@@ -42,7 +42,9 @@
   "dependencies": {
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/react-utils": "workspace:*",
-    "@kopexa/icons": "workspace:*"
+    "@kopexa/icons": "workspace:*",
+    "@kopexa/tooltip": "workspace:*",
+    "@radix-ui/react-slot": "^1.2.3"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

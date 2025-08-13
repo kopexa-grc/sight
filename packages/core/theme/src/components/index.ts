@@ -50,6 +50,7 @@ export {
 	type PreviewCardVariantProps,
 	previewCard,
 } from "./preview-card";
+export { relatedControlChip } from "./related-control-chip";
 export { type ResizableVariantProps, resizable } from "./resizable";
 export { type RiskBadgeVariantProps, riskBadge } from "./risk-badge";
 export {
@@ -80,6 +81,7 @@ export {
 	type SplitPageLayoutVariantProps,
 	splitPageLayout,
 } from "./split-page-layout";
+export { type StandardChipVariants, standardChip } from "./standard-chip";
 export { type TabNavSlots, type TabNavVariantProps, tabNav } from "./tab-nav";
 export { type TableSlots, type TableVariantProps, table } from "./table";
 export { type TabsVariantProps, tabs } from "./tabs";

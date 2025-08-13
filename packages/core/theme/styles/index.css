@@ -43,6 +43,8 @@
 	--sidebar-accent-foreground: var(--color-primary-50);
 	--sidebar-border: var(--color-default-200);
 	--sidebar-ring: oklch(0.708 0 0);
+
+    
 }
 
 .dark {
@@ -182,6 +184,45 @@
     --color-info-800: oklch(35.86% 0.084 240.95);
     --color-info-900: oklch(24.87% 0.058 240.76);
     --color-info-950: oklch(18.67% 0.043 240.07);
+
+    /** Standard Specific colors */
+    --color-standard-iso27001: var(--color-blue-700);
+    --color-standard-iso9001: var(--color-sky-500);
+    --color-standard-iso14001: var(--color-green-600);
+    --color-standard-nis2: var(--color-blue-600);
+    --color-standard-nist80053: var(--color-purple-600);
+    --color-standard-nistcsf: var(--color-indigo-600);
+    --color-standard-nistssdf: var(--color-violet-500);
+    --color-standard-soc2: var(--color-cyan-600);
+    --color-standard-gdpr: var(--color-yellow-500);
+    --color-standard-cis: var(--color-emerald-500);
+    --color-standard-ccm: var(--color-teal-500);
+    --color-standard-hipaa: var(--color-rose-500);
+    --color-standard-sox: var(--color-orange-500);
+    /** EU & DE add-ons */
+    --color-standard-dora: var(--color-amber-600);
+    --color-standard-cra: var(--color-lime-600);
+    --color-standard-eu-aiact: var(--color-fuchsia-600);
+    --color-standard-eidas2: var(--color-blue-800);
+
+    --color-standard-bsi-itg: var(--color-slate-600);   /* IT-Grundschutz */
+    --color-standard-kritis: var(--color-red-700);      /* KRITIS / IT-SiG 2.0 */
+    --color-standard-bsi-c5: var(--color-zinc-600);
+
+    /** Industry & extended ISO */
+    --color-standard-tisax: var(--color-yellow-600);
+    --color-standard-pci-dss: var(--color-red-600);
+    --color-standard-iec-62443: var(--color-lime-700);
+    --color-standard-iso27701: var(--color-cyan-700);
+    --color-standard-iso27017: var(--color-teal-700);
+    --color-standard-iso27018: var(--color-sky-600);
+    --color-standard-iso22301: var(--color-pink-600);
+    --color-standard-iso20000-1: var(--color-violet-600);
+
+    /** Neutral / custom */
+    --color-standard-custom: var(--color-gray-500);
+   
+   
 
 
 	--color-background: var(--background);
