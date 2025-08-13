@@ -6,6 +6,33 @@ import type { Meta } from "@storybook/react";
 export default {
 	title: "Components/Chip",
 	component: Chip,
+	argTypes: {
+		variant: {
+			control: { type: "select" },
+			options: Object.keys(chip.variants.variant),
+			defaultValue: chip.defaultVariants.variant,
+		},
+		color: {
+			control: { type: "select" },
+			options: Object.keys(chip.variants.color),
+			defaultValue: chip.defaultVariants.color,
+		},
+		size: {
+			control: { type: "select" },
+			options: Object.keys(chip.variants.size),
+			defaultValue: chip.defaultVariants.size,
+		},
+		indicatorColor: {
+			control: { type: "select" },
+			options: Object.keys(chip.variants.indicatorColor),
+			defaultValue: chip.defaultVariants.indicatorColor,
+		},
+		radius: {
+			control: { type: "select" },
+			options: Object.keys(chip.variants.radius),
+			defaultValue: chip.defaultVariants.radius,
+		},
+	},
 } as Meta<typeof Chip>;
 
 const defaultProps = {
