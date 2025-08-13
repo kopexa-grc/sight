@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/command",
-  "version": "7.0.4",
+  "version": "7.0.5",
   "description": "Fast, composable command menu",
   "keywords": [
     "command"

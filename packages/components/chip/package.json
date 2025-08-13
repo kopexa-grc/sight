@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/chip",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "A Chip is a small block of essential information that represent an input, attribute, or action.",
   "keywords": [
     "chip"
