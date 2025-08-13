@@ -1,5 +1,11 @@
 # @kopexa/sight
 
+## 8.0.5
+
+### Patch Changes
+
+- [`864112c`](https://github.com/kopexa-grc/sight/commit/864112ca11c6bd34544bd7c52173693aedc4baa8) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - bump storybook packages
+
 ## 8.0.4
 
 ### Patch Changes
