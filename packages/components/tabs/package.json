@@ -42,7 +42,7 @@
   "dependencies": {
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
-    "@radix-ui/react-tabs": "^1.1.12"
+    "@radix-ui/react-tabs": "^1.1.13"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
