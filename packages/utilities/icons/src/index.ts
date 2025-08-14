@@ -1,5 +1,6 @@
 export { AlertIcon } from "./alert";
 export { AlertCircleIcon } from "./alert-circle";
+export { ApplicationAssetIcon } from "./application-asset";
 export { ArrowDown } from "./arrow-down";
 export { ArrowDownUp } from "./arrow-down-up";
 export { ArrowRightIcon } from "./arrow-right-icon";

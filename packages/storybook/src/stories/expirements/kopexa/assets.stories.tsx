@@ -1,5 +1,6 @@
 import { faker } from "@faker-js/faker";
 import {
+	ApplicationAssetIcon,
 	AssetsIcon,
 	DataAssetIcon,
 	PeopleIcon,
@@ -387,8 +388,8 @@ export const Default = () => {
 								active={selectedTab === "other"}
 								onClick={() => handleTabChange("other")}
 							>
-								<AssetsIcon />
-								Other
+								<ApplicationAssetIcon />
+								Application
 							</TabNav.Link>
 						</TabNav>
 					</PageHeader.Navigation>
