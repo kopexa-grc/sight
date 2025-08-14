@@ -42,7 +42,7 @@
   "dependencies": {
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
-    "@radix-ui/react-dropdown-menu": "^2.1.15"
+    "@radix-ui/react-dropdown-menu": "^2.1.16"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
