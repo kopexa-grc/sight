@@ -43,7 +43,7 @@
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/use-controllable-state": "workspace:*",
-    "@radix-ui/react-tooltip": "^1.2.7"
+    "@radix-ui/react-tooltip": "^1.2.8"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
