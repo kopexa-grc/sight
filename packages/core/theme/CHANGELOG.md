@@ -1,5 +1,18 @@
 # @kopexa/theme
 
+## 1.7.5
+
+### Patch Changes
+
+- [`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new component for chips + theme update
+
+- [`1f8cc4a`](https://github.com/kopexa-grc/sight/commit/1f8cc4a75d798411130a4e2fab276dbac567acf5) Thanks [@juliankoehn](https://github.com/juliankoehn)! - create a new block
+
+- [`dd39fc9`](https://github.com/kopexa-grc/sight/commit/dd39fc9ef65a142ba4d0ec2136744d4a1c9572e9) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - fix solid default color
+
+- Updated dependencies [[`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a)]:
+  - @kopexa/shared-utils@1.1.6
+
 ## 1.7.4
 
 ### Patch Changes
