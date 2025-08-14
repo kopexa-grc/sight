@@ -42,7 +42,7 @@
   "dependencies": {
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
-    "@radix-ui/react-alert-dialog": "^1.1.14"
+    "@radix-ui/react-alert-dialog": "^1.1.15"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
