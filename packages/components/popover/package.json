@@ -44,7 +44,7 @@
 		"@kopexa/react-utils": "workspace:*",
 		"@kopexa/shared-utils": "workspace:*",
 		"@kopexa/motion-utils": "workspace:*",
-		"@radix-ui/react-popover": "^1.1.14"
+		"@radix-ui/react-popover": "^1.1.15"
 	},
 	"devDependencies": {
 		"@kopexa/theme": "workspace:*",
