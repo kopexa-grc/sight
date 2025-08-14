@@ -1,5 +1,56 @@
 # @kopexa/sight
 
+## 8.0.7
+
+### Patch Changes
+
+- [`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new component for chips + theme update
+
+- [`1f8cc4a`](https://github.com/kopexa-grc/sight/commit/1f8cc4a75d798411130a4e2fab276dbac567acf5) Thanks [@juliankoehn](https://github.com/juliankoehn)! - create a new block
+
+- Updated dependencies [[`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a), [`1f8cc4a`](https://github.com/kopexa-grc/sight/commit/1f8cc4a75d798411130a4e2fab276dbac567acf5), [`dd39fc9`](https://github.com/kopexa-grc/sight/commit/dd39fc9ef65a142ba4d0ec2136744d4a1c9572e9)]:
+  - @kopexa/risk-badge@1.0.6
+  - @kopexa/accordion@1.0.6
+  - @kopexa/alert-dialog@3.0.5
+  - @kopexa/avatar@3.0.5
+  - @kopexa/blankstate@1.0.5
+  - @kopexa/button@8.0.6
+  - @kopexa/calendar@3.0.6
+  - @kopexa/callout@1.0.6
+  - @kopexa/card@2.0.5
+  - @kopexa/checkbox@2.0.6
+  - @kopexa/chip@3.0.6
+  - @kopexa/code@2.0.5
+  - @kopexa/command@7.0.6
+  - @kopexa/data-table@2.0.6
+  - @kopexa/dialog@10.0.6
+  - @kopexa/drawer@10.0.6
+  - @kopexa/dropdown-menu@3.0.6
+  - @kopexa/heading@2.0.5
+  - @kopexa/hover-card@1.0.5
+  - @kopexa/infotip@1.0.6
+  - @kopexa/input@3.0.6
+  - @kopexa/page-header@2.0.5
+  - @kopexa/page-layout@5.0.5
+  - @kopexa/popover@10.0.5
+  - @kopexa/preview-card@1.0.6
+  - @kopexa/resizable@1.0.6
+  - @kopexa/risk-indicator@2.0.5
+  - @kopexa/section-row@1.0.5
+  - @kopexa/separator@2.0.5
+  - @kopexa/sidebar@2.0.6
+  - @kopexa/skeleton@2.0.5
+  - @kopexa/spinner@6.0.5
+  - @kopexa/split-page-layout@1.0.6
+  - @kopexa/tab-nav@2.0.5
+  - @kopexa/table@2.0.6
+  - @kopexa/tabs@2.0.5
+  - @kopexa/tooltip@6.0.5
+  - @kopexa/theme@1.7.5
+  - @kopexa/react-utils@2.0.7
+  - @kopexa/shared-utils@1.1.6
+  - @kopexa/mapped-controls@0.0.1
+
 ## 8.0.6
 
 ### Patch Changes

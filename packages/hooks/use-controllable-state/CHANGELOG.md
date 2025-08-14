@@ -1,5 +1,14 @@
 # @kopexa/use-controllable-state
 
+## 1.1.3
+
+### Patch Changes
+
+- [`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new component for chips + theme update
+
+- Updated dependencies [[`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a)]:
+  - @kopexa/use-callback-ref@1.1.3
+
 ## 1.1.2
 
 ### Patch Changes

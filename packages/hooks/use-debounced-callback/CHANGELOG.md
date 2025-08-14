@@ -1,5 +1,14 @@
 # @kopexa/use-debounced-callback
 
+## 1.0.4
+
+### Patch Changes
+
+- [`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a new component for chips + theme update
+
+- Updated dependencies [[`dfbdddb`](https://github.com/kopexa-grc/sight/commit/dfbdddb32eccc912932d63cf53b8eda4b9d5175a)]:
+  - @kopexa/use-unmount@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes
