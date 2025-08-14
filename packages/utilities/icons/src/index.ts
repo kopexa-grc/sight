@@ -46,6 +46,7 @@ export { PlattformAssetIcon } from "./plattform-asset";
 export { PlusIcon } from "./plus";
 export { ProcessingActivityIcon } from "./processing-activity";
 export { ProgramIcon } from "./program-icon";
+export { PuzzleIcon, PuzzleIcon as IntegrationIcon } from "./puzzle-icon";
 export { RiskIcon } from "./risk";
 export { SaveIcon } from "./save";
 export { SearchIcon } from "./search";
