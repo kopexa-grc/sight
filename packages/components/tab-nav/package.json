@@ -43,7 +43,7 @@
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/ripple": "workspace:*",
-    "@radix-ui/react-navigation-menu": "^1.2.13"
+    "@radix-ui/react-navigation-menu": "^1.2.14"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
