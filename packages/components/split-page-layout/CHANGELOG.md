@@ -1,5 +1,18 @@
 # @kopexa/split-page-layout
 
+## 1.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`9fa1282`](https://github.com/kopexa-grc/sight/commit/9fa1282ae512c94414493eaebf74fbb72c55ddb1), [`a117491`](https://github.com/kopexa-grc/sight/commit/a1174918797b4b84df480f3d52387fdadfc60957)]:
+  - @kopexa/shared-utils@1.1.7
+  - @kopexa/icons@10.0.8
+  - @kopexa/theme@1.7.6
+  - @kopexa/button@8.0.8
+  - @kopexa/drawer@10.0.8
+  - @kopexa/resizable@1.0.8
+  - @kopexa/react-utils@2.0.8
+
 ## 1.0.7
 
 ### Patch Changes

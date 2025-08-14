@@ -1,5 +1,14 @@
 # @kopexa/heading
 
+## 2.0.6
+
+### Patch Changes
+
+- Updated dependencies [[`9fa1282`](https://github.com/kopexa-grc/sight/commit/9fa1282ae512c94414493eaebf74fbb72c55ddb1)]:
+  - @kopexa/shared-utils@1.1.7
+  - @kopexa/theme@1.7.6
+  - @kopexa/react-utils@2.0.8
+
 ## 2.0.5
 
 ### Patch Changes

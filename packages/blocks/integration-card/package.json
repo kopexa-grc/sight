@@ -1,6 +1,6 @@
 {
   "name": "@kopexa/integration-card",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "integration-card"
@@ -48,13 +48,12 @@
     "@kopexa/heading": "workspace:*",
     "@kopexa/icons": "workspace:*",
     "@kopexa/chip": "workspace:*"
-    
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^19.1.1",
-	"react-dom": "^19.1.1"
+    "react-dom": "^19.1.1"
   },
   "clean-package": "../../../clean-package.config.json"
 }
