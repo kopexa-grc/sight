@@ -14,6 +14,7 @@ import {
 	StandardChip,
 	Tooltip,
 } from "@kopexa/sight";
+import type { Meta } from "@storybook/react";
 import { useState } from "react";
 
 const meta = {
@@ -21,7 +22,17 @@ const meta = {
 	parameters: {
 		layout: "centered",
 	},
-};
+	argTypes: {
+		density: {
+			control: {
+				type: "radio",
+			},
+			options: ["regular", "compact"],
+			defaultValue: "regular",
+			description: "Density of the card layout",
+		},
+	},
+} satisfies Meta;
 
 export default meta;
 
@@ -117,19 +128,6 @@ const demoC5Mappings: ControlMapping[] = [
 			'SN "+" bei mehreren CCM-Referenzen → CCM ist strenger/umfassender; C5 ist hier Teilmenge.',
 	},
 ];
-
-// Demo mappings: BSI C5:2020 → ISO/IEC 27001:2017, CSA CCM 3.0.1, AICPA TSC 2017, ISO 27017/27018, BSI IT-Grundschutz
-const data = demoC5Mappings[0];
-
-function copyText(text: string) {
-	navigator.clipboard?.writeText(text).catch(() => {});
-}
-
-function flattenRefs(map: Record<string, string[]>): string {
-	return Object.entries(map)
-		.map(([fw, codes]) => `${fw}: ${codes.join(", ")}`)
-		.join("\n");
-}
 
 type CardDensity = "regular" | "compact";
 
@@ -263,7 +261,9 @@ function MappingLegend() {
 	);
 }
 
-export const MappedControlCardDemo = () => {
+export const MappedControlCardDemo = (args: {
+	density: "regular" | "compact";
+}) => {
 	const [i, setI] = useState(0);
 	const curr = demoC5Mappings[i];
 
@@ -287,7 +287,7 @@ export const MappedControlCardDemo = () => {
 				</div>
 			</div>
 			<MappingLegend />
-			<MappedControlCard data={curr} />
+			<MappedControlCard data={curr} density={args.density} />
 		</div>
 	);
 };

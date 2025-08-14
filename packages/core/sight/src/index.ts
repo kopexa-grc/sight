@@ -1,7 +1,23 @@
 "use client";
 
-export * from "@kopexa/accordion";
-export * from "@kopexa/alert-dialog";
+export type {
+	AccordionContentProps,
+	AccordionItemProps,
+	AccordionRootProps,
+	AccordionTriggerProps,
+} from "@kopexa/accordion";
+export {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionRoot,
+	AccordionTrigger,
+} from "@kopexa/accordion";
+export {
+	AlertDialog,
+	ConfirmDialogProvider,
+	useConfirm,
+} from "@kopexa/alert-dialog";
 export * from "@kopexa/avatar";
 export * from "@kopexa/blankstate";
 export * from "@kopexa/button";
