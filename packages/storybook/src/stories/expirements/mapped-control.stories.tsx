@@ -128,8 +128,6 @@ type CardDensity = "regular" | "compact";
 function MappedControlCard({
 	data,
 	density = "regular",
-	onEdit,
-	onDelete,
 }: {
 	data: ControlMapping;
 	density?: CardDensity;
@@ -289,6 +287,7 @@ export const MappedControlCardDemo = (args: {
 /** Mapping Type → icon, tone, label */
 const mappingTypeMeta: Record<
 	MappingType,
+	// biome-ignore lint/suspicious/noExplicitAny: its a story
 	{ label: string; Icon: React.ComponentType<any>; tone: string; ring: string }
 > = {
 	EQUAL: {
