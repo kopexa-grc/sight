@@ -13,5 +13,9 @@ export const getInitials = (text: string): string => {
 	}
 
 	const initials = words.map((word) => word.charAt(0).toUpperCase());
+	// return only the first 2 letters
+	if (initials.length > 2) {
+		initials.length = 2;
+	}
 	return initials.join("");
 };

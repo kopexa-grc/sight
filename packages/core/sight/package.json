@@ -81,7 +81,8 @@
     "@kopexa/accordion": "workspace:*",
     "@kopexa/callout": "workspace:*",
     "@kopexa/blankstate": "workspace:*",
-    "@kopexa/mapped-controls": "workspace:*"
+    "@kopexa/mapped-controls": "workspace:*",
+    "@kopexa/integration-card": "workspace:*"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",

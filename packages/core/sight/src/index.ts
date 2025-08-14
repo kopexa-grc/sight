@@ -43,6 +43,12 @@ export * from "@kopexa/heading";
 export * from "@kopexa/hover-card";
 export * from "@kopexa/infotip";
 export * from "@kopexa/input";
+export {
+	type Integration,
+	IntegrationCard,
+	type IntegrationCardProps,
+	type IntegrationStatus,
+} from "@kopexa/integration-card";
 export * from "@kopexa/mapped-controls";
 export * from "@kopexa/page-header";
 export * from "@kopexa/page-layout";

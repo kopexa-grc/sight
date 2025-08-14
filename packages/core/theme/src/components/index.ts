@@ -39,6 +39,11 @@ export {
 	hoverCard,
 } from "./hover-card";
 export { type InputVariantProps, input, passwordInput } from "./input";
+export {
+	type IntegrationCardSlots,
+	type IntegrationCardVariantProps,
+	integrationCard,
+} from "./integration-card";
 export { type PageHeaderVariantProps, pageHeader } from "./page-header";
 export {
 	type PageLayoutSlots,

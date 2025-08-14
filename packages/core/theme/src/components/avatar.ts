@@ -5,7 +5,7 @@ import { colorVariants } from "../utils/variants";
 export const avatar = tv({
 	slots: {
 		root: [
-			"flex",
+			"flex w-min h-min",
 			"relative",
 			"justify-center",
 			"items-center",

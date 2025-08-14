@@ -5,13 +5,23 @@ import { type UseAvatarProps, useAvatar } from "./use-avatar";
 export interface AvatarProps extends UseAvatarProps {}
 
 export const Avatar = (props: AvatarProps) => {
-	const { alt, getAvatarProps, getImageProps, slots, classNames, name } =
-		useAvatar(props);
+	const {
+		alt,
+		getAvatarProps,
+		getImageProps,
+		slots,
+		classNames,
+		name,
+		fallback = <AvatarIcon />,
+	} = useAvatar(props);
 
 	return (
 		<AvatarPrimitive.Root {...getAvatarProps()}>
 			<AvatarPrimitive.Image {...getImageProps()} />
-			<AvatarPrimitive.Fallback data-slot="avatar-fallback">
+			<AvatarPrimitive.Fallback
+				data-slot="avatar-fallback"
+				className={slots.fallback({})}
+			>
 				{name ? (
 					<span
 						className={slots.name({
@@ -30,7 +40,7 @@ export const Avatar = (props: AvatarProps) => {
 						role="img"
 						aria-label={alt}
 					>
-						<AvatarIcon />
+						{fallback}
 					</span>
 				)}
 			</AvatarPrimitive.Fallback>

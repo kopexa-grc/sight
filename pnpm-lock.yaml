@@ -75,6 +75,49 @@ importers:
         specifier: ~5.9.2
         version: 5.9.2
 
+  packages/blocks/integration-card:
+    dependencies:
+      '@kopexa/avatar':
+        specifier: workspace:*
+        version: link:../../components/avatar
+      '@kopexa/button':
+        specifier: workspace:*
+        version: link:../../components/button
+      '@kopexa/card':
+        specifier: workspace:*
+        version: link:../../components/card
+      '@kopexa/chip':
+        specifier: workspace:*
+        version: link:../../components/chip
+      '@kopexa/heading':
+        specifier: workspace:*
+        version: link:../../components/heading
+      '@kopexa/icons':
+        specifier: workspace:*
+        version: link:../../utilities/icons
+      '@kopexa/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@kopexa/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      motion:
+        specifier: '>=12.23.6'
+        version: 12.23.12(react-dom@19.1.1)(react@19.1.1)
+    devDependencies:
+      '@kopexa/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^19.1.1
+        version: 19.1.1
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
+
   packages/blocks/mapped-controls:
     dependencies:
       '@kopexa/chip':
@@ -1358,6 +1401,9 @@ importers:
       '@kopexa/input':
         specifier: workspace:*
         version: link:../../components/input
+      '@kopexa/integration-card':
+        specifier: workspace:*
+        version: link:../../blocks/integration-card
       '@kopexa/mapped-controls':
         specifier: workspace:*
         version: link:../../blocks/mapped-controls

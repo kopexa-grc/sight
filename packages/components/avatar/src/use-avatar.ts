@@ -29,11 +29,15 @@ interface Props extends ComponentProps<"span"> {
 	/**
 	 * Image source.
 	 */
-	src?: string;
+	src?: string | null;
 	/**
 	 * Image alt text.
 	 */
 	alt?: string;
+	/**
+	 * Fallback content to render when the image fails to load.
+	 */
+	fallback?: React.ReactNode;
 	classNames?: SlotsToClasses<AvatarSlots>;
 	onLoadingStatusChange?: (status: ImageStatus) => void;
 	/**
@@ -63,6 +67,7 @@ export function useAvatar(originalProps: UseAvatarProps = {}) {
 		size = groupContext?.size ?? "md",
 		isBordered = groupContext?.isBordered ?? false,
 		isDisabled = groupContext?.isDisabled ?? false,
+		fallback,
 		className,
 		onError,
 		onLoadingStatusChange,
@@ -147,6 +152,7 @@ export function useAvatar(originalProps: UseAvatarProps = {}) {
 		slots,
 		classNames,
 		name,
+		fallback,
 		getAvatarProps,
 		getImageProps,
 	};
