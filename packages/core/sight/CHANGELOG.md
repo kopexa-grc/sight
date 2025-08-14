@@ -1,5 +1,31 @@
 # @kopexa/sight
 
+## 8.0.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @kopexa/risk-badge@1.0.7
+  - @kopexa/accordion@1.0.7
+  - @kopexa/button@8.0.7
+  - @kopexa/calendar@3.0.7
+  - @kopexa/callout@1.0.7
+  - @kopexa/checkbox@2.0.7
+  - @kopexa/chip@3.0.7
+  - @kopexa/command@7.0.7
+  - @kopexa/data-table@2.0.7
+  - @kopexa/dialog@10.0.7
+  - @kopexa/drawer@10.0.7
+  - @kopexa/dropdown-menu@3.0.7
+  - @kopexa/infotip@1.0.7
+  - @kopexa/input@3.0.7
+  - @kopexa/preview-card@1.0.7
+  - @kopexa/resizable@1.0.7
+  - @kopexa/sidebar@2.0.7
+  - @kopexa/split-page-layout@1.0.7
+  - @kopexa/table@2.0.7
+  - @kopexa/mapped-controls@0.0.2
+
 ## 8.0.7
 
 ### Patch Changes
