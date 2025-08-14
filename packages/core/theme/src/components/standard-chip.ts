@@ -81,6 +81,11 @@ export const standardChip = tv({
 				hexagon: "text-standard-custom",
 			},
 		},
+		size: {
+			sm: {},
+			md: {},
+			lg: {},
+		},
 	},
 	defaultVariants: {
 		standard: "CUSTOM",

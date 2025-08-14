@@ -50,7 +50,10 @@ export {
 	type PreviewCardVariantProps,
 	previewCard,
 } from "./preview-card";
-export { relatedControlChip } from "./related-control-chip";
+export {
+	type RelatedControlChipVariantsProps,
+	relatedControlChip,
+} from "./related-control-chip";
 export { type ResizableVariantProps, resizable } from "./resizable";
 export { type RiskBadgeVariantProps, riskBadge } from "./risk-badge";
 export {

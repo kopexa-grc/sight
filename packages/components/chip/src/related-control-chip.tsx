@@ -6,13 +6,16 @@ import {
 	SubsetIcon,
 	SupersetIcon,
 } from "@kopexa/icons";
-import { relatedControlChip } from "@kopexa/theme";
+import {
+	type RelatedControlChipVariantsProps,
+	relatedControlChip,
+} from "@kopexa/theme";
 import { Tooltip } from "@kopexa/tooltip";
 import * as Slot from "@radix-ui/react-slot";
 
 type MappingType = "EQUAL" | "INTERSECT" | "PARTIAL" | "SUBSET" | "SUPERSET";
 
-export type RelatedControlChipProps = {
+export type RelatedControlChipProps = RelatedControlChipVariantsProps & {
 	refCode: string;
 	mappingType?: MappingType;
 	relation?: string | null;

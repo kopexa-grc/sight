@@ -4,7 +4,7 @@ import { chip } from "@kopexa/theme";
 import type { Meta } from "@storybook/react";
 
 export default {
-	title: "Components/Chip",
+	title: "Components/Chips/Chip",
 	component: Chip,
 	argTypes: {
 		variant: {

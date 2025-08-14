@@ -1,4 +1,4 @@
-import { tv } from "tailwind-variants";
+import { tv, type VariantProps } from "tailwind-variants";
 
 export const relatedControlChip = tv({
 	slots: {
@@ -8,3 +8,7 @@ export const relatedControlChip = tv({
 		tooltip: "text-xs",
 	},
 });
+
+export type RelatedControlChipVariantsProps = VariantProps<
+	typeof relatedControlChip
+>;
