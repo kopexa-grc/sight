@@ -63,7 +63,7 @@
 		"@types/color": "^4.2.0",
 		"@types/flat": "^5.0.2",
 		"clean-package": "2.2.0",
-		"tailwindcss": "4.1.11"
+		"tailwindcss": "4.1.12"
 	},
 	"tsup": {
 		"clean": true,
