@@ -31,6 +31,7 @@ export { type DataTableVariants, dataTable } from "./data-table";
 export { type DialogSlots, type DialogVariantProps, dialog } from "./dialog";
 export { type DrawerVariantProps, drawer } from "./drawer";
 export { type DropdownMenuVariantProps, dropdownMenu } from "./dropdown-menu";
+export { frameworkRow } from "./framework-row";
 export { type HeadingVariantProps, heading } from "./heading";
 export {
 	type HoverCardSlots,

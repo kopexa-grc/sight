@@ -7,13 +7,7 @@ import {
 	SubsetIcon,
 	SupersetIcon,
 } from "@kopexa/icons";
-import {
-	Button,
-	Chip,
-	RelatedControlChip,
-	StandardChip,
-	Tooltip,
-} from "@kopexa/sight";
+import { Button, Chip, StandardRow, Tooltip } from "@kopexa/sight";
 import type { Meta } from "@storybook/react";
 import { useState } from "react";
 
@@ -183,9 +177,9 @@ function MappedControlCard({
 					</div>
 					<div>
 						{Object.entries(data.from).map(([fw, codes]) => (
-							<FrameworkRow
+							<StandardRow
 								key={`from:${fw}`}
-								framework={fw}
+								standard={fw}
 								codes={codes}
 								mappingType={data.type}
 								relation={data.relation}
@@ -211,9 +205,9 @@ function MappedControlCard({
 					</div>
 					<div>
 						{Object.entries(data.to).map(([fw, codes]) => (
-							<FrameworkRow
+							<StandardRow
 								key={`to:${fw}`}
-								framework={fw}
+								standard={fw}
 								codes={codes}
 								mappingType={data.type}
 								relation={data.relation}
@@ -372,53 +366,6 @@ function MappingMetaPill({
 				title={relation}
 			>
 				{relation}
-			</div>
-		</div>
-	);
-}
-
-/** Row listing a framework with its referenced control codes */
-function FrameworkRow({
-	framework,
-	codes,
-	mappingType,
-	relation,
-	initialVisible = 4, // show-more threshold
-}: {
-	framework: string;
-	codes: string[];
-	mappingType: MappingType;
-	relation: string;
-	initialVisible?: number;
-}) {
-	const [expanded, setExpanded] = useState(false);
-	const visible = expanded ? codes : codes.slice(0, initialVisible);
-	const hasMore = codes.length > initialVisible;
-
-	return (
-		<div className="flex w-full items-start gap-3 py-2 first:pt-0 last:pb-0 border-b border-dotted last:border-0">
-			<div className="shrink-0">
-				<StandardChip standard={framework} />
-			</div>
-			<div className="flex flex-wrap gap-2">
-				{visible.map((code) => (
-					<RelatedControlChip
-						key={`${framework}:${code}`}
-						refCode={code}
-						mappingType={mappingType}
-						relation={relation}
-					/>
-				))}
-				{hasMore && (
-					<button
-						type="button"
-						onClick={() => setExpanded((v) => !v)}
-						className="px-2 py-0.5 text-xs rounded-full border bg-background text-muted-foreground hover:bg-muted/40"
-						aria-expanded={expanded}
-					>
-						{expanded ? "Show less" : `+${codes.length - initialVisible} more`}
-					</button>
-				)}
 			</div>
 		</div>
 	);
