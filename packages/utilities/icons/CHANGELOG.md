@@ -1,5 +1,11 @@
 # @kopexa/icons
 
+## 10.0.7
+
+### Patch Changes
+
+- [`529162b`](https://github.com/kopexa-grc/sight/commit/529162b41e50b0af3c13fd4a180aa9ea86de0ff3) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created the integration icon based on the puzzle icon
+
 ## 10.0.6
 
 ### Patch Changes

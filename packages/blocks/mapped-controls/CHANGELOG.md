@@ -1,5 +1,12 @@
 # @kopexa/mapped-controls
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @kopexa/chip@3.0.7
+
 ## 0.0.1
 
 ### Patch Changes
