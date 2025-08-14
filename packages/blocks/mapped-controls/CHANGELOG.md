@@ -1,5 +1,15 @@
 # @kopexa/mapped-controls
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`9fa1282`](https://github.com/kopexa-grc/sight/commit/9fa1282ae512c94414493eaebf74fbb72c55ddb1)]:
+  - @kopexa/shared-utils@1.1.7
+  - @kopexa/theme@1.7.6
+  - @kopexa/chip@3.0.8
+  - @kopexa/react-utils@2.0.8
+
 ## 0.0.2
 
 ### Patch Changes

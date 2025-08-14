@@ -1,5 +1,11 @@
 # @kopexa/shared-utils
 
+## 1.1.7
+
+### Patch Changes
+
+- [`9fa1282`](https://github.com/kopexa-grc/sight/commit/9fa1282ae512c94414493eaebf74fbb72c55ddb1) Thanks [@juliankoehn](https://github.com/juliankoehn)! - created a integration card
+
 ## 1.1.6
 
 ### Patch Changes
