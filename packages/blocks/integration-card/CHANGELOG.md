@@ -1,5 +1,14 @@
 # @kopexa/integration-card
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`9794ce7`](https://github.com/kopexa-grc/sight/commit/9794ce71322a6345891a36761f47233eff6f9bab)]:
+  - @kopexa/icons@10.0.9
+  - @kopexa/button@8.0.9
+  - @kopexa/chip@3.0.9
+
 ## 0.0.1
 
 ### Patch Changes

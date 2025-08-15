@@ -1,5 +1,11 @@
 # @kopexa/icons
 
+## 10.0.9
+
+### Patch Changes
+
+- [`9794ce7`](https://github.com/kopexa-grc/sight/commit/9794ce71322a6345891a36761f47233eff6f9bab) Thanks [@steffen-petschow](https://github.com/steffen-petschow)! - fix application asset icon
+
 ## 10.0.8
 
 ### Patch Changes
