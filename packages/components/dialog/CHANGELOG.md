@@ -1,5 +1,12 @@
 # @kopexa/dialog
 
+## 10.0.9
+
+### Patch Changes
+
+- Updated dependencies [[`9794ce7`](https://github.com/kopexa-grc/sight/commit/9794ce71322a6345891a36761f47233eff6f9bab)]:
+  - @kopexa/icons@10.0.9
+
 ## 10.0.8
 
 ### Patch Changes
