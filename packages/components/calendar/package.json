@@ -45,7 +45,7 @@
     "@kopexa/icons": "workspace:*",
     "@kopexa/button": "workspace:*",
     "date-fns": "^4.1.0",
-    "react-day-picker": "^9.8.1"
+    "react-day-picker": "^9.9.0"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
