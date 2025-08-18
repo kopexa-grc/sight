@@ -1508,8 +1508,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0(tailwind-merge@3.3.1)(tailwindcss@4.1.12)
       tw-animate-css:
-        specifier: ^1.3.6
-        version: 1.3.6
+        specifier: ^1.3.7
+        version: 1.3.7
     devDependencies:
       '@types/color':
         specifier: ^4.2.0
@@ -9914,8 +9914,8 @@ packages:
       turbo-windows-arm64: 2.5.5
     dev: true
 
-  /tw-animate-css@1.3.6:
-    resolution: {integrity: sha512-9dy0R9UsYEGmgf26L8UcHiLmSFTHa9+D7+dAt/G/sF5dCnPePZbfgDYinc7/UzAM7g/baVrmS6m9yEpU46d+LA==}
+  /tw-animate-css@1.3.7:
+    resolution: {integrity: sha512-lvLb3hTIpB5oGsk8JmLoAjeCHV58nKa2zHYn8yWOoG5JJusH3bhJlF2DLAZ/5NmJ+jyH3ssiAx/2KmbhavJy/A==}
     dev: false
 
   /type-detect@4.0.8:
