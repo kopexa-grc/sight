@@ -37,7 +37,7 @@
     "@kopexa/icons": "workspace:*",
     "@kopexa/sight": "workspace:*",
     "@kopexa/theme": "workspace:*",
-    "@storybook/addon-links": "^9.1.2",
+    "@storybook/addon-links": "^9.1.3",
     "@storybook/addon-themes": "^9.1.2",
     "@storybook/react": "^9.1.2",
     "@tailwindcss/vite": "^4.1.12",
