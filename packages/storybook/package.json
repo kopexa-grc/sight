@@ -33,7 +33,7 @@
     "start": "pnpm dlx http-server storybook-static"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.9.0",
+    "@faker-js/faker": "^10.0.0",
     "@kopexa/icons": "workspace:*",
     "@kopexa/sight": "workspace:*",
     "@kopexa/theme": "workspace:*",
