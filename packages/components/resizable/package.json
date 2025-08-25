@@ -43,7 +43,7 @@
     "@kopexa/react-utils": "workspace:*",
     "@kopexa/shared-utils": "workspace:*",
     "@kopexa/icons": "workspace:*",
-    "react-resizable-panels": "^3.0.4"
+    "react-resizable-panels": "^3.0.5"
   },
   "devDependencies": {
     "@kopexa/theme": "workspace:*",
